@@ -11,9 +11,10 @@ export default function Home() {
           <Image
             className="h-full object-cover"
             src="/img/IMG_1440.webp"
-            alt="picture"
+            alt="two students selling paletas from a rolling cart at GorettiFest festival"
             width={1800}
             height={1800}
+            loading="eager"
           />
         </div>
         <div
