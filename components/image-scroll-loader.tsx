@@ -58,7 +58,7 @@ export function ImageScrollLoader({
                 showIndex < idx + 1
                   ? `translate3d(${
                       offScreenDirection === "left" ? "-" : ""
-                    }75vw, 0, 0)`
+                    }100vw, 0, 0)`
                   : "translate3d(0, 0, 0)",
             }}
           >
