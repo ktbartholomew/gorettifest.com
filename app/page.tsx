@@ -38,8 +38,8 @@ const eventStructuredData = {
 export default function Home() {
   return (
     <main>
-      <section className="relative h-[80vh]">
-        <div className="absolute h-full w-full overflow-hidden">
+      <section className="relative p-4 md:p-0 md:h-[80vh]">
+        <div className="hidden md:block absolute h-full w-full overflow-hidden">
           <Image
             className="h-full w-full object-cover"
             src={headerImage.src}
@@ -52,8 +52,8 @@ export default function Home() {
             blurDataURL={headerImage.blurDataURL}
           />
         </div>
-        <div className="absolute h-full w-full mix-blend-multiply bg-amber-900/70"></div>
-        <div className="flex h-full w-full absolute text-center items-center justify-center">
+        <div className="absolute top-0 left-0 h-full w-full mix-blend-multiply bg-amber-900/70"></div>
+        <div className="z-10 relative flex h-full w-full px-4 md:px-0 md:absolute text-center items-center justify-center">
           <div>
             <Image
               src="/img/goretti-fest-logo.svg"
@@ -169,7 +169,7 @@ export default function Home() {
               </tbody>
             </table>
           </div>
-          <div className="bg-teal-800 p-8 rounded-2xl">
+          <div className="hidden md:block bg-teal-800 p-8 rounded-2xl">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3356.5415387098847!2d-97.12749252363562!3d32.72480818665103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e7d1a02bc13ef%3A0xc77ecf1dab906f16!2sSt%20Maria%20Goretti%20Catholic%20School!5e0!3m2!1sen!2sus!4v1721175085047!5m2!1sen!2sus"
               width="600"
