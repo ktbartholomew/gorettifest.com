@@ -245,6 +245,7 @@ export default function Home() {
                     alt="a young boy enjoying frozen treats at GorettiFest festival"
                     width={900}
                     height={900}
+                    loading="lazy"
                   />
                   <Image
                     className={[
@@ -255,6 +256,7 @@ export default function Home() {
                     alt="a young boy enjoying frozen treats at GorettiFest festival"
                     width={900}
                     height={900}
+                    loading="eager"
                   />
                 </ImageScrollLoader>
               </div>
@@ -273,6 +275,7 @@ export default function Home() {
                     alt="festival attendees playing Cornhole in in the Cornhole tournament at GorettiFest festival"
                     width={900}
                     height={900}
+                    loading="lazy"
                   />
                   <Image
                     className={[styles.photoWithBorder].join(" ")}
@@ -280,6 +283,7 @@ export default function Home() {
                     alt="a young boy playing in the Nerf shooting gallery at GorettiFest festival"
                     width={900}
                     height={900}
+                    loading="eager"
                   />
                 </ImageScrollLoader>
               </div>
