@@ -4,16 +4,33 @@ import { Lilita_One } from "next/font/google";
 const lilita = Lilita_One({ weight: ["400"], subsets: ["latin"] });
 
 const eventStructuredData = {
-  "@context": {
-    ical: "http://www.w3.org/2002/12/cal/ical#",
-    xsd: "http://www.w3.org/2001/XMLSchema#",
-    "ical:dtstart": {
-      "@type": "xsd:dateTime",
+  "@context": "https://schema.org",
+  "@type": "Event",
+  name: "GorettiFest 2024",
+  startDate: "2024-10-05T11:00-05:00",
+  endDate: "2024-10-06T23:00-05:00",
+  eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+  eventStatus: "https://schema.org/EventScheduled",
+  location: {
+    "@type": "Place",
+    name: "Saint Maria Goretti Catholic School",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "1200 S Davis Dr",
+      addressLocality: "Arlington",
+      postalCode: "76016",
+      addressRegion: "TX",
+      addressCountry: "US",
     },
   },
-  "ical:summary": "GorettiFest",
-  "ical:location": "1200 S Davis Dr Arlington, TX 76013",
-  "ical:dtstart": "2024-10-05T11:00:00-05:00",
+  description:
+    "GorettiFest is a fall festival with delicious homemade food, carnival games, and entertainment. Hosted in the heart of Arlington, TX all proceeds benefit Saint Maria Goretti Catholic School.",
+
+  organizer: {
+    "@type": "Organization",
+    name: "Saint Maria Goretti Catholic School",
+    url: "https://smgschool.org/",
+  },
 };
 
 export default function Home() {
