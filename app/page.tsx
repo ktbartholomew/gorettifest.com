@@ -119,8 +119,8 @@ export default function Home() {
                     >
                       parking lot on Benge Drive
                     </a>
-                    . It's just a &frac14; mile walk from the parking lot to the
-                    school.
+                    . It&apos;s just a &frac14; mile walk from the parking lot
+                    to the school.
                   </td>
                 </tr>
               </tbody>
@@ -258,8 +258,9 @@ export default function Home() {
           <div>
             <h2>Entertainment</h2>
             <p className="text-2xl">
-              Our main stage has exhibitions from our school band, "Ballet
-              Folklorico" dance troupe, martial artists, and other live music!
+              Our main stage has exhibitions from our school band, &ldquo;Ballet
+              Folklorico&rdquo; dance troupe, martial artists, and other live
+              music!
             </p>
           </div>
         </div>
