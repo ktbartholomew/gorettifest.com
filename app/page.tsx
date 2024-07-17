@@ -1,9 +1,11 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import { Lilita_One } from "next/font/google";
+const lilita = Lilita_One({ weight: ["400"], subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <main className="">
+    <main>
       <section className="relative h-[80vh]">
         <div className="absolute h-full overflow-hidden">
           <Image
@@ -68,7 +70,7 @@ export default function Home() {
       <section id="visit" className={styles.pageSection}>
         <div className={styles.pageSection__grid}>
           <div>
-            <h2>Plan Your Visit</h2>
+            <h2 className={lilita.className}>Plan Your Visit</h2>
             <p className="text-2xl my-4">
               Join us for a weekend of fun and festivity at{" "}
               <strong>GorettiFest</strong>, a fall festival benefiting Saint
@@ -143,7 +145,7 @@ export default function Home() {
         <div className={styles.pageSection}>
           <div className={styles.pageSection__grid}>
             <div>
-              <h2>Food &amp; Games</h2>
+              <h2 className={lilita.className}>Food &amp; Games</h2>
               <p className="text-2xl">
                 For generations, homemade cuisine from around the world has
                 defined GorettiFest. Enjoy a break between snacks and games in
@@ -256,7 +258,7 @@ export default function Home() {
             />
           </div>
           <div>
-            <h2>Entertainment</h2>
+            <h2 className={lilita.className}>Entertainment</h2>
             <p className="text-2xl">
               Our main stage has exhibitions from our school band, &ldquo;Ballet
               Folklorico&rdquo; dance troupe, martial artists, and other live

@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Lilita_One } from "next/font/google";
+const lilita = Lilita_One({ weight: ["400"], subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title:
