@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import { Lilita_One } from "next/font/google";
 import headerImage from "@/public/img/IMG_1440.webp";
+import { ImageScrollLoader } from "@/components/image-scroll-loader";
 const lilita = Lilita_One({ weight: ["400"], subsets: ["latin"] });
 
 const eventStructuredData = {
@@ -181,121 +182,151 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section id="food-and-games" className="bg-amber-100">
-        <div className={styles.pageSection}>
-          <div className={styles.pageSection__grid}>
-            <div>
-              <h2 className={lilita.className}>Food &amp; Games</h2>
-              <p className="text-2xl">
-                For generations, homemade cuisine from around the world has
-                defined GorettiFest. Enjoy a break between snacks and games in
-                our biergarten!
-              </p>
-              <p className="text-2xl"></p>
-              <table className={styles.infoTable}>
-                <tbody>
-                  <tr>
-                    <th>American Food</th>
-                    <td>Hamburgers, Nachos, French fries</td>
-                  </tr>
-                  <tr>
-                    <th>German Food</th>
-                    <td>
-                      Bratwurst, Sausage on a stick, Sauerkraut, Fried potatoes
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>Mexican Food</th>
-                    <td>Fajitas, Nachos, Breakfast burritos (on Sunday)</td>
-                  </tr>
-                  <tr>
-                    <th>Caribbean Food</th>
-                    <td>
-                      Beignets, Jerk chicken, Jollof rice (spiced fried rice)
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>Asian Food</th>
-                    <td>Chow mein, Egg rolls, Fried rice</td>
-                  </tr>
-                  <tr>
-                    <th>Sweets &amp; Drinks</th>
-                    <td>
-                      Paletas (popsicles), Craft on draft biergarten, Soft
-                      drinks, Water
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div>
-              <Image
-                className={[
-                  styles.photoWithBorder,
-                  styles.photoWithBorder__right,
-                ].join(" ")}
-                src="/img/IMG_1246.webp"
-                alt="a young boy enjoying frozen treats at GorettiFest festival"
-                width={900}
-                height={900}
-              />
-            </div>
+      <div className="overflow-hidden">
+        <section id="food-and-games" className="bg-amber-100">
+          <div className={styles.pageSection}>
+            <div className={styles.pageSection__grid}>
+              <div>
+                <h2 className={lilita.className}>Food &amp; Games</h2>
+                <p className="text-2xl">
+                  For generations, homemade cuisine from around the world has
+                  defined GorettiFest. Enjoy a break between snacks and games in
+                  our biergarten!
+                </p>
+                <p className="text-2xl"></p>
+                <table className={styles.infoTable}>
+                  <tbody>
+                    <tr>
+                      <th>American Food</th>
+                      <td>Hamburgers, Nachos, French fries</td>
+                    </tr>
+                    <tr>
+                      <th>German Food</th>
+                      <td>
+                        Bratwurst, Sausage on a stick, Sauerkraut, Fried
+                        potatoes
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Mexican Food</th>
+                      <td>Fajitas, Nachos, Breakfast burritos (on Sunday)</td>
+                    </tr>
+                    <tr>
+                      <th>Caribbean Food</th>
+                      <td>
+                        Beignets, Jerk chicken, Jollof rice (spiced fried rice)
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Asian Food</th>
+                      <td>Chow mein, Egg rolls, Fried rice</td>
+                    </tr>
+                    <tr>
+                      <th>Sweets &amp; Drinks</th>
+                      <td>
+                        Paletas (popsicles), Craft on draft biergarten, Soft
+                        drinks, Water
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div>
+                <ImageScrollLoader
+                  offScreenDirection="right"
+                  midPointOffset={0.4}
+                >
+                  <Image
+                    className={[
+                      styles.photoWithBorder,
+                      styles.photoWithBorder__right,
+                    ].join(" ")}
+                    src="/img/IMG_1246.webp"
+                    alt="a young boy enjoying frozen treats at GorettiFest festival"
+                    width={900}
+                    height={900}
+                  />
+                  <Image
+                    className={[
+                      styles.photoWithBorder,
+                      styles.photoWithBorder__left,
+                    ].join(" ")}
+                    src="/img/IMG_1360.webp"
+                    alt="a young boy enjoying frozen treats at GorettiFest festival"
+                    width={900}
+                    height={900}
+                  />
+                </ImageScrollLoader>
+              </div>
 
-            <div>
-              <Image
-                className={[
-                  styles.photoWithBorder,
-                  styles.photoWithBorder__left,
-                ].join(" ")}
-                src="/img/IMG_1358.webp"
-                alt="festival attendees playing Cornhole in in the Cornhole tournament at GorettiFest festival"
-                width={900}
-                height={900}
-              />
-            </div>
-            <div>
-              <p className="text-2xl">
-                Test your skills at our annual Cornhole tournament, press your
-                luck at our carnival games or bingo hall, or set the little ones
-                loose in our (supervised) bounce houses!
-              </p>
-              <table className={styles.infoTable}>
-                <tbody>
-                  <tr>
-                    <th>Cornhole tournament</th>
-                    <td>
-                      <a href="">Register in advance</a> to enter. Cash prize
-                      for the winning team!
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>Raffle</th>
-                    <td>Buy tickets at the festival to win a cash prize!</td>
-                  </tr>
-                  <tr>
-                    <th>Bingo</th>
-                    <td>
-                      Real bingo with a professional caller and cash prizes
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>Jail</th>
-                    <td>
-                      Buy a warrant to put your friends in jail, or pay a bounty
-                      to incarcerate the Principal or Priest! (if you can catch
-                      them)
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>Carnival Games</th>
-                    <td>Nerf shooting gallery, Marble races</td>
-                  </tr>
-                </tbody>
-              </table>
+              <div>
+                <ImageScrollLoader
+                  offScreenDirection="left"
+                  midPointOffset={0.4}
+                >
+                  <Image
+                    className={[
+                      styles.photoWithBorder,
+                      styles.photoWithBorder__left,
+                    ].join(" ")}
+                    src="/img/IMG_1358.webp"
+                    alt="festival attendees playing Cornhole in in the Cornhole tournament at GorettiFest festival"
+                    width={900}
+                    height={900}
+                  />
+                  <Image
+                    className={[styles.photoWithBorder].join(" ")}
+                    src="/img/IMG_1189.webp"
+                    alt="a young boy playing in the Nerf shooting gallery at GorettiFest festival"
+                    width={900}
+                    height={900}
+                  />
+                </ImageScrollLoader>
+              </div>
+              <div>
+                <p className="text-2xl">
+                  Test your skills at our annual Cornhole tournament, press your
+                  luck at our carnival games or bingo hall, or set the little
+                  ones loose in our (supervised) bounce houses!
+                </p>
+                <table className={styles.infoTable}>
+                  <tbody>
+                    <tr>
+                      <th>Cornhole tournament</th>
+                      <td>
+                        <a href="">Register in advance</a> to enter. Cash prize
+                        for the winning team!
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Raffle</th>
+                      <td>Buy tickets at the festival to win a cash prize!</td>
+                    </tr>
+                    <tr>
+                      <th>Bingo</th>
+                      <td>
+                        Real bingo with a professional caller and cash prizes
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Jail</th>
+                      <td>
+                        Buy a warrant to put your friends in jail, or pay a
+                        bounty to incarcerate the Principal or Priest! (if you
+                        can catch them)
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Carnival Games</th>
+                      <td>Nerf shooting gallery, Marble races</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
       <section id="entertainment" className={styles.pageSection}>
         <div className={styles.pageSection__grid}>
           <div>
