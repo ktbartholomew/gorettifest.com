@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import { Lilita_One } from "next/font/google";
+import headerImage from "@/public/img/IMG_1440.webp";
 const lilita = Lilita_One({ weight: ["400"], subsets: ["latin"] });
 
 const eventStructuredData = {
@@ -40,12 +41,14 @@ export default function Home() {
         <div className="absolute h-full w-full overflow-hidden">
           <Image
             className="h-full w-full object-cover"
-            src="/img/IMG_1440.webp"
+            src={headerImage.src}
             alt="two students selling paletas from a rolling cart at GorettiFest festival"
             priority
             width={1800}
             height={1800}
             loading="eager"
+            placeholder="blur"
+            blurDataURL={headerImage.blurDataURL}
           />
         </div>
         <div className="absolute h-full w-full mix-blend-multiply bg-amber-900/70"></div>
@@ -56,6 +59,8 @@ export default function Home() {
               alt="Goretti Fest Logo"
               width={500}
               height={500}
+              priority
+              loading="eager"
             />
             <div className="mt-8 inline-block flex-col bg-white text-2xl rounded-lg">
               <div className="bg-red-700 border-b-2 border-b-red-900 border-t border-t-red-400 text-white text-center py-4 px-8 rounded-t-lg">
