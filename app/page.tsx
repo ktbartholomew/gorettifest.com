@@ -3,24 +3,35 @@ import styles from "./page.module.css";
 import { Lilita_One } from "next/font/google";
 const lilita = Lilita_One({ weight: ["400"], subsets: ["latin"] });
 
+const eventStructuredData = {
+  "@context": {
+    ical: "http://www.w3.org/2002/12/cal/ical#",
+    xsd: "http://www.w3.org/2001/XMLSchema#",
+    "ical:dtstart": {
+      "@type": "xsd:dateTime",
+    },
+  },
+  "ical:summary": "GorettiFest",
+  "ical:location": "1200 S Davis Dr Arlington, TX 76013",
+  "ical:dtstart": "2024-10-05T11:00:00-05:00",
+};
+
 export default function Home() {
   return (
     <main>
       <section className="relative h-[80vh]">
-        <div className="absolute h-full overflow-hidden">
+        <div className="absolute h-full w-full overflow-hidden">
           <Image
-            className="h-full object-cover"
+            className="h-full w-full object-cover"
             src="/img/IMG_1440.webp"
             alt="two students selling paletas from a rolling cart at GorettiFest festival"
+            priority
             width={1800}
             height={1800}
             loading="eager"
           />
         </div>
-        <div
-          className="absolute h-full w-full"
-          style={{ background: "rgba(0,0,0,0.6)" }}
-        ></div>
+        <div className="absolute h-full w-full mix-blend-multiply bg-amber-900/70"></div>
         <div className="flex h-full w-full absolute text-center items-center justify-center">
           <div>
             <Image
@@ -82,8 +93,14 @@ export default function Home() {
                 <tr>
                   <th>When</th>
                   <td>
-                    Saturday, October 5 from 11am to 8pm <br />
-                    Sunday, October October 6 from 8am to 3pm
+                    <p className="mt-0">
+                      Saturday, October 5<br />
+                      11am to 8pm
+                    </p>
+                    <p>
+                      Sunday, October 6 <br />
+                      8am to 3pm
+                    </p>
                   </td>
                 </tr>
                 <tr>
@@ -191,7 +208,10 @@ export default function Home() {
             </div>
             <div>
               <Image
-                className="border-[1rem] border-white drop-shadow-lg rotate-2"
+                className={[
+                  styles.photoWithBorder,
+                  styles.photoWithBorder__right,
+                ].join(" ")}
                 src="/img/IMG_1246.webp"
                 alt="a young boy enjoying frozen treats at GorettiFest festival"
                 width={900}
@@ -201,9 +221,12 @@ export default function Home() {
 
             <div>
               <Image
-                className="border-[1rem] border-white drop-shadow-lg -rotate-2"
+                className={[
+                  styles.photoWithBorder,
+                  styles.photoWithBorder__left,
+                ].join(" ")}
                 src="/img/IMG_1358.webp"
-                alt="a young boy enjoying frozen treats at GorettiFest festival"
+                alt="festival attendees playing Cornhole in in the Cornhole tournament at GorettiFest festival"
                 width={900}
                 height={900}
               />
@@ -222,6 +245,10 @@ export default function Home() {
                       <a href="">Register in advance</a> to enter. Cash prize
                       for the winning team!
                     </td>
+                  </tr>
+                  <tr>
+                    <th>Raffle</th>
+                    <td>Buy tickets at the festival to win a cash prize!</td>
                   </tr>
                   <tr>
                     <th>Bingo</th>
@@ -251,9 +278,12 @@ export default function Home() {
         <div className={styles.pageSection__grid}>
           <div>
             <Image
-              className="border-[1rem] border-white drop-shadow-lg rotate-2"
+              className={[
+                styles.photoWithBorder,
+                styles.photoWithBorder__right,
+              ].join(" ")}
               src="/img/IMG_1433.webp"
-              alt="a young boy enjoying frozen treats at GorettiFest festival"
+              alt="children playing with confetti-filled eggs at GorettiFest festival"
               width={900}
               height={900}
             />
@@ -265,9 +295,45 @@ export default function Home() {
               Folklorico&rdquo; dance troupe, martial artists, and other live
               music!
             </p>
+            <table className={styles.infoTable}>
+              <tbody>
+                <tr>
+                  <th>Main Stage</th>
+                  <td>
+                    Live music, Ballet Folklorico, martial arts demonstration,
+                    school talent show
+                  </td>
+                </tr>
+                <tr>
+                  <th>Vendor Hall</th>
+                  <td>
+                    Local vendors offer their goods and services in our
+                    air-conditioned vendor hall.
+                  </td>
+                </tr>
+                <tr>
+                  <th>Used Book and Rummage Sale</th>
+                  <td>
+                    Find hidden gems in our expansive collection of used books!
+                  </td>
+                </tr>
+                <tr>
+                  <th>For Kids</th>
+                  <td>
+                    Petting zoo, &ldquo;Touch-a-Truck&rdquo;, Confetti eggs
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </section>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(eventStructuredData),
+        }}
+      ></script>
     </main>
   );
 }

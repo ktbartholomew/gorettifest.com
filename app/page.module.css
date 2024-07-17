@@ -41,3 +41,17 @@
   @apply gap-8;
   @apply gap-y-32;
 }
+
+.photoWithBorder {
+  @apply border-[1rem];
+  @apply border-white;
+  @apply drop-shadow-lg;
+}
+
+.photoWithBorder__left {
+  @apply -rotate-2;
+}
+
+.photoWithBorder__right {
+  @apply rotate-2;
+}
