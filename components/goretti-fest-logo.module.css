@@ -1,0 +1,22 @@
+.b {
+  fill: #e29c20;
+}
+
+.b,
+.c,
+.d,
+.e {
+  stroke-width: 0px;
+}
+
+.c {
+  fill: #efe3cb;
+}
+
+.d {
+  fill: #ccebed;
+}
+
+.e {
+  fill: #115e59;
+}

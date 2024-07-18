@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import { Lilita_One } from "next/font/google";
 import headerImage from "@/public/img/IMG_1440.webp";
 import { ImageScrollLoader } from "@/components/image-scroll-loader";
+import { GorettiFestLogo } from "@/components/goretti-fest-logo";
 const lilita = Lilita_One({ weight: ["400"], subsets: ["latin"] });
 
 const eventStructuredData = {
@@ -55,16 +56,9 @@ export default function Home() {
         <div className="absolute top-0 left-0 h-full w-full mix-blend-multiply bg-amber-900/70"></div>
         <div className="z-10 relative flex h-full w-full px-4 md:px-0 md:absolute text-center items-center justify-center">
           <div>
-            <Image
-              src="/img/goretti-fest-logo.svg"
-              alt="Goretti Fest Logo"
-              width={500}
-              height={500}
-              priority
-              loading="eager"
-            />
+            <GorettiFestLogo />
             <div className="mt-8 inline-block flex-col bg-white text-2xl rounded-lg">
-              <div className="bg-red-700 border-b-2 border-b-red-900 border-t border-t-red-400 text-white text-center py-4 px-8 rounded-t-lg">
+              <div className="bg-red-700 border-b-2 border-b-red-900 border-t border-t-red-400 text-white text-center py-2 px-8 rounded-t-lg">
                 October
               </div>
               <div className="text-6xl py-4 px-8 tracking-tighter">5 - 6</div>
@@ -90,11 +84,11 @@ export default function Home() {
               Entertainment
             </a>
           </li>
-          <li>
+          {/* <li>
             <a className={styles.headerNav__link} href="#vendors">
               Vendors
             </a>
-          </li>
+          </li> */}
           <li>
             <a className={styles.headerNav__link} href="#about-us">
               About Us
@@ -385,6 +379,46 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <div id="about-us" className="bg-teal-800 text-white">
+        <section className={styles.pageSection}>
+          <div className="flex justify-evenly justify-items-center">
+            <div className="lg:max-w-[50vw]">
+              <h2 className={lilita.className}>About GorettiFest</h2>
+              <p className="text-2xl">
+                GorettiFest is an annual festival to raise money for{" "}
+                <a
+                  className="text-white"
+                  href="https://smgschool.org/"
+                  target="_blank"
+                >
+                  Saint Maria Goretti Catholic School
+                </a>
+                , the leading Catholic School in Arlington.
+              </p>
+              <p>
+                Since 1964, GorettiFest (long known as &ldquo;Kountry
+                Karnival&rdquo;) has brought families throughout Arlington
+                together for a weekend of fun and fellowship. It&apos;s changed
+                a lot over the years, but many of our traditions have been
+                around for decades!
+              </p>
+              <p>
+                We hope you&apos;ll join us for GorettiFest this year, knowing
+                that every dollar you spend goes directly to helping Saint Maria
+                Goretti provide a one-of-a-kind Catholic education to hundreds
+                of students.
+              </p>
+            </div>
+          </div>
+          <div className="text-center mt-8">
+            &copy; {new Date().getFullYear()} Saint Maria Goretti Catholic
+            School |{" "}
+            <a className="text-white" href="mailto:questions@gorettifest.com">
+              Contact Us
+            </a>
+          </div>
+        </section>
+      </div>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
