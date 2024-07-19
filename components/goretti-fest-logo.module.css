@@ -1,5 +1,12 @@
+/* text */
 .b {
-  fill: #e29c20;
+  @apply fill-white;
+}
+
+/* text outline */
+.e {
+  @apply fill-slate-800;
+  @apply drop-shadow-md;
 }
 
 .b,
@@ -10,13 +17,16 @@
 }
 
 .c {
-  fill: #efe3cb;
+  @apply fill-red-700;
+  @apply stroke-white;
+  @apply stroke-[6px];
+}
+/* bottom border */
+.b0 {
+  @apply hidden;
 }
 
+/* top border */
 .d {
-  fill: #ccebed;
-}
-
-.e {
-  fill: #115e59;
+  @apply hidden;
 }
