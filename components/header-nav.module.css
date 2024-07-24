@@ -1,0 +1,18 @@
+.headerNav {
+  @apply z-10;
+  @apply text-lg;
+  @apply bg-slate-800;
+  @apply font-bold;
+  @apply w-full;
+  @apply text-white;
+}
+
+.headerNav a {
+  @apply block;
+  @apply p-4;
+  @apply md:p-6;
+  @apply text-white;
+  @apply no-underline;
+  @apply hover:bg-slate-700;
+  @apply transition-colors;
+}
