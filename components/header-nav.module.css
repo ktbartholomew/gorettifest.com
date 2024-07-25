@@ -7,7 +7,7 @@
   @apply text-white;
 }
 
-.headerNav a {
+.headerNav ul a {
   @apply block;
   @apply p-4;
   @apply md:p-6;

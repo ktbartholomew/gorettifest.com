@@ -55,18 +55,17 @@ export default function Home() {
             blurDataURL={headerImage.blurDataURL}
           />
         </div>
-        <div className="absolute top-0 left-0 h-full w-full mix-blend-multiply bg-slate-800 md:bg-amber-900/70"></div>
+        <div className="absolute top-0 left-0 h-full w-full mix-blend-multiply bg-slate-800 md:bg-slate-900/70"></div>
         <div className="z-10 relative flex h-full w-full px-4 md:px-0 md:absolute text-center items-center justify-center">
-          <div>
-            <GorettiFestLogo />
-            <div className="mt-8 inline-block flex-col bg-white text-2xl rounded-lg">
-              <div className="bg-red-700 border-b-2 border-b-red-900 border-t border-t-red-400 text-white text-center py-2 px-8 rounded-t-lg">
-                October
-              </div>
-              <div className="text-6xl py-4 px-8 tracking-tighter">5 - 6</div>
-              <div className="py-2 px-8">2024</div>
-            </div>
-          </div>
+          <Image
+            alt="GorettiFest October 5-6, 2024"
+            src="/img/gorettifest-logo-white-red-outline-date.svg"
+            width={760}
+            height={760}
+            priority
+            loading="eager"
+            className="relative h-full object-contain"
+          />
         </div>
       </section>
       <HeaderNav />

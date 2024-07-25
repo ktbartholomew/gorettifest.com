@@ -8,7 +8,7 @@ const VENDOR_PAY_LINK = "https://square.link/u/XAu8gnpK";
 export default function VendorRegister() {
   return (
     <>
-      <HeaderNav />
+      <HeaderNav logo />
       <PageSection>
         <div className="max-w-prose mx-auto">
           <h2 className={lilita.className + " text-balance"}>

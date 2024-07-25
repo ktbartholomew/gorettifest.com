@@ -1,8 +1,24 @@
+import Image from "next/image";
 import styles from "./header-nav.module.css";
 
-export function HeaderNav() {
+export function HeaderNav({ logo }: { logo?: boolean }) {
   return (
     <nav className={styles.headerNav}>
+      {logo ? (
+        <a href="/" className="block">
+          <div className="bg-slate-800 absolute rounded-br-3xl">
+            <Image
+              alt="GorettiFest October 5-6, 2024"
+              src="/img/gorettifest-logo-white-red-outline.svg"
+              width={240}
+              height={240}
+              priority
+              loading="eager"
+              className="relative h-full object-contain"
+            />
+          </div>
+        </a>
+      ) : null}
       <ul className="md:flex justify-center">
         <li>
           <a className={styles.headerNav__link} href="/#visit">
