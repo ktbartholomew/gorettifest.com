@@ -1,12 +1,12 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import { Lilita_One } from "next/font/google";
+const lilita = Lilita_One({ weight: ["400"], subsets: ["latin"] });
 import headerImage from "@/public/img/IMG_1440.webp";
 import { ImageScrollLoader } from "@/components/image-scroll-loader";
 import { GorettiFestLogo } from "@/components/goretti-fest-logo";
 import { HeaderNav } from "@/components/header-nav";
 import { PageSection } from "@/components/page-section";
-const lilita = Lilita_One({ weight: ["400"], subsets: ["latin"] });
 
 const eventStructuredData = {
   "@context": "https://schema.org",
@@ -252,8 +252,8 @@ export default function Home() {
               <tr>
                 <th>Cornhole tournament</th>
                 <td>
-                  <a href="">Register in advance</a> to enter. Cash prize for
-                  the winning team!
+                  <a href="/cornhole/register">Register in advance</a> to enter.
+                  Cash prize for the winning team!
                 </td>
               </tr>
               <tr>
