@@ -4,7 +4,6 @@ import { Lilita_One } from "next/font/google";
 const lilita = Lilita_One({ weight: ["400"], subsets: ["latin"] });
 import headerImage from "@/public/img/IMG_1440.webp";
 import { ImageScrollLoader } from "@/components/image-scroll-loader";
-import { GorettiFestLogo } from "@/components/goretti-fest-logo";
 import { HeaderNav } from "@/components/header-nav";
 import { PageSection } from "@/components/page-section";
 
@@ -64,7 +63,7 @@ export default function Home() {
             height={760}
             priority
             loading="eager"
-            className="relative h-full object-contain"
+            className="block relative h-full object-contain"
           />
         </div>
       </section>

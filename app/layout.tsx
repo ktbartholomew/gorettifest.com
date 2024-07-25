@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Analytics } from "@vercel/analytics/react";
 import { Lilita_One } from "next/font/google";
 const lilita = Lilita_One({ weight: ["400"], subsets: ["latin"] });
 
@@ -20,7 +19,11 @@ export default function RootLayout({
     <html lang="en">
       <body>
         {children}
-        <Analytics />
+        <script
+          defer
+          data-domain="gorettifest.com"
+          src="https://plausible.io/js/script.js"
+        ></script>
       </body>
     </html>
   );
