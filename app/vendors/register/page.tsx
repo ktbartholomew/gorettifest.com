@@ -22,8 +22,8 @@ export default function VendorRegister() {
           <p>
             Each vendor gets a 10x10 space and two tables to furnish however
             they wish. Your registration is good for the entire weekend. The
-            vendor hall is locked and secured overnight, so you don't have to
-            worry about packing and unpacking in middle of the weekend.
+            vendor hall is locked and secured overnight, so you don&apos;t have
+            to worry about packing and unpacking in middle of the weekend.
           </p>
           <p>Space is limited&mdash;register now!</p>
           <div className="text-center mt-8">
