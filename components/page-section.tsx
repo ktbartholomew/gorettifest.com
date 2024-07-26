@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import styles from "./page-section.module.css";
+import { VirtualPageview } from "./virtual-pageview";
 
 export function PageSection({
   id,
@@ -13,14 +14,16 @@ export function PageSection({
   children: ReactNode;
 }) {
   return (
-    <div className={["overflow-hidden", className ?? ""].join(" ")}>
-      <section id={id} className={styles.pageSection}>
-        {grid ? (
-          <div className={styles.pageSection__grid}>{children}</div>
-        ) : (
-          children
-        )}
-      </section>
-    </div>
+    <VirtualPageview id={id ?? ""}>
+      <div className={["overflow-hidden", className ?? ""].join(" ")}>
+        <section id={id} className={styles.pageSection}>
+          {grid ? (
+            <div className={styles.pageSection__grid}>{children}</div>
+          ) : (
+            children
+          )}
+        </section>
+      </div>
+    </VirtualPageview>
   );
 }

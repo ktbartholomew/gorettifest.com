@@ -22,7 +22,7 @@ export default function RootLayout({
         <script
           defer
           data-domain="gorettifest.com"
-          src="https://plausible.io/js/script.js"
+          src="/js/script.js"
         ></script>
       </body>
     </html>
