@@ -152,9 +152,9 @@ export default function Home() {
         <div>
           <h2 className={lilita.className}>Food &amp; Drinks</h2>
           <p className="text-2xl">
-            For generations, our school's parents have shared delicious cuisine
-            from around the world representing their heritage. Enjoy a beverage
-            in our biergarten to wash down all these tasty treats!
+            For generations, our school&apos;s parents have shared delicious
+            cuisine from around the world representing their heritage. Enjoy a
+            beverage in our biergarten to wash down all these tasty treats!
           </p>
           <p className="text-2xl"></p>
           <table className={styles.infoTable}>
@@ -319,7 +319,7 @@ export default function Home() {
           <p className="text-2xl">
             Our school is proud to be a part of the City of Arlington and we are
             happy to showcase the incredible talents of both of our communities!
-            The stage will be busy all weekend long, so don't miss a thing!
+            The stage will be busy all weekend long, so don&apos;t miss a thing!
           </p>
           <table className={styles.infoTable}>
             <tbody>
