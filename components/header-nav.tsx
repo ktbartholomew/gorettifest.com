@@ -6,7 +6,7 @@ export function HeaderNav({ logo }: { logo?: boolean }) {
     <nav className={styles.headerNav}>
       {logo ? (
         <a href="/" className="block">
-          <div className="bg-slate-800 absolute rounded-br-3xl">
+          <div className="bg-slate-800 z-20 md:absolute rounded-br-3xl">
             <Image
               alt="GorettiFest October 5-6, 2024"
               src="/img/gorettifest-logo-white-red-outline.svg"
@@ -14,7 +14,7 @@ export function HeaderNav({ logo }: { logo?: boolean }) {
               height={240}
               priority
               loading="eager"
-              className="relative h-full object-contain"
+              className="relative mx-auto h-full object-contain"
             />
           </div>
         </a>
@@ -40,11 +40,6 @@ export function HeaderNav({ logo }: { logo?: boolean }) {
             Entertainment
           </a>
         </li>
-        {/* <li>
-            <a className={styles.headerNav__link} href="/#vendors">
-              Vendors
-            </a>
-          </li> */}
         <li>
           <a className={styles.headerNav__link} href="/#about-us">
             About Us

@@ -1,0 +1,12 @@
+.infoTable th {
+  @apply py-2;
+  @apply pr-8;
+  @apply align-top;
+  @apply text-right;
+  @apply whitespace-nowrap;
+}
+
+.infoTable td {
+  @apply py-2;
+  @apply align-top;
+}

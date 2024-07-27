@@ -1,15 +1,3 @@
-.infoTable th {
-  @apply py-2;
-  @apply pr-8;
-  @apply align-top;
-  @apply text-right;
-}
-
-.infoTable td {
-  @apply py-2;
-  @apply align-top;
-}
-
 .photoWithBorder {
   @apply border-[1rem];
   @apply border-white;

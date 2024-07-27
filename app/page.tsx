@@ -6,6 +6,7 @@ import headerImage from "@/public/img/IMG_1440.webp";
 import { ImageScrollLoader } from "@/components/image-scroll-loader";
 import { HeaderNav } from "@/components/header-nav";
 import { PageSection } from "@/components/page-section";
+import { InfoTable } from "@/components/info-table";
 
 const eventStructuredData = {
   "@context": "https://schema.org",
@@ -76,7 +77,7 @@ export default function Home() {
             Saint Maria Goretti Catholic School! GorettiFest is packed with
             food, games, music, and fun for the whole family!
           </p>
-          <table className={styles.infoTable}>
+          <InfoTable>
             <tbody>
               <tr>
                 <th>When</th>
@@ -132,7 +133,7 @@ export default function Home() {
                 </td>
               </tr>
             </tbody>
-          </table>
+          </InfoTable>
         </div>
         <div className="hidden md:block">
           <div className="bg-slate-800 p-8 rounded-2xl">
@@ -157,7 +158,7 @@ export default function Home() {
             beverage in our biergarten to wash down all these tasty treats!
           </p>
           <p className="text-2xl"></p>
-          <table className={styles.infoTable}>
+          <InfoTable>
             <tbody>
               <tr>
                 <th>Fair Classics</th>
@@ -199,7 +200,7 @@ export default function Home() {
                 <td>Craft on draft!</td>
               </tr>
             </tbody>
-          </table>
+          </InfoTable>
         </div>
         <div>
           <ImageScrollLoader offScreenDirection="right" midPointOffset={0.4}>
@@ -260,18 +261,14 @@ export default function Home() {
             Win some cash in our Bingo Hall! <br />
             Set the little ones loose in our (supervised) bounce houses!
           </p>
-          <table className={styles.infoTable}>
+          <InfoTable>
             <tbody>
               <tr>
                 <th>Cornhole tournament</th>
                 <td>
                   <p className="mt-0">Cash prize for the winning team!</p>
                   <div>
-                    <a
-                      href="/cornhole/register"
-                      target="_blank"
-                      rel="noreferrer noopener"
-                    >
+                    <a href="/cornhole/register">
                       <button className="bg-blue-600 hover:bg-blue-500 transition-colors text-white rounded-md px-8 py-2">
                         Register Now
                       </button>
@@ -298,7 +295,7 @@ export default function Home() {
                 </td>
               </tr>
             </tbody>
-          </table>
+          </InfoTable>
         </div>
       </PageSection>
       <PageSection id="entertainment" grid={2}>
@@ -321,7 +318,7 @@ export default function Home() {
             happy to showcase the incredible talents of both of our communities!
             The stage will be busy all weekend long, so don&apos;t miss a thing!
           </p>
-          <table className={styles.infoTable}>
+          <InfoTable>
             <tbody>
               <tr>
                 <th>Main Stage</th>
@@ -364,7 +361,7 @@ export default function Home() {
                 <td>Petting Zoo, confetti eggs, face paint, crazy makeover</td>
               </tr>
             </tbody>
-          </table>
+          </InfoTable>
         </div>
       </PageSection>
       <PageSection id="about-us" className="bg-red-700 text-white">
