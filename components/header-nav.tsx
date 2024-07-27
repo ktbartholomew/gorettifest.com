@@ -26,8 +26,13 @@ export function HeaderNav({ logo }: { logo?: boolean }) {
           </a>
         </li>
         <li>
-          <a className={styles.headerNav__link} href="/#food-and-games">
-            Food &amp; Games
+          <a className={styles.headerNav__link} href="/#food-and-drinks">
+            Food &amp; Drinks
+          </a>
+        </li>
+        <li>
+          <a className={styles.headerNav__link} href="/#games">
+            Games
           </a>
         </li>
         <li>

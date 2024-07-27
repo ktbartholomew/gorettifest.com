@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import styles from "./page-section.module.css";
+import { ScrollIntoViewEvent } from "./scroll-into-view-event";
 
 export function PageSection({
   id,
@@ -29,6 +30,7 @@ export function PageSection({
   return (
     <div className={["overflow-hidden", className ?? ""].join(" ")}>
       <section id={id} className={styles.pageSection}>
+        <ScrollIntoViewEvent event={`scroll: ${id}`} />
         {grid ? (
           <div className={`${styles.pageSection__grid} ${gridClass(grid)} `}>
             {children}
