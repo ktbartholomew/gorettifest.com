@@ -9,14 +9,30 @@ export function PageSection({
 }: {
   id?: string;
   className?: string;
-  grid?: boolean;
+  grid?: number;
   children: ReactNode;
 }) {
+  function gridClass(columns: number) {
+    switch (columns) {
+      case 1:
+      default:
+        return "md:!grid-cols-1";
+      case 2:
+        return "md:!grid-cols-2";
+      case 3:
+        return "md:!grid-cols-3";
+      case 4:
+        return "md:!grid-cols-4";
+    }
+  }
+
   return (
     <div className={["overflow-hidden", className ?? ""].join(" ")}>
       <section id={id} className={styles.pageSection}>
         {grid ? (
-          <div className={styles.pageSection__grid}>{children}</div>
+          <div className={`${styles.pageSection__grid} ${gridClass(grid)} `}>
+            {children}
+          </div>
         ) : (
           children
         )}

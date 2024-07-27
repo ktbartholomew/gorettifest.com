@@ -68,13 +68,13 @@ export default function Home() {
         </div>
       </section>
       <HeaderNav />
-      <PageSection id="visit" grid>
+      <PageSection id="visit" grid={2}>
         <div>
           <h2 className={lilita.className}>Plan Your Visit</h2>
           <p className="text-2xl my-4">
-            Join us for a weekend of fun and festivity at{" "}
-            <strong>GorettiFest</strong>, a fall festival benefiting Saint Maria
-            Goretti Catholic School!
+            Join us at <strong>GorettiFest</strong>, a fall festival benefiting
+            Saint Maria Goretti Catholic School! GorettiFest is packed with
+            food, games, music, and fun for the whole family!
           </p>
           <table className={styles.infoTable}>
             <tbody>
@@ -134,74 +134,75 @@ export default function Home() {
             </tbody>
           </table>
         </div>
-        <div className="hidden md:block bg-slate-800 p-8 rounded-2xl">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3356.5415387098847!2d-97.12749252363562!3d32.72480818665103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e7d1a02bc13ef%3A0xc77ecf1dab906f16!2sSt%20Maria%20Goretti%20Catholic%20School!5e0!3m2!1sen!2sus!4v1721175085047!5m2!1sen!2sus"
-            width="600"
-            height="450"
-            className="w-full"
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
+        <div className="hidden md:block">
+          <div className="bg-slate-800 p-8 rounded-2xl">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3356.5415387098847!2d-97.12749252363562!3d32.72480818665103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e7d1a02bc13ef%3A0xc77ecf1dab906f16!2sSt%20Maria%20Goretti%20Catholic%20School!5e0!3m2!1sen!2sus!4v1721175085047!5m2!1sen!2sus"
+              width="600"
+              height="450"
+              className="w-full"
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
       </PageSection>
-      <PageSection id="food-and-games" className="bg-slate-200" grid>
+      <PageSection id="food-and-drinks" className="bg-slate-200" grid={2}>
         <div>
-          <h2 className={lilita.className}>Food &amp; Games</h2>
+          <h2 className={lilita.className}>Food &amp; Drinks</h2>
           <p className="text-2xl">
-            For generations, homemade cuisine from around the world has defined
-            GorettiFest. Enjoy a break between snacks and games in our
-            biergarten!
+            For generations, our school's parents have shared delicious cuisine
+            from around the world representing their heritage. Enjoy a beverage
+            in our biergarten to wash down all these tasty treats!
           </p>
           <p className="text-2xl"></p>
           <table className={styles.infoTable}>
             <tbody>
               <tr>
-                <th>American Food</th>
-                <td>Hamburgers, Nachos, French fries</td>
-              </tr>
-              <tr>
-                <th>German Food</th>
+                <th>Fair Classics</th>
                 <td>
-                  Bratwurst, Sausage on a stick, Sauerkraut, Fried potatoes
+                  Hamburgers, French fries, Turkey legs, Texas Tornado (spiral
+                  potato chip)
                 </td>
               </tr>
               <tr>
-                <th>Mexican Food</th>
+                <th>German</th>
+                <td>
+                  Bratwurst (in a bun or on a stick), Fried potatoes,
+                  Sauerkraut, Red cabbage, Soft Pretzels (sweet or salty)
+                </td>
+              </tr>
+              <tr>
+                <th>Mexican</th>
                 <td>Fajitas, Nachos, Breakfast burritos (on Sunday)</td>
               </tr>
               <tr>
-                <th>Caribbean Food</th>
-                <td>Beignets, Jerk chicken, Jollof rice (spiced fried rice)</td>
+                <th>Asian</th>
+                <td>
+                  Egg Rolls, Chicken Teriyaki, Fried Rice, Coconut Milk Waffles
+                </td>
               </tr>
               <tr>
-                <th>Asian Food</th>
-                <td>Chow mein, Egg rolls, Fried rice</td>
+                <th>BBQ</th>
+                <td>BBQ Plate, Pulled Pork sandwiches</td>
               </tr>
               <tr>
                 <th>Sweets &amp; Drinks</th>
                 <td>
-                  Paletas (popsicles), Craft on draft biergarten, Soft drinks,
-                  Water
+                  Paletas (popsicles), Candy, Popcorn (we can adjust these once
+                  we talk to 8th grade coordinators) Soft drinks, water
                 </td>
+              </tr>
+              <tr>
+                <th>Biergarten</th>
+                <td>Craft on draft!</td>
               </tr>
             </tbody>
           </table>
         </div>
         <div>
           <ImageScrollLoader offScreenDirection="right" midPointOffset={0.4}>
-            <Image
-              className={[
-                styles.photoWithBorder,
-                styles.photoWithBorder__right,
-              ].join(" ")}
-              src="/img/IMG_1246.webp"
-              alt="a young boy enjoying frozen treats at GorettiFest festival"
-              width={900}
-              height={900}
-              loading="lazy"
-            />
             <Image
               className={[
                 styles.photoWithBorder,
@@ -213,9 +214,21 @@ export default function Home() {
               height={900}
               loading="eager"
             />
+            <Image
+              className={[
+                styles.photoWithBorder,
+                styles.photoWithBorder__right,
+              ].join(" ")}
+              src="/img/IMG_1396.webp"
+              alt="A parent serving food at GorretiFest"
+              width={900}
+              height={900}
+              loading="lazy"
+            />
           </ImageScrollLoader>
         </div>
-
+      </PageSection>
+      <PageSection id="games" grid={2} className="bg-slate-800 text-white">
         <div>
           <ImageScrollLoader offScreenDirection="left" midPointOffset={0.4}>
             <Image
@@ -240,27 +253,35 @@ export default function Home() {
           </ImageScrollLoader>
         </div>
         <div>
+          <h2 className={lilita.className}>Games</h2>
           <p className="text-2xl">
-            Test your skills at our annual Cornhole tournament, press your luck
-            at our carnival games or bingo hall, or set the little ones loose in
-            our (supervised) bounce houses!
+            Test your skills at our annual Cornhole Tournament! <br />
+            Show your stuff at the games along the midway! <br />
+            Win some cash in our Bingo Hall! <br />
+            Set the little ones loose in our (supervised) bounce houses!
           </p>
           <table className={styles.infoTable}>
             <tbody>
               <tr>
                 <th>Cornhole tournament</th>
                 <td>
-                  <a href="/cornhole/register">Register in advance</a> to enter.
-                  Cash prize for the winning team!
+                  <p className="mt-0">Cash prize for the winning team!</p>
+                  <div>
+                    <a
+                      href="/cornhole/register"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                    >
+                      <button className="bg-blue-600 hover:bg-blue-500 transition-colors text-white rounded-md px-8 py-2">
+                        Register Now
+                      </button>
+                    </a>
+                  </div>
                 </td>
               </tr>
               <tr>
-                <th>Raffle</th>
-                <td>Buy tickets at the festival to win a cash prize!</td>
-              </tr>
-              <tr>
                 <th>Bingo</th>
-                <td>Real bingo with a professional caller and cash prizes</td>
+                <td>Pay-per-card bingo with a real caller and cash prizes!</td>
               </tr>
               <tr>
                 <th>Jail</th>
@@ -271,13 +292,16 @@ export default function Home() {
               </tr>
               <tr>
                 <th>Carnival Games</th>
-                <td>Nerf shooting gallery, Marble races</td>
+                <td>
+                  Coin toss, Nerf shooting gallery, Marble races, Fastest pitch,
+                  and more!
+                </td>
               </tr>
             </tbody>
           </table>
         </div>
       </PageSection>
-      <PageSection id="entertainment" grid>
+      <PageSection id="entertainment" grid={2}>
         <div>
           <Image
             className={[
@@ -293,17 +317,18 @@ export default function Home() {
         <div>
           <h2 className={lilita.className}>Entertainment</h2>
           <p className="text-2xl">
-            Our main stage has exhibitions from our school band, &ldquo;Ballet
-            Folklorico&rdquo; dance troupe, martial artists, and other live
-            music!
+            Our school is proud to be a part of the City of Arlington and we are
+            happy to showcase the incredible talents of both of our communities!
+            The stage will be busy all weekend long, so don't miss a thing!
           </p>
           <table className={styles.infoTable}>
             <tbody>
               <tr>
                 <th>Main Stage</th>
                 <td>
-                  Live music, Ballet Folklorico, martial arts demonstration,
-                  school talent show
+                  Live band, martial arts demonstrations, magic show, dance
+                  troupes, ballet folklorico, our school talent show, and so
+                  much more!
                 </td>
               </tr>
               <tr>
@@ -314,14 +339,29 @@ export default function Home() {
                 </td>
               </tr>
               <tr>
-                <th>Used Book and Rummage Sale</th>
+                <th>Rummage Sale</th>
                 <td>
-                  Find hidden gems in our expansive collection of used books!
+                  Find your next treasure in our collection of items from the
+                  community.
+                </td>
+              </tr>
+              <tr>
+                <th>Used Book Sale</th>
+                <td>
+                  Pick out your next read from a huge selection of used books.
+                </td>
+              </tr>
+              <tr>
+                <th>Touch-a-Truck</th>
+                <td>
+                  See the coolest vehicles up close and in person! Entries
+                  include police car, ambulance, fire truck, construction
+                  equipment, and more!
                 </td>
               </tr>
               <tr>
                 <th>For Kids</th>
-                <td>Petting zoo, &ldquo;Touch-a-Truck&rdquo;, Confetti eggs</td>
+                <td>Petting Zoo, confetti eggs, face paint, crazy makeover</td>
               </tr>
             </tbody>
           </table>
@@ -340,20 +380,19 @@ export default function Home() {
               >
                 Saint Maria Goretti Catholic School
               </a>
-              , the leading Catholic School in Arlington.
+              , the premier Catholic School in Arlington.
             </p>
             <p>
               We&apos;ve been hosting this massive fall event for years! Since
               1964, GorettiFest has brought families throughout Arlington
-              together for a weekend of fun and fellowship. It&apos;s changed a
-              lot over the years, but many of our traditions have been around
-              for decades!
+              together for a weekend of fun and fellowship. The event has
+              changed some over the years, but many of our traditions have been
+              around for decades!
             </p>
             <p>
-              We hope you&apos;ll join us for GorettiFest this year, knowing
-              that every dollar you spend goes directly to helping Saint Maria
-              Goretti provide a one-of-a-kind Catholic education to hundreds of
-              students.
+              Every dollar you spend at GorettiFest goes directly to helping
+              Saint Maria Goretti provide a one-of-kind Catholic education to
+              hundreds of students. We are excited to see you there!
             </p>
           </div>
         </div>
