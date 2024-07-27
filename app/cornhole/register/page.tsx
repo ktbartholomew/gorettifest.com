@@ -3,7 +3,7 @@ import { PageSection } from "@/components/page-section";
 import { Lilita_One } from "next/font/google";
 const lilita = Lilita_One({ weight: ["400"], subsets: ["latin"] });
 
-const CORNHOLE_PAY_LINK = "https://square.link/u/XAu8gnpK";
+const CORNHOLE_PAY_LINK = "";
 
 export default function CornholeRegister() {
   return (
@@ -20,15 +20,12 @@ export default function CornholeRegister() {
             tournament is bracket-style, winner-take-all.
           </p>
           <div className="text-center mt-8">
-            <a
-              href={CORNHOLE_PAY_LINK}
-              target="_blank"
-              rel="noreferrer noopener"
+            <button
+              disabled
+              className="bg-blue-300 hover:bg-blue-300 cursor-not-allowed text-white rounded-md px-8 py-2"
             >
-              <button className="bg-blue-700 hover:bg-blue-600 text-white rounded-md px-8 py-2">
-                Register Now
-              </button>
-            </a>
+              Registration Coming Soon
+            </button>
           </div>
         </div>
       </PageSection>

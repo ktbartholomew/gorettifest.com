@@ -20,18 +20,20 @@ export default function VendorRegister() {
             GorettiFest, providing a place for festival-goers to beat the heat.
           </p>
           <p>
-            Each vendor gets a 10x10 space and two tables to furnish however
-            they wish. Your registration is good for the entire weekend. The
-            vendor hall is locked and secured overnight, so you don&apos;t have
-            to worry about packing and unpacking in middle of the weekend.
+            Each vendor gets a 10x10 space and one table, and two chairs to
+            furnish however they wish. Your registration is good for the entire
+            weekend. The vendor hall is locked and secured overnight, so you
+            don&apos;t have to worry about packing and unpacking in middle of
+            the weekend.
           </p>
           <p>Space is limited&mdash;register now!</p>
           <div className="text-center mt-8">
-            <a href={VENDOR_PAY_LINK} target="_blank" rel="noreferrer noopener">
-              <button className="bg-blue-700 hover:bg-blue-600 text-white rounded-md px-8 py-2">
-                Register Now
-              </button>
-            </a>
+            <button
+              disabled
+              className="bg-blue-300 hover:bg-blue-300 cursor-not-allowed text-white rounded-md px-8 py-2"
+            >
+              Registration Coming Soon
+            </button>
           </div>
         </div>
       </PageSection>
