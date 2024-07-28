@@ -3,7 +3,7 @@ const nextConfig = {
   rewrites: async () => [
     {
       source: "/js/script.js",
-      destination: "https://plausible.io/js/script.js",
+      destination: "https://plausible.io/js/script.hash.js",
     },
     {
       source: "/api/event",
