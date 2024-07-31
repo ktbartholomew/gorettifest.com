@@ -36,7 +36,7 @@ export default function CornholeRegister() {
               <h2 className={lilita.className + " text-balance"}>
                 Sign Up for the GorettiFest Cornhole tournament!
               </h2>
-              <p>
+              <p className="text-lg">
                 Enter your team of one to two people in our annual Cornhole
                 tournament! Registration is <strong>$50</strong> per team. The
                 tournament is bracket-style, winner-take-all.

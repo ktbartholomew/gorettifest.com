@@ -21,7 +21,6 @@ h2 {
 }
 
 p {
-  @apply text-lg;
   @apply my-4;
 }
 

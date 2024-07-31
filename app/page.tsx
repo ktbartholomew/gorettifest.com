@@ -82,11 +82,11 @@ export default function Home() {
               <tr>
                 <th>When</th>
                 <td>
-                  <p className="mt-0">
+                  <p className="text-lg mt-0">
                     Saturday, October 5<br />
                     11am to 8pm
                   </p>
-                  <p>
+                  <p className="text-lg">
                     Sunday, October 6 <br />
                     8am to 3pm
                   </p>
@@ -378,14 +378,14 @@ export default function Home() {
               </a>
               , the premier Catholic School in Arlington.
             </p>
-            <p>
+            <p className="text-lg">
               We&apos;ve been hosting this massive fall event for years! Since
               1964, GorettiFest has brought families throughout Arlington
               together for a weekend of fun and fellowship. The event has
               changed some over the years, but many of our traditions have been
               around for decades!
             </p>
-            <p>
+            <p className="text-lg">
               Every dollar you spend at GorettiFest goes directly to helping
               Saint Maria Goretti provide a one-of-kind Catholic education to
               hundreds of students. We are excited to see you there!
