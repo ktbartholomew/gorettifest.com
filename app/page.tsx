@@ -190,10 +190,7 @@ export default function Home() {
               </tr>
               <tr>
                 <th>Sweets &amp; Drinks</th>
-                <td>
-                  Paletas (popsicles), Candy, Popcorn (we can adjust these once
-                  we talk to 8th grade coordinators) Soft drinks, water
-                </td>
+                <td>Paletas (popsicles), Candy, Popcorn, Soft drinks, water</td>
               </tr>
               <tr>
                 <th>Biergarten</th>
@@ -266,7 +263,9 @@ export default function Home() {
               <tr>
                 <th>Cornhole tournament</th>
                 <td>
-                  <p className="mt-0">Cash prize for the winning team!</p>
+                  <p className="mt-0">
+                    Cash prize for the winning team! Two-person teams only.
+                  </p>
                   <div>
                     <a href="/cornhole/register">
                       <button className="bg-blue-600 hover:bg-blue-500 transition-colors text-white rounded-md px-8 py-2">
