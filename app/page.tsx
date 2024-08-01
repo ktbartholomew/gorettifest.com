@@ -179,6 +179,10 @@ export default function Home() {
                 <td>Fajitas, Nachos, Breakfast burritos (on Sunday)</td>
               </tr>
               <tr>
+                <th>Afro-Caribbean</th>
+                <td>Beignets, Jerk chicken, Jollof rice (spiced fried rice)</td>
+              </tr>
+              <tr>
                 <th>Asian</th>
                 <td>
                   Egg Rolls, Chicken Teriyaki, Fried Rice, Coconut Milk Waffles
