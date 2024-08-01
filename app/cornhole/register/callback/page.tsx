@@ -35,25 +35,15 @@ export default function CornholeRegister() {
           >
             <div className="max-w-prose mx-auto">
               <h2 className={lilita.className + " text-balance"}>
-                Sign Up for the GorettiFest Cornhole tournament!
+                Thank you for registering for the GorettiFest Cornhole
+                tournament!
               </h2>
               <p className="text-lg">
-                Enter your team of one to two people in our annual Cornhole
-                tournament! Registration is <strong>$50</strong> per team. The
-                tournament is bracket-style, winner-take-all.
+                You&apos;ll receive a receipt via email. Keep that receipt, and
+                prepare show it to our tournament coordinator when you arrive on{" "}
+                <strong>October 5</strong>.
               </p>
-              <CornholeInfoTable />
-              <div className="text-center mt-8">
-                <a
-                  href={CORNHOLE_PAY_LINK}
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  <button className="bg-blue-700 hover:bg-blue-600 transition-colors text-white rounded-md px-8 py-2">
-                    Register Now
-                  </button>
-                </a>
-              </div>
+              <CornholeInfoTable omitCost />
             </div>
           </div>
         </div>
