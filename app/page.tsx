@@ -8,6 +8,8 @@ import { HeaderNav } from "@/components/header-nav";
 import { PageSection } from "@/components/page-section";
 import { InfoTable } from "@/components/info-table";
 
+const DONATION_LINK = "https://square.link/u/Ugurk7sW";
+
 const eventStructuredData = {
   "@context": "https://schema.org",
   "@type": "Event",
@@ -394,6 +396,23 @@ export default function Home() {
               Saint Maria Goretti provide a one-of-kind Catholic education to
               hundreds of students. We are excited to see you there!
             </p>
+            <div className="drop-shadow-lg rounded-xl my-8 p-4 bg-white text-black">
+              <p className="text-lg">
+                Want to help, but can&rsquo;t attend the festival? Please make a
+                tax-deductible donation to help us make GorettiFest a success!
+              </p>
+              <p className="text-lg text-center">
+                <a
+                  href={DONATION_LINK}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <button className="bg-blue-700 hover:bg-blue-600 transition-colors text-white rounded-md px-8 py-2">
+                    Donate Now
+                  </button>
+                </a>
+              </p>
+            </div>
           </div>
         </div>
         <div className="text-center mt-8">

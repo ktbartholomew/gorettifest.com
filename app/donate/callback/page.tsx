@@ -3,15 +3,8 @@ import { Lilita_One } from "next/font/google";
 import Image from "next/image";
 const lilita = Lilita_One({ weight: ["400"], subsets: ["latin"] });
 import headerImage from "@/public/img/IMG_1358.webp";
-import { CornholeInfoTable } from "@/components/cornhole-info-table";
-import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title:
-    "Thank you for registering for the GorettiFest Cornhole tournament! Arlington GorettiFest October 5-6 - Fall Festival Hosted by Saint Maria Goretti Catholic School",
-};
-
-export default function CornholeRegisterCallback() {
+export default function CornholeRegister() {
   return (
     <>
       <HeaderNav logo />
@@ -37,15 +30,13 @@ export default function CornholeRegisterCallback() {
           >
             <div className="max-w-prose mx-auto">
               <h2 className={lilita.className + " text-balance"}>
-                Thank you for registering for the GorettiFest Cornhole
-                tournament!
+                Thank you for donating to GorettiFest!
               </h2>
               <p className="text-lg">
-                You&apos;ll receive a receipt via email. Keep that receipt, and
-                prepare to show it to our tournament coordinator when you arrive
-                on <strong>October 5</strong>.
+                Your donation will help us gather the supplies we need to make
+                GorettiFest an awesometime for everyone. Thank you! We
+                can&rsquo;t wait to see you on <strong>October 5</strong>!
               </p>
-              <CornholeInfoTable omitCost />
             </div>
           </div>
         </div>
