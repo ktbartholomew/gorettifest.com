@@ -2,9 +2,9 @@ import { HeaderNav } from "@/components/header-nav";
 import { Lilita_One } from "next/font/google";
 import Image from "next/image";
 const lilita = Lilita_One({ weight: ["400"], subsets: ["latin"] });
-import headerImage from "@/public/img/IMG_1358.webp";
+import headerImage from "@/public/img/IMG_1440.webp";
 
-export default function CornholeRegister() {
+export default function Page() {
   return (
     <>
       <HeaderNav logo />

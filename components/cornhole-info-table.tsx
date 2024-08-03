@@ -57,8 +57,8 @@ export function CornholeInfoTable({ omitCost }: { omitCost?: boolean }) {
                 forfeit!
               </li>
               <li>
-                The final championship is winner-take-all.{" "}
-                <em>If you ain&apos;t first, you&apos;re last!</em>
+                The final championship is winner-take-all for the $200 cash
+                prize. <em>If you ain&apos;t first, you&apos;re last!</em>
               </li>
               <ul className="list-disc pl-4">
                 <li>Boards are 27 feet apart</li>

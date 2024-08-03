@@ -7,6 +7,7 @@ import { ImageScrollLoader } from "@/components/image-scroll-loader";
 import { HeaderNav } from "@/components/header-nav";
 import { PageSection } from "@/components/page-section";
 import { InfoTable } from "@/components/info-table";
+import { Button } from "@/components/button";
 
 const DONATION_LINK = "https://square.link/u/Ugurk7sW";
 
@@ -114,9 +115,21 @@ export default function Home() {
               <tr>
                 <th>Cost</th>
                 <td>
-                  Admission is <strong>FREE</strong>! <br />
-                  Buy tickets for food &amp; games with cash or card after you
-                  arrive.
+                  <p className="mt-0">
+                    Admission is <strong>FREE</strong>! <br />
+                    Buy tickets for food &amp; games with cash or card after you
+                    arrive.
+                  </p>
+                  <p>
+                    <a
+                      href="https://square.link/u/FA3LEB9p"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <Button>Pre-purchase tickets</Button>
+                    </a>
+                  </p>
+                  <p></p>
                 </td>
               </tr>
               <tr>
@@ -270,7 +283,7 @@ export default function Home() {
                 <th>Cornhole tournament</th>
                 <td>
                   <p className="mt-0">
-                    Cash prize for the winning team! Two-person teams only.
+                    $200 Cash prize for the winning team! Two-person teams only.
                   </p>
                   <div>
                     <a href="/cornhole/register">
@@ -336,8 +349,19 @@ export default function Home() {
               <tr>
                 <th>Vendor Hall</th>
                 <td>
-                  Local vendors offer their goods and services in our
-                  air-conditioned vendor hall.
+                  <p className="mt-0">
+                    Local vendors offer their goods and services in our
+                    air-conditioned vendor hall.
+                  </p>
+                  <p>
+                    <a
+                      href="https://forms.gle/GH9kLzA345z1qi87A"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <Button>Register to be a vendor</Button>
+                    </a>
+                  </p>
                 </td>
               </tr>
               <tr>
@@ -398,8 +422,9 @@ export default function Home() {
             </p>
             <div className="drop-shadow-lg rounded-xl my-8 p-4 bg-white text-black">
               <p className="text-lg">
-                Want to help, but can&rsquo;t attend the festival? Please make a
-                tax-deductible donation to help us make GorettiFest a success!
+                Help us make GorettiFest a success! Your tax-deductible donation
+                helps us gather the supplies we need to make GorettiFest an
+                unforgetable experience for everyone!
               </p>
               <p className="text-lg text-center">
                 <a
@@ -407,9 +432,7 @@ export default function Home() {
                   target="_blank"
                   rel="noreferrer noopener"
                 >
-                  <button className="bg-blue-700 hover:bg-blue-600 transition-colors text-white rounded-md px-8 py-2">
-                    Donate Now
-                  </button>
+                  <Button>Donate Now</Button>
                 </a>
               </p>
             </div>

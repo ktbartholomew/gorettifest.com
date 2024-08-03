@@ -2,18 +2,9 @@ import { HeaderNav } from "@/components/header-nav";
 import { Lilita_One } from "next/font/google";
 import Image from "next/image";
 const lilita = Lilita_One({ weight: ["400"], subsets: ["latin"] });
-import headerImage from "@/public/img/IMG_1358.webp";
-import { CornholeInfoTable } from "@/components/cornhole-info-table";
-import { Metadata } from "next";
+import headerImage from "@/public/img/IMG_1440.webp";
 
-const CORNHOLE_PAY_LINK = "https://square.link/u/6NCGlZTi";
-
-export const metadata: Metadata = {
-  title:
-    "Register for Cornhole at Arlington GorettiFest October 5-6 - Fall Festival Hosted by Saint Maria Goretti Catholic School",
-};
-
-export default function CornholeRegister() {
+export default function Page() {
   return (
     <>
       <HeaderNav logo />
@@ -39,26 +30,14 @@ export default function CornholeRegister() {
           >
             <div className="max-w-prose mx-auto">
               <h2 className={lilita.className + " text-balance"}>
-                Sign Up for the GorettiFest Cornhole tournament!
+                Thank you for pre-ordering GorettiFest tickets!
               </h2>
               <p className="text-lg">
-                Enter your two-person team in our annual Cornhole tournament!
-                Registration is <strong>$50</strong> per team. The tournament is
-                bracket-style, double-elimination, winner-take-all.{" "}
-                <strong>$200</strong> cash prize for the winning team!
+                You&apos;ll receive a receipt via email. Keep that receipt, and
+                prepare to show it to our volunteers when you arrive.
+                We&rsquo;ll have your tickets waiting for you! We can&rsquo;t
+                wait to see you on <strong>October 5</strong>!
               </p>
-              <div className="text-center mt-4 mb-8 text-lg">
-                <a
-                  href={CORNHOLE_PAY_LINK}
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  <button className="bg-blue-600 hover:bg-blue-500 transition-colors text-white rounded-md px-8 py-2">
-                    Register Now
-                  </button>
-                </a>
-              </div>
-              <CornholeInfoTable />
             </div>
           </div>
         </div>
