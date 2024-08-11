@@ -73,7 +73,7 @@ export default function VolunteerPage() {
                   </p>
                 </div>
                 <div>
-                  <h4>I want to donate money&amp;supplies</h4>
+                  <h4>I want to donate money &amp; supplies</h4>
                   <p>
                     A festival like GorettiFest doesn&apos;t happen for free;
                     every donation you make helps our festival raise even more
