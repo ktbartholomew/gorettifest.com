@@ -20,6 +20,20 @@ h2 {
   @apply tracking-tight;
 }
 
+h3 {
+  @apply text-4xl;
+  @apply font-bold;
+  @apply mb-2;
+  @apply tracking-tight;
+}
+
+h4 {
+  @apply text-2xl;
+  @apply font-bold;
+  @apply mb-2;
+  @apply tracking-tight;
+}
+
 p {
   @apply my-4;
 }
