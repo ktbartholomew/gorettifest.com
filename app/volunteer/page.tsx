@@ -37,7 +37,7 @@ export default function VolunteerPage() {
           <div className="bg-white relative md:max-w-[67vw] lg:max-w-[50vw] mx-auto md:rounded-3xl p-8 md:drop-shadow-xl">
             <div className="max-w-prose mx-auto">
               <h2 className={lilita.className + " text-balance"}>
-                GorettiFest&nbsp;needs your help!
+                GorettiFest needs your help!
               </h2>
               <p className="text-lg">
                 GorettiFest only exists because of your generous donations.
@@ -73,7 +73,7 @@ export default function VolunteerPage() {
                   </p>
                 </div>
                 <div>
-                  <h4>I want to donate money&nbsp;&amp;&nbsp;supplies</h4>
+                  <h4>I want to donate money&amp;supplies</h4>
                   <p>
                     A festival like GorettiFest doesn&apos;t happen for free;
                     every donation you make helps our festival raise even more
