@@ -47,7 +47,7 @@ export default function VolunteerPage() {
               </p>
               <div className="grid lg:grid-cols-2 gap-8 mt-16">
                 <div>
-                  <h4>I&apos;m interested in volunteering</h4>
+                  <h4>I want to help</h4>
                   <p>
                     There are tons of different ways to volunteer at
                     GorettiFest:
