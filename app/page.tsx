@@ -8,6 +8,7 @@ import { HeaderNav } from "@/components/header-nav";
 import { PageSection } from "@/components/page-section";
 import { InfoTable } from "@/components/info-table";
 import { Button } from "@/components/button";
+import Link from "next/link";
 
 const DONATION_LINK = "https://square.link/u/Ugurk7sW";
 
@@ -427,13 +428,9 @@ export default function Home() {
                 unforgetable experience for everyone!
               </p>
               <p className="text-lg text-center">
-                <a
-                  href={DONATION_LINK}
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  <Button>Donate Now</Button>
-                </a>
+                <Link href="/volunteer">
+                  <Button>I want to help!</Button>
+                </Link>
               </p>
             </div>
           </div>
