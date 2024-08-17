@@ -423,9 +423,10 @@ export default function Home() {
             </p>
             <div className="drop-shadow-lg rounded-xl my-8 p-4 bg-white text-black">
               <p className="text-lg">
-                Help us make GorettiFest a success! Your tax-deductible donation
-                helps us gather the supplies we need to make GorettiFest an
-                unforgetable experience for everyone!
+                Help us make GorettiFest a success! There are tons of ways to
+                volunteer, or you can make a tax-deductible donation to help us
+                gather the supplies we need to make GorettiFest an unforgetable
+                experience for everyone!
               </p>
               <p className="text-lg text-center">
                 <Link href="/volunteer">
