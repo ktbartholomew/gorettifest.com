@@ -38,6 +38,10 @@ export default function VolunteerPage() {
                 GorettiFest Schedule
               </h2>
               <h3 className="text-center my-8">Saturday, October 5</h3>
+              <p className="text-sm">
+                <strong>All Day:</strong> food booths, vendor hall, bingo,
+                carnival games, bounce houses, rummage sale, used book sale
+              </p>
               <div className="relative z-0">
                 <div className={classes.lineContainer}>
                   <div className={classes.hourLine}></div>
@@ -60,18 +64,38 @@ export default function VolunteerPage() {
                   <div className={classes.halfHourLine}></div>
                   <div className={classes.hourLine}></div>
                 </div>
-                <div className="flex gap-4 z-10">
-                  <div className="text-sm">
-                    <div className="h-32 ">11:00am</div>
-                    <div className="h-32 ">12:00pm</div>
-                    <div className="h-32 ">1:00pm</div>
-                    <div className="h-32 ">2:00pm</div>
-                    <div className="h-32 ">3:00pm</div>
-                    <div className="h-32 ">4:00pm</div>
-                    <div className="h-32 ">5:00pm</div>
-                    <div className="h-32 ">6:00pm</div>
-                    <div className="h-32 ">7:00pm</div>
-                    <div className="h-32 ">8:00pm</div>
+                <div className="flex gap-2 md:gap-4 z-10">
+                  <div className="text-xs">
+                    <div className="h-32 ">
+                      11<span className="hidden md:inline">:00am</span>
+                    </div>
+                    <div className="h-32 ">
+                      12<span className="hidden md:inline">:00pm</span>
+                    </div>
+                    <div className="h-32 ">
+                      1<span className="hidden md:inline">:00pm</span>
+                    </div>
+                    <div className="h-32 ">
+                      2<span className="hidden md:inline">:00pm</span>
+                    </div>
+                    <div className="h-32 ">
+                      3<span className="hidden md:inline">:00pm</span>
+                    </div>
+                    <div className="h-32 ">
+                      4<span className="hidden md:inline">:00pm</span>
+                    </div>
+                    <div className="h-32 ">
+                      5<span className="hidden md:inline">:00pm</span>
+                    </div>
+                    <div className="h-32 ">
+                      6<span className="hidden md:inline">:00pm</span>
+                    </div>
+                    <div className="h-32 ">
+                      7<span className="hidden md:inline">:00pm</span>
+                    </div>
+                    <div className="h-32 ">
+                      8<span className="hidden md:inline">:00pm</span>
+                    </div>
                   </div>
                   <div className="flex-grow">
                     <div className="grid grid-cols-2 gap-1">
@@ -81,11 +105,14 @@ export default function VolunteerPage() {
                             <strong>Opening Ceremony</strong>
                           </div>
                         </div>
-                        <div className={`${classes.calendarItem} h-[6rem]`}>
+                        <div className={`${classes.calendarItem} h-[3rem]`}>
                           <div>
-                            <strong>
-                              Nolan Cheerleaders &amp; Ballet Folklorico
-                            </strong>
+                            <strong>Nolan Cheer</strong>
+                          </div>
+                        </div>
+                        <div className={`${classes.calendarItem} h-[3rem]`}>
+                          <div>
+                            <strong>Ballet Folklorico</strong>
                           </div>
                         </div>
                         <div className={`${classes.calendarItem} h-[8rem]`}>
@@ -122,15 +149,13 @@ export default function VolunteerPage() {
                           </div>
                         </div>
                         <div
-                          className={`${classes.calendarItem} mt-[4rem] h-[2rem]`}
+                          className={`${classes.calendarItem} mt-[4rem] h-[4rem]`}
                         >
                           <div>
                             <strong>Alumni Group Photo</strong>
                           </div>
                         </div>
-                        <div
-                          className={`${classes.calendarItem} mt-[2rem] h-[16rem]`}
-                        >
+                        <div className={`${classes.calendarItem}  h-[16rem]`}>
                           <div>
                             <strong>Live Music: Trinity River Ramblers</strong>
                           </div>
@@ -156,6 +181,10 @@ export default function VolunteerPage() {
 
             <div className="max-w-prose mx-auto">
               <h3 className="text-center my-8">Sunday, October 6</h3>
+              <p className="text-sm">
+                <strong>All Day:</strong> food booths, vendor hall, bingo,
+                carnival games, bounce houses, rummage sale, used book sale
+              </p>
               <div className="relative z-0">
                 <div className={classes.lineContainer}>
                   <div className={classes.hourLine}></div>
@@ -174,16 +203,32 @@ export default function VolunteerPage() {
                   <div className={classes.halfHourLine}></div>
                   <div className={classes.hourLine}></div>
                 </div>
-                <div className="flex gap-4">
-                  <div className="text-sm">
-                    <div className="h-32 ">8:00am</div>
-                    <div className="h-32 ">9:00am</div>
-                    <div className="h-32 ">10:00am</div>
-                    <div className="h-32 ">11:00am</div>
-                    <div className="h-32 ">12:00pm</div>
-                    <div className="h-32 ">1:00pm</div>
-                    <div className="h-32 ">2:00pm</div>
-                    <div className="h-32 ">3:00pm</div>
+                <div className="flex gap-2 md:gap-4">
+                  <div className="text-xs">
+                    <div className="h-32 ">
+                      8<span className="hidden md:inline">:00am</span>
+                    </div>
+                    <div className="h-32 ">
+                      9<span className="hidden md:inline">:00am</span>
+                    </div>
+                    <div className="h-32 ">
+                      10<span className="hidden md:inline">:00am</span>
+                    </div>
+                    <div className="h-32 ">
+                      11<span className="hidden md:inline">:00am</span>
+                    </div>
+                    <div className="h-32 ">
+                      12<span className="hidden md:inline">:00pm</span>
+                    </div>
+                    <div className="h-32 ">
+                      1<span className="hidden md:inline">:00pm</span>
+                    </div>
+                    <div className="h-32 ">
+                      2<span className="hidden md:inline">:00pm</span>
+                    </div>
+                    <div className="h-32 ">
+                      3<span className="hidden md:inline">:00pm</span>
+                    </div>
                   </div>
                   <div className="flex-grow">
                     <div className="grid grid-cols-1 gap-1">

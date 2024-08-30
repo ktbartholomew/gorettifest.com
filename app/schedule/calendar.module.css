@@ -20,7 +20,7 @@
 }
 
 .calendarItem {
-  @apply text-sm;
+  @apply text-xs;
   @apply bg-blue-300;
   @apply border-t;
   @apply border-t-blue-200;
