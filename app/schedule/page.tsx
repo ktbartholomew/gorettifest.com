@@ -38,8 +38,8 @@ export default function VolunteerPage() {
                 GorettiFest Schedule
               </h2>
               <h3 className="text-center my-8">Saturday, October 5</h3>
-              <div className="relative">
-                <div className="absolute -z-10 w-full">
+              <div className="relative z-0">
+                <div className={classes.lineContainer}>
                   <div className={classes.hourLine}></div>
                   <div className={classes.halfHourLine}></div>
                   <div className={classes.hourLine}></div>
@@ -60,7 +60,7 @@ export default function VolunteerPage() {
                   <div className={classes.halfHourLine}></div>
                   <div className={classes.hourLine}></div>
                 </div>
-                <div className="flex gap-4">
+                <div className="flex gap-4 z-10">
                   <div className="text-sm">
                     <div className="h-32 ">11:00am</div>
                     <div className="h-32 ">12:00pm</div>
@@ -156,8 +156,8 @@ export default function VolunteerPage() {
 
             <div className="max-w-prose mx-auto">
               <h3 className="text-center my-8">Sunday, October 6</h3>
-              <div className="relative">
-                <div className="absolute -z-10 w-full">
+              <div className="relative z-0">
+                <div className={classes.lineContainer}>
                   <div className={classes.hourLine}></div>
                   <div className={classes.halfHourLine}></div>
                   <div className={classes.hourLine}></div>

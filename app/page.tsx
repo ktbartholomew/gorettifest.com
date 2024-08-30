@@ -73,7 +73,7 @@ export default function Home() {
         </div>
       </section>
       <HeaderNav />
-      <PageSection id="visit" grid={2}>
+      <PageSection id="visit" grid={2} className="bg-white">
         <div>
           <h2 className={lilita.className}>Plan Your Visit</h2>
           <p className="text-2xl my-4">
@@ -317,7 +317,7 @@ export default function Home() {
           </InfoTable>
         </div>
       </PageSection>
-      <PageSection id="entertainment" grid={2}>
+      <PageSection id="entertainment" grid={2} className="bg-white">
         <div>
           <Image
             className={[
