@@ -1,0 +1,27 @@
+.hourLine {
+  @apply w-full;
+  @apply h-16;
+  @apply border-t;
+  @apply border-black/40;
+}
+
+.halfHourLine {
+  @apply w-full;
+  @apply h-16;
+  @apply border-t;
+  @apply border-dotted;
+  @apply border-black/40;
+}
+
+.calendarItem {
+  @apply bg-blue-300;
+  @apply border-t;
+  @apply border-t-blue-200;
+  @apply border-b;
+  @apply border-b-blue-500;
+  @apply py-1;
+  @apply px-4;
+  @apply rounded-md;
+  @apply overflow-hidden;
+  @apply text-ellipsis;
+}
