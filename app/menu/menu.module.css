@@ -1,0 +1,28 @@
+.menu {
+  @apply grid;
+  @apply md:grid-cols-2;
+  @apply gap-8;
+}
+
+.menuSection {
+  @apply flex;
+  @apply flex-col;
+  @apply gap-4;
+}
+
+.menuSection h3 {
+  @apply text-balance;
+}
+
+.menuSection dt {
+  @apply text-lg;
+  @apply font-bold;
+}
+
+.menuSection dd + dt {
+  @apply mt-4;
+}
+
+.menuSection dd {
+  @apply italic;
+}

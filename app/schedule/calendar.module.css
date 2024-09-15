@@ -21,14 +21,21 @@
 
 .calendarItem {
   @apply text-xs;
-  @apply bg-blue-300;
+  @apply text-white;
+  @apply bg-red-700;
   @apply border-t;
-  @apply border-t-blue-200;
+  @apply border-t-red-600;
   @apply border-b;
-  @apply border-b-blue-500;
+  @apply border-b-red-800;
   @apply py-1;
   @apply px-4;
   @apply rounded-md;
   @apply overflow-hidden;
   @apply text-ellipsis;
+}
+
+.alternate {
+  @apply bg-slate-800;
+  @apply border-t-slate-700;
+  @apply border-b-slate-900;
 }

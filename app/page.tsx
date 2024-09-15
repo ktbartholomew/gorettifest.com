@@ -94,6 +94,11 @@ export default function Home() {
                     Sunday, October 6 <br />
                     8am to 3pm
                   </p>
+                  <p>
+                    <a href="/schedule">
+                      <Button>See the full schedule</Button>
+                    </a>
+                  </p>
                 </td>
               </tr>
               <tr>
@@ -121,16 +126,6 @@ export default function Home() {
                     Buy tickets for food &amp; games with cash or card after you
                     arrive.
                   </p>
-                  <p>
-                    <a
-                      href="https://square.link/u/FA3LEB9p"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <Button>Pre-purchase tickets</Button>
-                    </a>
-                  </p>
-                  <p></p>
                 </td>
               </tr>
               <tr>
@@ -173,51 +168,17 @@ export default function Home() {
             cuisine from around the world representing their heritage. Enjoy a
             beverage in our biergarten to wash down all these tasty treats!
           </p>
-          <p className="text-2xl"></p>
-          <InfoTable>
-            <tbody>
-              <tr>
-                <th>Fair Classics</th>
-                <td>
-                  Hamburgers, French fries, Turkey legs, Texas Tornado (spiral
-                  potato chip)
-                </td>
-              </tr>
-              <tr>
-                <th>German</th>
-                <td>
-                  Bratwurst (in a bun or on a stick), Fried potatoes,
-                  Sauerkraut, Red cabbage, Soft Pretzels (sweet or salty)
-                </td>
-              </tr>
-              <tr>
-                <th>Mexican</th>
-                <td>Fajitas, Nachos, Breakfast burritos (on Sunday)</td>
-              </tr>
-              <tr>
-                <th>Afro-Caribbean</th>
-                <td>Beignets, Jerk chicken, Jollof rice (spiced fried rice)</td>
-              </tr>
-              <tr>
-                <th>Asian</th>
-                <td>
-                  Egg Rolls, Chicken Teriyaki, Fried Rice, Coconut Milk Waffles
-                </td>
-              </tr>
-              <tr>
-                <th>BBQ</th>
-                <td>BBQ Plate, Pulled Pork sandwiches</td>
-              </tr>
-              <tr>
-                <th>Sweets &amp; Drinks</th>
-                <td>Paletas (popsicles), Candy, Popcorn, Soft drinks, water</td>
-              </tr>
-              <tr>
-                <th>Biergarten</th>
-                <td>Craft on draft!</td>
-              </tr>
-            </tbody>
-          </InfoTable>
+          <p className="text-lg">
+            We have something for every palate, from legendary Texas BBQ to West
+            African street food favorites to sweet treats of every shape and
+            size!
+          </p>
+
+          <div className="mt-4">
+            <a href="/menu">
+              <Button>See the full menu</Button>
+            </a>
+          </div>
         </div>
         <div>
           <ImageScrollLoader offScreenDirection="right" midPointOffset={0.4}>

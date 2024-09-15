@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     "GorettiFest is packed with events including live bands, a talent show, magicians, games, and dancing!",
 };
 
-export default function VolunteerPage() {
+export default function SchedulePage() {
   return (
     <>
       <HeaderNav logo />
@@ -115,14 +115,28 @@ export default function VolunteerPage() {
                             <strong>Ballet Folklorico</strong>
                           </div>
                         </div>
-                        <div className={`${classes.calendarItem} h-[8rem]`}>
+                        <div className={`${classes.calendarItem} h-[4rem]`}>
                           <div>
                             <strong>Helicopter Appearance</strong>
                           </div>
                         </div>
+                        <div className={`${classes.calendarItem} h-[4rem]`}>
+                          <div>
+                            <strong>Leap of Faith Dance</strong>
+                          </div>
+                        </div>
+                        <div
+                          className={`${classes.calendarItem} mt-[4rem] h-[4rem]`}
+                        >
+                          <div>
+                            <strong>UPAC Dance</strong>
+                          </div>
+                        </div>
                       </div>
                       <div>
-                        <div className={`${classes.calendarItem} h-[16rem]`}>
+                        <div
+                          className={`${classes.calendarItem} ${classes.alternate} h-[16rem]`}
+                        >
                           <div>
                             <strong>Touch-a-truck</strong>
                           </div>
@@ -131,9 +145,7 @@ export default function VolunteerPage() {
                     </div>
                     <div className="grid grid-cols-2 gap-1">
                       <div>
-                        <div
-                          className={`${classes.calendarItem} mt-[8rem] h-[16rem]`}
-                        >
+                        <div className={`${classes.calendarItem}  h-[16rem]`}>
                           <div>
                             <strong>School Talent Show</strong>
                           </div>
@@ -143,13 +155,8 @@ export default function VolunteerPage() {
                             <strong>Live Music: Box Brains</strong>
                           </div>
                         </div>
-                        <div className={`${classes.calendarItem} h-[4rem]`}>
-                          <div>
-                            <strong>Live Music: Bubble Gum Riot</strong>
-                          </div>
-                        </div>
                         <div
-                          className={`${classes.calendarItem} mt-[4rem] h-[4rem]`}
+                          className={`${classes.calendarItem} mt-[8rem] h-[4rem]`}
                         >
                           <div>
                             <strong>Alumni Group Photo</strong>
@@ -162,12 +169,16 @@ export default function VolunteerPage() {
                         </div>
                       </div>
                       <div>
-                        <div className={`${classes.calendarItem} h-[32rem]`}>
+                        <div
+                          className={`${classes.calendarItem} ${classes.alternate} h-[32rem]`}
+                        >
                           <div>
                             <strong>Bingo</strong>
                           </div>
                         </div>
-                        <div className={`${classes.calendarItem} h-[24rem]`}>
+                        <div
+                          className={`${classes.calendarItem} ${classes.alternate} h-[24rem]`}
+                        >
                           <div>
                             <strong>Homecoming Happy Hour</strong>
                           </div>
@@ -235,12 +246,14 @@ export default function VolunteerPage() {
                       <div>
                         <div className={`${classes.calendarItem} h-[8rem]`}>
                           <div>
-                            <strong>Soul Core</strong>
+                            <strong>
+                              SoulCore (Christian meditation/yoga)
+                            </strong>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div className="grid grid-cols-2 gap-1">
+                    <div className="grid grid-cols-3 gap-1">
                       <div>
                         <div
                           className={`${classes.calendarItem} mt-[8rem] h-[6rem]`}
@@ -249,14 +262,33 @@ export default function VolunteerPage() {
                             <strong>Checkers the Magician</strong>
                           </div>
                         </div>
-                        <div className={`${classes.calendarItem} h-[8rem]`}>
+                        <div className={`${classes.calendarItem} h-[2rem]`}>
                           <div>
-                            <strong>Helicopter Appearance</strong>
+                            <strong>Helicopter</strong>
+                          </div>
+                        </div>
+                        <div className={`${classes.calendarItem} h-[4rem]`}>
+                          <div>
+                            <strong>Live Music: Box Brains</strong>
+                          </div>
+                        </div>
+                        <div
+                          className={`${classes.calendarItem} mt-[4rem] h-[4rem]`}
+                        >
+                          <div>
+                            <strong>Shotokan Karate</strong>
+                          </div>
+                        </div>
+                        <div
+                          className={`${classes.calendarItem} mt-[4rem] h-[4rem]`}
+                        >
+                          <div>
+                            <strong>Miss Persis Dance</strong>
                           </div>
                         </div>
 
                         <div
-                          className={`${classes.calendarItem} mt-[18rem] h-[8rem]`}
+                          className={`${classes.calendarItem} mt-[4rem] h-[8rem]`}
                         >
                           <div>
                             <strong>Live Music: BEHAN</strong>
@@ -265,10 +297,19 @@ export default function VolunteerPage() {
                       </div>
                       <div>
                         <div
-                          className={`${classes.calendarItem} mt-[12rem] h-[32rem]`}
+                          className={`${classes.calendarItem} ${classes.alternate} mt-[12rem] h-[32rem]`}
                         >
                           <div>
                             <strong>Bingo</strong>
+                          </div>
+                        </div>
+                      </div>
+                      <div>
+                        <div
+                          className={`${classes.calendarItem} ${classes.alternate} mt-[24rem] h-[16rem]`}
+                        >
+                          <div>
+                            <strong>Petting Zoo</strong>
                           </div>
                         </div>
                       </div>
