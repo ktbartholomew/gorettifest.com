@@ -138,7 +138,9 @@ export default function SchedulePage() {
                           className={`${classes.calendarItem} ${classes.alternate} h-[16rem]`}
                         >
                           <div>
-                            <strong>Touch-a-truck</strong>
+                            <strong>
+                              Touch-a-truck (Police + Fire + Ambulance)
+                            </strong>
                           </div>
                         </div>
                       </div>
@@ -246,9 +248,7 @@ export default function SchedulePage() {
                       <div>
                         <div className={`${classes.calendarItem} h-[8rem]`}>
                           <div>
-                            <strong>
-                              SoulCore (Christian meditation/yoga)
-                            </strong>
+                            <strong>SoulCore (Rosary + exercise)</strong>
                           </div>
                         </div>
                       </div>
