@@ -105,14 +105,15 @@ export default function SchedulePage() {
                             <strong>Opening Ceremony</strong>
                           </div>
                         </div>
-                        <div className={`${classes.calendarItem} h-[3rem]`}>
+                        <div className={`${classes.calendarItem} h-[6rem]`}>
                           <div>
-                            <strong>Nolan Cheer</strong>
-                          </div>
-                        </div>
-                        <div className={`${classes.calendarItem} h-[3rem]`}>
-                          <div>
-                            <strong>Ballet Folklorico</strong>
+                            <strong>
+                              Nolan + SMG
+                              <br />
+                              Cheer
+                              <br />
+                              Ballet Folklorico
+                            </strong>
                           </div>
                         </div>
                         <div className={`${classes.calendarItem} h-[4rem]`}>
@@ -122,14 +123,32 @@ export default function SchedulePage() {
                         </div>
                         <div className={`${classes.calendarItem} h-[4rem]`}>
                           <div>
-                            <strong>Leap of Faith Dance</strong>
+                            <strong>DANCE: Leap of Faith</strong>
                           </div>
                         </div>
                         <div
                           className={`${classes.calendarItem} mt-[4rem] h-[4rem]`}
                         >
                           <div>
-                            <strong>UPAC Dance</strong>
+                            <strong>DANCE: UPAC</strong>
+                          </div>
+                        </div>
+                        <div className={`${classes.calendarItem}  h-[16rem]`}>
+                          <div>
+                            <strong>School Talent Show</strong>
+                          </div>
+                        </div>
+                        <div className={`${classes.calendarItem} h-[4rem]`}>
+                          <div>
+                            <strong>BAND: Box Brains</strong>
+                          </div>
+                        </div>
+
+                        <div
+                          className={`${classes.calendarItem}  mt-[12rem] h-[16rem]`}
+                        >
+                          <div>
+                            <strong>BAND: Trinity River Ramblers</strong>
                           </div>
                         </div>
                       </div>
@@ -143,34 +162,6 @@ export default function SchedulePage() {
                             </strong>
                           </div>
                         </div>
-                      </div>
-                    </div>
-                    <div className="grid grid-cols-2 gap-1">
-                      <div>
-                        <div className={`${classes.calendarItem}  h-[16rem]`}>
-                          <div>
-                            <strong>School Talent Show</strong>
-                          </div>
-                        </div>
-                        <div className={`${classes.calendarItem} h-[4rem]`}>
-                          <div>
-                            <strong>Live Music: Box Brains</strong>
-                          </div>
-                        </div>
-                        <div
-                          className={`${classes.calendarItem} mt-[8rem] h-[4rem]`}
-                        >
-                          <div>
-                            <strong>Alumni Group Photo</strong>
-                          </div>
-                        </div>
-                        <div className={`${classes.calendarItem}  h-[16rem]`}>
-                          <div>
-                            <strong>Live Music: Trinity River Ramblers</strong>
-                          </div>
-                        </div>
-                      </div>
-                      <div>
                         <div
                           className={`${classes.calendarItem} ${classes.alternate} h-[32rem]`}
                         >
@@ -183,6 +174,8 @@ export default function SchedulePage() {
                         >
                           <div>
                             <strong>Homecoming Happy Hour</strong>
+                            <br />
+                            Group photo at 5:30pm
                           </div>
                         </div>
                       </div>
@@ -269,21 +262,21 @@ export default function SchedulePage() {
                         </div>
                         <div className={`${classes.calendarItem} h-[4rem]`}>
                           <div>
-                            <strong>Live Music: Box Brains</strong>
+                            <strong>BAND: Box Brains</strong>
                           </div>
                         </div>
                         <div
                           className={`${classes.calendarItem} mt-[4rem] h-[4rem]`}
                         >
                           <div>
-                            <strong>Shotokan Karate</strong>
+                            <strong>KARATE: USKDA</strong>
                           </div>
                         </div>
                         <div
                           className={`${classes.calendarItem} mt-[4rem] h-[4rem]`}
                         >
                           <div>
-                            <strong>Miss Persis Dance</strong>
+                            <strong>DANCE: Miss Persis</strong>
                           </div>
                         </div>
 
@@ -291,7 +284,7 @@ export default function SchedulePage() {
                           className={`${classes.calendarItem} mt-[4rem] h-[8rem]`}
                         >
                           <div>
-                            <strong>Live Music: BEHAN</strong>
+                            <strong>BAND: BEHAN</strong>
                           </div>
                         </div>
                       </div>

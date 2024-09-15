@@ -126,6 +126,15 @@ export default function Home() {
                     Buy tickets for food &amp; games with cash or card after you
                     arrive.
                   </p>
+                  <p>
+                    <a
+                      href="https://square.link/u/FA3LEB9p"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <Button>Pre-purchase tickets</Button>
+                    </a>
+                  </p>
                 </td>
               </tr>
               <tr>
