@@ -343,8 +343,7 @@ export default function Home() {
                 <th>Touch-a-Truck</th>
                 <td>
                   See the coolest vehicles up close and in person! Entries
-                  include police car, ambulance, fire truck, construction
-                  equipment, and more!
+                  include police car, ambulance, fire truck, and more!
                 </td>
               </tr>
               <tr>

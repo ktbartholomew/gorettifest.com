@@ -34,7 +34,7 @@ const menu: Menu = {
             "A flame-grilled burger served on a classic sesame-crusted bun. Add cheese and all your favorite garnishes and condiments.",
         },
         {
-          title: "French Frires",
+          title: "French Fries",
           description:
             "Perfectly fried russet potatoes, lightly salted. Enjoy them on their own or to complement your full meal.",
         },
@@ -46,27 +46,27 @@ const menu: Menu = {
         {
           title: "Texas Tornado",
           description:
-            "A giant russet potato spiral-cut from end-to-end, seasoned with our spicy, smokey blend and deep fried for an irrestistible, shareable snack.",
+            "A giant russet potato spiral-cut from end-to-end, seasoned with our spicy, smokey blend and deep fried for an irresistible, shareable snack.",
         },
         {
           title: "Roasted Corn",
           description:
-            "A whole cob of corn seasoned with our house-made spice rub and slowly roasted for a juicy, slightly-charred crunch.",
+            "A whole cob of corn seasoned with our house-made spice rub and slow-roasted for a juicy, slightly-charred crunch.",
         },
       ],
     },
     {
-      title: "Deutsche Favoriten",
+      title: "German",
       items: [
         {
           title: "Bratwurst",
           description:
-            "Enjoy a juicy, savory, slowly-roasted bratwurst. Have it in a bun or on a skewer with mustard.",
+            "Enjoy a juicy, savory, grilled bratwurst. Have it in a bun or on a skewer. Don't forget the Dusseldorf mustard!",
         },
         {
           title: "Fried Potatoes",
           description:
-            "Thinly sliced and seasoned russet potatoes fried to crispy perfection over our massive, smoldering skillet.",
+            "A bratwurst's best friend: thinly sliced and seasoned russet potatoes cooked to perfection.",
         },
         {
           title: "Sauerkraut",
@@ -81,7 +81,7 @@ const menu: Menu = {
       ],
     },
     {
-      title: "Tacos y Más",
+      title: "Tex-Mex",
       items: [
         {
           title: "Street Tacos",
@@ -90,7 +90,13 @@ const menu: Menu = {
         },
         {
           title: "Nachos",
-          description: "",
+          description:
+            "Tortilla chips and melted cheese. A match made in heaven!",
+        },
+        {
+          title: "Dave-o’s Supremo Nachos",
+          description:
+            "Famous for a reason, you can get the job done on this kind of meal! Classic nachos loaded with every topping imaginable.",
         },
         {
           title: "Breakfast Burritos (Sunday only)",
@@ -129,11 +135,13 @@ const menu: Menu = {
       items: [
         {
           title: "Egg Rolls",
-          description: "",
+          description:
+            "Bite into a takeout classic: everyone's favorite crispy shell surrounding a blend of savory spiced pork and crunchy cabbage.",
         },
         {
           title: "Teriyaki Chicken Skewer",
-          description: "",
+          description:
+            "Juicy chicken bites tossed in a classic sweet and tangy teriyake glaze.",
         },
         {
           title: "Vegetable Fried Rice",
@@ -157,7 +165,8 @@ const menu: Menu = {
         },
         {
           title: "Sausage Plate",
-          description: "Peppery, savory gourmet sausage ",
+          description:
+            "Peppery, savory gourmet sausage, with your choice of classic BBQ sides.",
         },
         {
           title: "Texas Twinkie",
@@ -167,17 +176,17 @@ const menu: Menu = {
         {
           title: "Brisket Mac and Cheese",
           description:
-            "The only thing better than the creamy comfort of classic Mac and cheese is to add a kick of smoked brisket!",
+            "The only thing better than the creamy comfort of classic Mac and Cheese is to add a kick of smoked brisket!",
         },
       ],
     },
     {
-      title: "Festa Italiana",
+      title: "Italian",
       items: [
         {
           title: "Pizza",
           description:
-            "Enjoy a classic New York-style slice, with your favorite toppings.",
+            "Enjoy a classic slice topped with your choice of cheese, pepperoni, or sausage.",
         },
         {
           title: "Meatball Sub",
