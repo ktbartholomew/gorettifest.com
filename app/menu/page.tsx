@@ -94,7 +94,7 @@ const menu: Menu = {
             "Tortilla chips and melted cheese. A match made in heaven!",
         },
         {
-          title: "Dave-o’s Supremo Nachos",
+          title: "Davo Supremo Nachos",
           description:
             "Famous for a reason, you can get the job done on this kind of meal! Classic nachos loaded with every topping imaginable.",
         },
