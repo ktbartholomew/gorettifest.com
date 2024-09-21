@@ -108,9 +108,7 @@ export default function SchedulePage() {
                         <div className={`${classes.calendarItem} h-[6rem]`}>
                           <div>
                             <strong>
-                              Nolan + SMG
-                              <br />
-                              Cheer
+                              SMG Cheer
                               <br />
                               Ballet Folklorico
                             </strong>
@@ -133,7 +131,16 @@ export default function SchedulePage() {
                             <strong>DANCE: UPAC</strong>
                           </div>
                         </div>
-                        <div className={`${classes.calendarItem}  h-[16rem]`}>
+
+                        <div className={`${classes.calendarItem} h-[4rem]`}>
+                          <div>
+                            <strong>KARATE: Sentinal Martial Arts</strong>
+                          </div>
+                        </div>
+
+                        <div
+                          className={`${classes.calendarItem}  mt-[4rem] h-[8rem]`}
+                        >
                           <div>
                             <strong>School Talent Show</strong>
                           </div>
