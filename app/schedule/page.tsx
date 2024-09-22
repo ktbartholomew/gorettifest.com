@@ -134,7 +134,7 @@ export default function SchedulePage() {
 
                         <div className={`${classes.calendarItem} h-[4rem]`}>
                           <div>
-                            <strong>KARATE: Sentinal Martial Arts</strong>
+                            <strong>KARATE: Sentinel Martial Arts</strong>
                           </div>
                         </div>
 
