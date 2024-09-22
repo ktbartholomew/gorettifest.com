@@ -363,6 +363,35 @@ export default function Home() {
           </InfoTable>
         </div>
       </PageSection>
+      <PageSection id="sponsors" className="bg-slate-800 text-white">
+        <div>
+          <h3 className={`${lilita.className} text-center mb-16`}>
+            Thank you to our sponsors
+          </h3>
+          <div className="flex gap-8 justify-center">
+            <div>
+              <a href="https://www.barnesvideogroup.com/" target="_blank">
+                <Image
+                  src="/img/barnes-video-group-logo.png"
+                  alt="Rick and Ray's Auto Plaza"
+                  width={416}
+                  height={106}
+                />
+              </a>
+            </div>
+            <div>
+              <a href="https://rickandraysautoplaza.com/" target="_blank">
+                <Image
+                  src="/img/rick-and-rays-logo.png"
+                  alt="Rick and Ray's Auto Plaza"
+                  width={416}
+                  height={106}
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </PageSection>
       <PageSection id="about-us" className="bg-red-700 text-white">
         <div className="flex justify-evenly justify-items-center">
           <div className="lg:max-w-[50vw]">
