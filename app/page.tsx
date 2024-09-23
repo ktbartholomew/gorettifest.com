@@ -70,11 +70,6 @@ const sponsors: SponsorLogo[] = [
   },
   {
     size: "small",
-    name: "Knights of Columbus",
-    imageUrl: "/img/sponsors/KOC.png",
-  },
-  {
-    size: "small",
     name: "Affalon Productions",
     imageUrl: "/img/sponsors/Affalon%20Productions.png",
   },
@@ -100,6 +95,11 @@ const sponsors: SponsorLogo[] = [
   },
   {
     size: "small",
+    name: "Knights of Columbus",
+    imageUrl: "/img/sponsors/KOC.png",
+  },
+  {
+    size: "small",
     name: "Little Germany",
     imageUrl: "/img/sponsors/Little%20Germany.png",
   },
@@ -117,6 +117,26 @@ const sponsors: SponsorLogo[] = [
     size: "small",
     name: "North Arlington Little League",
     imageUrl: "/img/sponsors/NALL%20Logo.png",
+  },
+  {
+    size: "small",
+    name: "Nolan Catholic High School",
+    imageUrl: "/img/sponsors/NCHS Viking.png",
+  },
+  {
+    size: "small",
+    name: "Propane Doctor",
+    imageUrl: "/img/sponsors/Propane%20Doctor.jpg",
+  },
+  {
+    size: "small",
+    name: "Sigercon",
+    imageUrl: "/img/sponsors/Sigercon_logoFINALcol.png",
+  },
+  {
+    size: "small",
+    name: "Trailer Park Chill",
+    imageUrl: "/img/sponsors/Trailer%20Park%20Chill.png",
   },
 ];
 
@@ -470,10 +490,10 @@ export default function Home() {
               .map((s) => (
                 <div
                   key={s.imageUrl}
-                  className="relative flex-[25%] shrink-0 md:shrink h-[90px] md:flex-[18%]"
+                  className="relative flex-[25%] shrink-0 md:shrink h-[80px] md:flex-[18%]"
                 >
                   {s.linkUrl ? (
-                    <a href={s.linkUrl} target="_blank" className="bg-white">
+                    <a href={s.linkUrl} target="_blank">
                       <Image
                         src={s.imageUrl}
                         alt={s.name}
@@ -482,7 +502,7 @@ export default function Home() {
                       />
                     </a>
                   ) : (
-                    <div className="bg-white">
+                    <div>
                       <Image
                         src={s.imageUrl}
                         alt={s.name}
