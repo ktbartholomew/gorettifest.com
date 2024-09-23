@@ -138,6 +138,11 @@ const sponsors: SponsorLogo[] = [
     name: "Trailer Park Chill",
     imageUrl: "/img/sponsors/Trailer%20Park%20Chill.png",
   },
+  {
+    size: "small",
+    name: "Trinity River Ramblers",
+    imageUrl: "/img/sponsors/Trinity%20River%20Ramblers.png",
+  },
 ];
 
 export default function Home() {
