@@ -65,6 +65,11 @@ const sponsors: SponsorLogo[] = [
   {
     size: "large",
     name: "The Keever Group Amerprise Wealth Advisors",
+    imageUrl: "/img/sponsors/the-shelton-family.svg",
+  },
+  {
+    size: "large",
+    name: "The Keever Group Amerprise Wealth Advisors",
     imageUrl: "/img/sponsors/the-keever-group-logo.png",
     linkUrl: "https://www.ameripriseadvisors.com/team/the-keever-group/",
   },
@@ -125,6 +130,11 @@ const sponsors: SponsorLogo[] = [
   },
   {
     size: "small",
+    name: "Pet Supermarket",
+    imageUrl: "/img/sponsors/Pet%20Supermarket.svg",
+  },
+  {
+    size: "small",
     name: "Propane Doctor",
     imageUrl: "/img/sponsors/Propane%20Doctor.jpg",
   },
@@ -142,6 +152,12 @@ const sponsors: SponsorLogo[] = [
     size: "small",
     name: "Trinity River Ramblers",
     imageUrl: "/img/sponsors/Trinity%20River%20Ramblers.png",
+  },
+
+  {
+    size: "small",
+    name: "Watermill Express",
+    imageUrl: "/img/sponsors/Watermill-logo-white.png",
   },
 ];
 
@@ -471,13 +487,13 @@ export default function Home() {
           <h3 className={`${lilita.className} text-center mb-16`}>
             Thank you to our sponsors
           </h3>
-          <div className="flex flex-wrap gap-8 justify-center">
+          <div className="flex flex-wrap gap-8 mb-32 justify-center">
             {sponsors
               .filter((s) => s.size === "large")
               .map((s) => (
                 <div
                   key={s.imageUrl}
-                  className="relative flex-[100%] shrink-0 md:shrink h-[180px] md:flex-[30%]"
+                  className="relative flex-[100%] shrink-0 md:shrink h-[180px] md:flex-[40%]"
                 >
                   <a href={s.linkUrl} target="_blank">
                     <Image
@@ -489,7 +505,8 @@ export default function Home() {
                   </a>
                 </div>
               ))}
-
+          </div>
+          <div className="flex flex-wrap gap-8 justify-center">
             {sponsors
               .filter((s) => s.size === "small")
               .map((s) => (
