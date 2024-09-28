@@ -493,7 +493,7 @@ export default function Home() {
               .map((s) => (
                 <div
                   key={s.imageUrl}
-                  className="relative flex-[100%] shrink-0 md:shrink h-[180px] md:flex-[40%]"
+                  className="relative flex-[100%] grow-0 shrink-0 md:shrink h-[180px] md:flex-[40%]"
                 >
                   <a href={s.linkUrl} target="_blank">
                     <Image
@@ -512,7 +512,7 @@ export default function Home() {
               .map((s) => (
                 <div
                   key={s.imageUrl}
-                  className="relative flex-[25%] shrink-0 md:shrink h-[80px] md:flex-[18%]"
+                  className="relative flex-[25%] grow-0 shrink-0 md:shrink h-[80px] md:flex-[18%]"
                 >
                   {s.linkUrl ? (
                     <a href={s.linkUrl} target="_blank">
