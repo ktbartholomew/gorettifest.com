@@ -245,30 +245,25 @@ export default function Home() {
                     Buy tickets for food &amp; games with cash or card after you
                     arrive.
                   </p>
-                  <p>
-                    <a
-                      href="https://square.link/u/FA3LEB9p"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <Button>Pre-purchase tickets</Button>
-                    </a>
-                  </p>
                 </td>
               </tr>
               <tr>
                 <th>Parking</th>
                 <td>
-                  Free parking is available in our{" "}
+                  Free parking is available in our private{" "}
                   <a
                     href="https://maps.app.goo.gl/cqx3drVKb1xtRaeN6"
                     target="_blank"
                     rel="noreferrer"
                   >
                     parking lot on Benge Drive
-                  </a>
-                  . It&apos;s just a &frac14; mile walk from the parking lot to
-                  the school.
+                  </a>{" "}
+                  or in{" "}
+                  <a href="https://maps.app.goo.gl/yq1oQXLD37FGUJj76">
+                    UTA&nbsp;lot&nbsp;26
+                  </a>{" "}
+                  on Mitchell Street. Shuttles are available to transport you
+                  from the parking lots to GorettiFest.
                 </td>
               </tr>
             </tbody>
