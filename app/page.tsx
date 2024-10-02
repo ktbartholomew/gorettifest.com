@@ -105,6 +105,11 @@ const sponsors: SponsorLogo[] = [
   },
   {
     size: "small",
+    name: "La Isla",
+    imageUrl: "/img/sponsors/La%20Isla.webp",
+  },
+  {
+    size: "small",
     name: "Little Germany",
     imageUrl: "/img/sponsors/Little%20Germany.png",
   },
@@ -112,6 +117,11 @@ const sponsors: SponsorLogo[] = [
     size: "small",
     name: "Marquee Event Rentals",
     imageUrl: "/img/sponsors/MarqueeEventRentals.svg",
+  },
+  {
+    size: "small",
+    name: "Marquez Bakery",
+    imageUrl: "/img/sponsors/marquez%20logo%202024.jpg",
   },
   {
     size: "small",
