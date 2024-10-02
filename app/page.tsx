@@ -193,8 +193,8 @@ export default function Home() {
             blurDataURL={headerImage.blurDataURL}
           />
         </div>
-        <div className="absolute top-0 left-0 h-full w-full mix-blend-multiply bg-slate-800 md:bg-slate-900/70"></div>
-        <div className="z-10 relative flex h-full w-full px-4 md:px-0 md:absolute text-center items-center justify-center">
+        <div className="absolute top-0 left-0 h-full w-full md:mix-blend-multiply bg-slate-800 md:bg-slate-900/70"></div>
+        <div className="z-10 relative flex flex-col h-full w-full px-4 md:px-0 md:absolute text-center items-center justify-center">
           <Image
             alt="GorettiFest October 5-6, 2024"
             src="/img/gorettifest-logo-white-red-outline-date.svg"
@@ -202,8 +202,11 @@ export default function Home() {
             height={760}
             priority
             loading="eager"
-            className="block relative h-full object-contain"
+            className="block relative h-[75%] object-contain"
           />
+          <a href="/img/GorettiFest-Map.png">
+            <Button>View the GorettiFest Map</Button>
+          </a>
         </div>
       </section>
       <HeaderNav />
@@ -249,6 +252,10 @@ export default function Home() {
                       1200 S Davis Dr <br />
                       Arlington, TX 76013
                     </address>
+                  </a>
+                  <br />
+                  <a href="/img/GorettiFest-Map.png">
+                    <Button>View the GorettiFest Map</Button>
                   </a>
                 </td>
               </tr>
