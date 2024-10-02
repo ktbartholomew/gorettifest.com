@@ -124,23 +124,25 @@ export default function SchedulePage() {
                             <strong>DANCE: Leap of Faith</strong>
                           </div>
                         </div>
-                        <div
-                          className={`${classes.calendarItem} mt-[4rem] h-[4rem]`}
-                        >
-                          <div>
-                            <strong>DANCE: UPAC</strong>
-                          </div>
-                        </div>
-
                         <div className={`${classes.calendarItem} h-[4rem]`}>
                           <div>
                             <strong>KARATE: Sentinel Martial Arts</strong>
                           </div>
                         </div>
-
+                        <div className={`${classes.calendarItem} h-[4rem]`}>
+                          <div>
+                            <strong>DANCE: UPAC</strong>
+                          </div>
+                        </div>
                         <div
-                          className={`${classes.calendarItem}  mt-[4rem] h-[8rem]`}
+                          className={`${classes.calendarItem} mt-[4rem] h-[4rem]`}
                         >
+                          <div>
+                            <strong>DANCE: Laura&apos;s Dance Dynamics</strong>
+                          </div>
+                        </div>
+
+                        <div className={`${classes.calendarItem}   h-[8rem]`}>
                           <div>
                             <strong>School Talent Show</strong>
                           </div>
