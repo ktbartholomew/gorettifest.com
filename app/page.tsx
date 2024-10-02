@@ -85,6 +85,11 @@ const sponsors: SponsorLogo[] = [
   },
   {
     size: "small",
+    name: "Darby Day Staffing",
+    imageUrl: "/img/sponsors/darby-day-new-logo-1.jpg",
+  },
+  {
+    size: "small",
     name: "Drengr Axe Throwing",
     imageUrl: "/img/sponsors/Drengr%20Axe%20Throwing.png",
   },
