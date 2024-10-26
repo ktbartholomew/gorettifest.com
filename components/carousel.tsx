@@ -327,7 +327,7 @@ const images: { src: string; alt: string }[] = [
 
 export function Carousel() {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
-    Autoplay({ delay: 4000, stopOnInteraction: true }),
+    Autoplay({ delay: 4000, stopOnInteraction: false }),
     Fade({}),
   ]);
 
