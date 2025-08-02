@@ -1,7 +1,7 @@
 import { HeaderNav } from "@/components/header-nav";
 import { lilita } from "@/components/font";
 import Image from "next/image";
-import headerImage from "@/public/img/IMG_1440.webp";
+import headerImage from "@/public/img/IMG_2212.webp";
 
 export default function Page() {
   return (

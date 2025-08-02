@@ -2,7 +2,7 @@ import { HeaderNav } from "@/components/header-nav";
 import { Metadata } from "next";
 import Image from "next/image";
 import { lilita } from "@/components/font";
-import headerImage from "@/public/img/IMG_1433.webp";
+import headerImage from "@/public/img/IMG_2212.webp";
 import classes from "./calendar.module.css";
 
 export const metadata: Metadata = {

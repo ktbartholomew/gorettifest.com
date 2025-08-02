@@ -1,13 +1,11 @@
 import Image from "next/image";
 import styles from "@/components/sections/sections.module.css";
 import headerImage from "@/public/img/IMG_2212.webp";
-import { ImageScrollLoader } from "@/components/image-scroll-loader";
 import { HeaderNav } from "@/components/header-nav";
 import { PageSection } from "@/components/page-section";
 import { InfoTable } from "@/components/info-table";
 import { Button } from "@/components/button";
 import Link from "next/link";
-import { SponsorsSection } from "@/components/sections/sponsors";
 import { GamesSection } from "@/components/sections/games";
 import { lilita } from "@/components/font";
 import { EntertainmentSection } from "@/components/sections/entertainment";

@@ -63,9 +63,9 @@ export function GamesSection() {
             <tr>
               <th>Cakewalk</th>
               <td>
-                Easy as pie! A piece of cake! We sweeten the pot so everyone's a
-                winner at this classic prize game featuring a variety of
-                home-baked goods.
+                Easy as pie! A piece of cake! We sweeten the pot so
+                everyone&apos;s a winner at this classic prize game featuring a
+                variety of home-baked goods.
               </td>
             </tr>
           </tbody>
