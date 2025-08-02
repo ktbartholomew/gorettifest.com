@@ -1,8 +1,7 @@
-import { Lilita_One } from "next/font/google";
 import { PageSection } from "../page-section";
 import { InfoTable } from "../info-table";
 import { Button } from "../button";
-const lilita = Lilita_One({ weight: ["400"], subsets: ["latin"] });
+import { lilita } from "../font";
 
 export function VisitSection() {
   return (
@@ -20,11 +19,11 @@ export function VisitSection() {
               <th>When</th>
               <td>
                 <p className="text-lg mt-0">
-                  Saturday, October 5<br />
+                  Saturday, October 4<br />
                   11am to 8pm
                 </p>
                 <p className="text-lg">
-                  Sunday, October 6 <br />
+                  Sunday, October 5<br />
                   8am to 3pm
                 </p>
                 <p>

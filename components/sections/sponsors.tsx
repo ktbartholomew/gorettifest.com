@@ -1,7 +1,6 @@
-import { Lilita_One } from "next/font/google";
+import { lilita } from "../font";
 import { PageSection } from "../page-section";
 import Image from "next/image";
-const lilita = Lilita_One({ weight: ["400"], subsets: ["latin"] });
 
 type SponsorLogo = {
   size: "small" | "large";

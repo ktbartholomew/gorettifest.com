@@ -1,6 +1,5 @@
-import { Lilita_One } from "next/font/google";
-const lilita = Lilita_One({ weight: ["400"], subsets: ["latin"] });
 import { Carousel } from "../carousel";
+import { lilita } from "../font";
 
 export function RecapSection() {
   return (

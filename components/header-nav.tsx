@@ -53,7 +53,7 @@ export function HeaderNav({ logo }: { logo?: boolean }) {
         <a href="/" className="block">
           <div className="bg-slate-800 z-20 md:absolute rounded-br-3xl">
             <Image
-              alt="GorettiFest October 5-6, 2024"
+              alt="GorettiFest October 4-5, 2024"
               src="/img/gorettifest-logo-white-red-outline.svg"
               width={240}
               height={240}

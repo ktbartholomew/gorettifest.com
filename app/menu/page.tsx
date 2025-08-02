@@ -1,10 +1,9 @@
 import { HeaderNav } from "@/components/header-nav";
 import { Metadata } from "next";
 import Image from "next/image";
-import { Lilita_One } from "next/font/google";
-const lilita = Lilita_One({ weight: ["400"], subsets: ["latin"] });
+import { lilita } from "@/components/font";
 import classes from "./menu.module.css";
-import headerImage from "@/public/img/IMG_1183.webp";
+import headerImage from "@/public/img/IMG_2256.webp";
 import React from "react";
 
 export const metadata: Metadata = {

@@ -34,7 +34,7 @@ export function ScrollIntoViewEvent({ event }: { event: string }) {
   }, [ref]);
 
   useEffect(() => {
-    if (inView) {
+    if (inView && typeof window.plausible === "function") {
       window.plausible(event);
     }
   }, [event, inView]);

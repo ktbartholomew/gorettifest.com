@@ -1,7 +1,6 @@
 import { HeaderNav } from "@/components/header-nav";
-import { Lilita_One } from "next/font/google";
+import { lilita } from "@/components/font";
 import Image from "next/image";
-const lilita = Lilita_One({ weight: ["400"], subsets: ["latin"] });
 import headerImage from "@/public/img/IMG_1440.webp";
 
 export default function Page() {

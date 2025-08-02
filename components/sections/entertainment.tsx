@@ -1,32 +1,44 @@
-import { Lilita_One } from "next/font/google";
+import { lilita } from "../font";
 import { PageSection } from "../page-section";
 import { InfoTable } from "../info-table";
-const lilita = Lilita_One({ weight: ["400"], subsets: ["latin"] });
 import Image from "next/image";
 import styles from "./sections.module.css";
 import { Button } from "../button";
+import { ImageScrollLoader } from "../image-scroll-loader";
 
 export function EntertainmentSection() {
   return (
     <PageSection id="entertainment" grid={2} className="bg-white">
       <div>
-        <Image
-          className={[
-            styles.photoWithBorder,
-            styles.photoWithBorder__right,
-          ].join(" ")}
-          src="/img/IMG_1433.webp"
-          alt="children playing with confetti-filled eggs at GorettiFest festival"
-          width={900}
-          height={900}
-        />
+        <ImageScrollLoader offScreenDirection="left" midPointOffset={0.4}>
+          <Image
+            className={[
+              styles.photoWithBorder,
+              styles.photoWithBorder__right,
+            ].join(" ")}
+            src="/img/IMG_2457.webp"
+            alt="An alumni band playing rock music on stage at GorettiFest"
+            width={900}
+            height={900}
+          />
+          <Image
+            className={[
+              styles.photoWithBorder,
+              styles.photoWithBorder__left,
+            ].join(" ")}
+            src="/img/IMG_2672.webp"
+            alt="GorettiFest volunteers stand with helicopter crew in front of a helicopter at GorettiFest"
+            width={900}
+            height={900}
+          />
+        </ImageScrollLoader>
       </div>
       <div>
         <h2 className={lilita.className}>Entertainment</h2>
         <p className="text-2xl">
           Our school is proud to be a part of the City of Arlington and we are
-          happy to showcase the incredible talents of both of our communities!
-          The stage will be busy all weekend long, so don&apos;t miss a thing!
+          happy to showcase the incredible talents of the entire community! The
+          stage will be busy all weekend long, so don&apos;t miss a thing!
         </p>
         <InfoTable>
           <tbody>
@@ -61,12 +73,6 @@ export function EntertainmentSection() {
               <td>
                 Find your next treasure in our collection of items from the
                 community.
-              </td>
-            </tr>
-            <tr>
-              <th>Used Book Sale</th>
-              <td>
-                Pick out your next read from a huge selection of used books.
               </td>
             </tr>
             <tr>

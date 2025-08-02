@@ -1,10 +1,9 @@
 import { HeaderNav } from "@/components/header-nav";
 import { Metadata } from "next";
 import Image from "next/image";
-import { Lilita_One } from "next/font/google";
-const lilita = Lilita_One({ weight: ["400"], subsets: ["latin"] });
-import headerImage from "@/public/img/IMG_1183.webp";
+import headerImage from "@/public/img/IMG_2256.webp";
 import { Button } from "@/components/button";
+import { lilita } from "@/components/font";
 
 const VOLUNTEER_SURVEY_LINK = "https://forms.gle/znyXijyCB2DFtAf88";
 const DONATION_LINK = "https://square.link/u/Ugurk7sW";

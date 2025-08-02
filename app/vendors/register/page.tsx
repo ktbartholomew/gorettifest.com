@@ -1,7 +1,6 @@
+import { lilita } from "@/components/font";
 import { HeaderNav } from "@/components/header-nav";
 import { PageSection } from "@/components/page-section";
-import { Lilita_One } from "next/font/google";
-const lilita = Lilita_One({ weight: ["400"], subsets: ["latin"] });
 
 const VENDOR_PAY_LINK = "https://square.link/u/XAu8gnpK";
 

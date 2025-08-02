@@ -1,10 +1,9 @@
-import { Lilita_One } from "next/font/google";
 import { PageSection } from "../page-section";
 import styles from "./sections.module.css";
 import { Button } from "../button";
 import { ImageScrollLoader } from "../image-scroll-loader";
 import Image from "next/image";
-const lilita = Lilita_One({ weight: ["400"], subsets: ["latin"] });
+import { lilita } from "../font";
 
 export function FoodSection() {
   return (
@@ -32,24 +31,24 @@ export function FoodSection() {
           <Image
             className={[
               styles.photoWithBorder,
-              styles.photoWithBorder__left,
+              styles.photoWithBorder__right,
             ].join(" ")}
-            src="/img/IMG_1360.webp"
-            alt="a young boy enjoying frozen treats at GorettiFest festival"
+            src="/img/IMG_2248.webp"
+            alt="A young girl enjoying food at GorretiFest"
             width={900}
             height={900}
-            loading="eager"
+            loading="lazy"
           />
           <Image
             className={[
               styles.photoWithBorder,
-              styles.photoWithBorder__right,
+              styles.photoWithBorder__left,
             ].join(" ")}
-            src="/img/IMG_1396.webp"
-            alt="A parent serving food at GorretiFest"
+            src="/img/IMG_2194.webp"
+            alt="a father enjoying good at GorettiFest"
             width={900}
             height={900}
-            loading="lazy"
+            loading="eager"
           />
         </ImageScrollLoader>
       </div>
