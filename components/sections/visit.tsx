@@ -26,11 +26,12 @@ export function VisitSection() {
                   Sunday, October 5<br />
                   8am to 3pm
                 </p>
-                <p>
+                {/* TODO: uncomment when the schedule is mostly ready */}
+                {/* <p>
                   <a href="/schedule">
                     <Button>See the full schedule</Button>
                   </a>
-                </p>
+                </p> */}
               </td>
             </tr>
             <tr>
@@ -49,9 +50,10 @@ export function VisitSection() {
                   </address>
                 </a>
                 <br />
-                <a href="/img/GorettiFest-Map.png">
+                {/* TODO: uncomment close to event */}
+                {/* <a href="/img/GorettiFest-Map.png">
                   <Button>View the GorettiFest Map</Button>
-                </a>
+                </a> */}
               </td>
             </tr>
             <tr>
@@ -86,9 +88,24 @@ export function VisitSection() {
           </tbody>
         </InfoTable>
       </div>
-      <div className="hidden md:block">
-        <div className="bg-slate-800 p-8 rounded-2xl">
+      <div>
+        <div className="bg-red-700 text-white p-4 rounded-2xl">
           <iframe
+            className="w-full rounded-md"
+            width="600"
+            height="450"
+            src="https://www.youtube.com/embed/yPmmsz8YlAw?si=lDQsIiCei3B6-QsR&controls=0"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
+          <p className="text-lg">
+            Explore the sights and sounds of GorettiFest 2024, in our exclusive
+            behind-the scenes video. Expect this and much more when you visit
+            GorettiFest on October 4!
+          </p>
+          {/* <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3356.5415387098847!2d-97.12749252363562!3d32.72480818665103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e7d1a02bc13ef%3A0xc77ecf1dab906f16!2sSt%20Maria%20Goretti%20Catholic%20School!5e0!3m2!1sen!2sus!4v1721175085047!5m2!1sen!2sus"
             width="600"
             height="450"
@@ -96,7 +113,7 @@ export function VisitSection() {
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
+          ></iframe> */}
         </div>
       </div>
     </PageSection>
