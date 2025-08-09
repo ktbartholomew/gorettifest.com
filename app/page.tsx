@@ -310,6 +310,9 @@ export default function Home() {
       </PageSection>
       <FoodSection />
       <GamesSection />
+      <div className="md:hidden">
+        <video src="/img/music-reel-no-audio.mp4" loop autoPlay muted></video>
+      </div>
       <EntertainmentSection />
       {/* TODO: Confirm sponsors first, then build out this section */}
       {/* <SponsorsSection /> */}
