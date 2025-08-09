@@ -5,20 +5,12 @@ import Image from "next/image";
 import styles from "./sections.module.css";
 import { Button } from "../button";
 import { ImageScrollLoader } from "../image-scroll-loader";
+import { AutoplayVideo } from "../autoplay-video";
 
 export function EntertainmentSection() {
   return (
     <>
-      <div className="md:hidden">
-        <video
-          className="object-cover"
-          src="/img/music-reel-no-audio.mp4"
-          loop
-          autoPlay
-          muted
-          playsInline
-        ></video>
-      </div>
+      <AutoplayVideo className="md:hidden" src="/img/music-reel-no-audio.mp4" />
       <PageSection id="entertainment" grid={2} className="bg-white">
         <div>
           <ImageScrollLoader offScreenDirection="left" midPointOffset={0.4}>

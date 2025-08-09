@@ -1,23 +1,13 @@
 import { PageSection } from "../page-section";
 import styles from "./sections.module.css";
 import { Button } from "../button";
-import { ImageScrollLoader } from "../image-scroll-loader";
-import Image from "next/image";
 import { lilita } from "../font";
+import { AutoplayVideo } from "../autoplay-video";
 
 export function FoodSection() {
   return (
     <>
-      <div className="md:hidden">
-        <video
-          className="object-cover"
-          src="/img/food-reel-no-audio.mp4"
-          loop
-          autoPlay
-          muted
-          playsInline
-        ></video>
-      </div>
+      <AutoplayVideo src="/img/food-reel-no-audio.mp4" className="md:hidden" />
       <PageSection id="food-and-drinks" className="bg-slate-200" grid={2}>
         <div>
           <h2 className={lilita.className}>Food &amp; Drinks</h2>
@@ -39,17 +29,14 @@ export function FoodSection() {
           </div>
         </div>
         <div>
-          <video
+          <AutoplayVideo
+            src="/img/food-reel-no-audio.mp4"
             className={[
               styles.photoWithBorder,
               "hidden md:block object-cover",
             ].join(" ")}
-            src="/img/food-reel-no-audio.mp4"
-            loop
-            autoPlay
-            muted
-            playsInline
-          ></video>
+          />
+
           {/* TODO: I would like to show photos AND the video, but it looks too busy. Needs some thought. */}
           {/* <ImageScrollLoader offScreenDirection="right" midPointOffset={0.4}>
             <Image
