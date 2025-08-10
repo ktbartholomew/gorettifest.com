@@ -1,10 +1,8 @@
 import { lilita } from "../font";
 import { PageSection } from "../page-section";
 import { InfoTable } from "../info-table";
-import Image from "next/image";
 import styles from "./sections.module.css";
 import { Button } from "../button";
-import { ImageScrollLoader } from "../image-scroll-loader";
 import { AutoplayVideo } from "../autoplay-video";
 
 export function EntertainmentSection() {
@@ -13,7 +11,11 @@ export function EntertainmentSection() {
       <AutoplayVideo className="md:hidden" src="/img/music-reel-no-audio.mp4" />
       <PageSection id="entertainment" grid={2} className="bg-white">
         <div>
-          <ImageScrollLoader offScreenDirection="left" midPointOffset={0.4}>
+          <AutoplayVideo
+            src="/img/music-reel-no-audio.mp4"
+            className={[styles.photoWithBorder, "hidden md:block"].join(" ")}
+          />
+          {/* <ImageScrollLoader offScreenDirection="left" midPointOffset={0.4}>
             <Image
               className={[
                 styles.photoWithBorder,
@@ -34,7 +36,7 @@ export function EntertainmentSection() {
               width={900}
               height={900}
             />
-          </ImageScrollLoader>
+          </ImageScrollLoader> */}
         </div>
         <div>
           <h2 className={lilita.className}>Entertainment</h2>
