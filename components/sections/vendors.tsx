@@ -7,7 +7,10 @@ import { AutoplayVideo } from "../autoplay-video";
 export function VendorSection() {
   return (
     <>
-      <AutoplayVideo src="/img/food-reel-no-audio.mp4" className="md:hidden" />
+      <AutoplayVideo
+        src="/img/vendor-reel-no-audio.mp4"
+        className="md:hidden"
+      />
       <PageSection id="vendors" className="bg-slate-200" grid={2}>
         <div>
           <h2 className={lilita.className}>Vendor Showcase</h2>
