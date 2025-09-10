@@ -11,6 +11,7 @@ import { lilita } from "@/components/font";
 import { EntertainmentSection } from "@/components/sections/entertainment";
 import { FoodSection } from "@/components/sections/food";
 import { VisitSection } from "@/components/sections/visit";
+import { VendorSection } from "@/components/sections/vendors";
 
 const DONATION_LINK = "https://square.link/u/Ugurk7sW";
 
@@ -18,8 +19,8 @@ const eventStructuredData = {
   "@context": "https://schema.org",
   "@type": "Event",
   name: "GorettiFest 2025",
-  startDate: "2025-10-04T11:00-05:00",
-  endDate: "2025-10-05T23:00-05:00",
+  startDate: "2025-10-04T10:00-05:00",
+  endDate: "2025-10-05T15:00-05:00",
   eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
   eventStatus: "https://schema.org/EventScheduled",
   location: {
@@ -217,6 +218,7 @@ export default function Home() {
       <FoodSection />
       <GamesSection />
       <EntertainmentSection />
+      <VendorSection />
       {/* TODO: Confirm sponsors first, then build out this section */}
       {/* <SponsorsSection /> */}
       <PageSection id="about-us" className="bg-red-700 text-white">

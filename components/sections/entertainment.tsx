@@ -56,24 +56,6 @@ export function EntertainmentSection() {
                 </td>
               </tr>
               <tr>
-                <th>Vendor Hall</th>
-                <td>
-                  <p className="mt-0">
-                    Local vendors offer their goods and services in our
-                    air-conditioned vendor hall.
-                  </p>
-                  <p>
-                    <a
-                      href="https://forms.gle/GH9kLzA345z1qi87A"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <Button>Register to be a vendor</Button>
-                    </a>
-                  </p>
-                </td>
-              </tr>
-              <tr>
                 <th>Rummage Sale</th>
                 <td>
                   Find your next treasure in our collection of items from the

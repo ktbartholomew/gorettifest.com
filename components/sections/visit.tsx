@@ -20,11 +20,11 @@ export function VisitSection() {
               <td>
                 <p className="text-lg mt-0">
                   Saturday, October 4<br />
-                  11am to 8pm
+                  10am to 8pm
                 </p>
                 <p className="text-lg">
                   Sunday, October 5<br />
-                  8am to 3pm
+                  10am to 3pm
                 </p>
                 {/* TODO: uncomment when the schedule is mostly ready */}
                 {/* <p>
