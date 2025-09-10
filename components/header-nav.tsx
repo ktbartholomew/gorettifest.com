@@ -91,6 +91,11 @@ export function HeaderNav({ logo }: { logo?: boolean }) {
           </a>
         </li>
         <li>
+          <a className={styles.headerNav__link} href="/#vendors">
+            Vendors
+          </a>
+        </li>
+        <li>
           <a className={styles.headerNav__link} href="/#about-us">
             About Us
           </a>
