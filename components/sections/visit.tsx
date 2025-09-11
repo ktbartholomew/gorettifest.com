@@ -9,8 +9,7 @@ export function VisitSection() {
       <div>
         <h2 className={lilita.className}>Plan Your Visit</h2>
         <p className="text-2xl my-4">
-          Join us at <strong>GorettiFest</strong>, a fall festival benefiting
-          Saint Maria Goretti Catholic School! GorettiFest is packed with food,
+          Join us at <strong>GorettiFest</strong>, a festival packed with food,
           games, music, and fun for the whole family!
         </p>
         <InfoTable>
