@@ -1,3 +1,4 @@
+import { Button } from "../button";
 import { lilita } from "../font";
 import { PageSection } from "../page-section";
 import Image from "next/image";
@@ -18,35 +19,21 @@ const sponsors: SponsorLogo[] = [
   },
   {
     size: "large",
-    name: "Rick and Ray's Auto Plaza",
-    imageUrl: "/img/sponsors/rick-and-rays-logo.png",
-    linkUrl: "https://rickandraysautoplaza.com/",
+    name: "Legacy Stone Family Wealth",
+    imageUrl: "/img/sponsors/legacy-stone-white.png",
+    linkUrl:
+      "https://www.ameripriseadvisors.com/team/legacy-stone-family-wealth/",
   },
   {
     size: "large",
-    name: "The Keever Group Amerprise Wealth Advisors",
-    imageUrl: "/img/sponsors/the-shelton-family.svg",
-  },
-  {
-    size: "large",
-    name: "The Keever Group Amerprise Wealth Advisors",
-    imageUrl: "/img/sponsors/the-keever-group-logo.png",
-    linkUrl: "https://www.ameripriseadvisors.com/team/the-keever-group/",
+    name: "Sink or Swim Pools",
+    imageUrl: "/img/sponsors/sinkorswimlogo.png",
+    linkUrl: "https://sinkorswimpool.com/",
   },
   {
     size: "small",
-    name: "Affalon Productions",
-    imageUrl: "/img/sponsors/Affalon%20Productions.png",
-  },
-  {
-    size: "small",
-    name: "Behan Music",
-    imageUrl: "/img/sponsors/Behan%20Music.png",
-  },
-  {
-    size: "small",
-    name: "Darby Day Staffing",
-    imageUrl: "/img/sponsors/darby-day-new-logo-1.jpg",
+    name: "Abbey Brown and the Sound",
+    imageUrl: "/img/sponsors/abbey-brown-and-the-sound.png",
   },
   {
     size: "small",
@@ -57,11 +44,6 @@ const sponsors: SponsorLogo[] = [
     size: "small",
     name: "Fischer's Meat Market",
     imageUrl: "/img/sponsors/Fischers%20Meat%20Market.png",
-  },
-  {
-    size: "small",
-    name: "Jump Around DFW",
-    imageUrl: "/img/sponsors/JumpAroundDFW.webp",
   },
   {
     size: "small",
@@ -80,11 +62,6 @@ const sponsors: SponsorLogo[] = [
   },
   {
     size: "small",
-    name: "Marquee Event Rentals",
-    imageUrl: "/img/sponsors/MarqueeEventRentals.svg",
-  },
-  {
-    size: "small",
     name: "Marquez Bakery",
     imageUrl: "/img/sponsors/marquez%20logo%202024.jpg",
   },
@@ -100,23 +77,8 @@ const sponsors: SponsorLogo[] = [
   },
   {
     size: "small",
-    name: "Nolan Catholic High School",
-    imageUrl: "/img/sponsors/NCHS Viking.png",
-  },
-  {
-    size: "small",
-    name: "Pet Supermarket",
-    imageUrl: "/img/sponsors/Pet%20Supermarket.svg",
-  },
-  {
-    size: "small",
     name: "Propane Doctor",
     imageUrl: "/img/sponsors/Propane%20Doctor.jpg",
-  },
-  {
-    size: "small",
-    name: "Sigercon",
-    imageUrl: "/img/sponsors/Sigercon_logoFINALcol.png",
   },
   {
     size: "small",
@@ -127,12 +89,6 @@ const sponsors: SponsorLogo[] = [
     size: "small",
     name: "Trinity River Ramblers",
     imageUrl: "/img/sponsors/Trinity%20River%20Ramblers.png",
-  },
-
-  {
-    size: "small",
-    name: "Watermill Express",
-    imageUrl: "/img/sponsors/Watermill-logo-white.png",
   },
 ];
 
@@ -162,7 +118,7 @@ export function SponsorsSection() {
               </div>
             ))}
         </div>
-        <div className="flex flex-wrap gap-8 justify-center">
+        <div className="flex flex-wrap gap-8 mb-32 justify-center">
           {sponsors
             .filter((s) => s.size === "small")
             .map((s) => (
@@ -191,6 +147,13 @@ export function SponsorsSection() {
                 )}
               </div>
             ))}
+        </div>
+        <div className="flex flex-wrap justify-center">
+          <a href="mailto:sponsor@gorettifest.com?subject=I%20want%20to%20sponsor!">
+            <button className="bg-white hover:bg-slate-200 text-slate-800 transition-colors rounded-md px-8 py-2">
+              I want to sponsor, too!
+            </button>
+          </a>
         </div>
       </div>
     </PageSection>

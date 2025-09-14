@@ -12,6 +12,7 @@ import { EntertainmentSection } from "@/components/sections/entertainment";
 import { FoodSection } from "@/components/sections/food";
 import { VisitSection } from "@/components/sections/visit";
 import { VendorSection } from "@/components/sections/vendors";
+import { SponsorsSection } from "@/components/sections/sponsors";
 
 const DONATION_LINK = "https://square.link/u/Ugurk7sW";
 
@@ -220,7 +221,7 @@ export default function Home() {
       <EntertainmentSection />
       <VendorSection />
       {/* TODO: Confirm sponsors first, then build out this section */}
-      {/* <SponsorsSection /> */}
+      <SponsorsSection />
       <PageSection id="about-us" className="bg-red-700 text-white">
         <div className="flex justify-evenly justify-items-center">
           <div className="lg:max-w-[50vw]">
