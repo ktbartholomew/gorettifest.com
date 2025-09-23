@@ -35,7 +35,7 @@ const menu: Menu = {
         {
           title: "French Fries",
           description:
-            "Perfectly fried russet potatoes, lightly salted. Enjoy them on their own or to complement your full meal.",
+            "Perfectly fried russet potatoes, lightly salted. Top them with chili for an extra-special treat!",
         },
         {
           title: "Turkey Leg",
@@ -45,12 +45,12 @@ const menu: Menu = {
         {
           title: "Texas Tornado",
           description:
-            "A giant russet potato spiral-cut from end-to-end, seasoned with our spicy, smokey blend and deep fried for an irresistible, shareable snack.",
+            "A giant russet potato spiral-cut from end-to-end, seasoned with our spicy, smokey spice blend and deep fried for an irresistible, shareable snack. Try it with our sweet powdered sugar topping for dessert!",
         },
         {
           title: "Roasted Corn",
           description:
-            "A whole cob of corn seasoned with our house-made spice rub and slow-roasted for a juicy, slightly-charred crunch.",
+            "A whole ear of corn seasoned with our house-made spice rub and slow-roasted for a juicy, slightly-charred crunch.",
         },
       ],
     },
@@ -58,24 +58,23 @@ const menu: Menu = {
       title: "German",
       items: [
         {
-          title: "Bratwurst",
-          description:
-            "Enjoy a juicy, savory, grilled bratwurst. Have it in a bun or on a skewer. Don't forget the Dusseldorf mustard!",
+          title: "German Feast",
+          description: "",
         },
         {
-          title: "Fried Potatoes",
+          title: "Bratwurst Sandwich",
           description:
-            "A bratwurst's best friend: thinly sliced and seasoned russet potatoes cooked to perfection.",
+            "Savory, grilled bratwurst straight from Muenster! Served on a warm hoagie roll and topped with a generous topping of sauerkraut.",
         },
         {
-          title: "Sauerkraut",
+          title: "“Bratsicle”",
           description:
-            "Finely sliced and fermented cabbage, the perfect tangy addition to a juicy bratwurst!",
+            "Our famous bratwurst, on a stick. Sometimes simpler is better.",
         },
         {
-          title: "Red Cabbage",
+          title: "Soft Pretzel",
           description:
-            "Perfectly sweet, shredded, seasoned, and braised red cabbage will transport you to Deutschland with every bite.",
+            "A classic salted soft pretzel, straight from our oven to you!",
         },
       ],
     },
@@ -83,14 +82,14 @@ const menu: Menu = {
       title: "Tex-Mex",
       items: [
         {
-          title: "Street Tacos",
+          title: "Fajita Taco Plate",
           description:
-            "Grilled chicken or beef seasoned with a house marinade, flame-grilled, diced, and served on a piping-hot flour tortilla. Top with all your favorites like pico de gallo, salsa, and sour cream.",
+            "Strips of flame-grilled fajita chicken or beef served on a piping-hot flour tortilla and your choice of fresh topping. Served with rice and beans.",
         },
         {
-          title: "Nachos",
+          title: "Cheese Nachos",
           description:
-            "Tortilla chips and melted cheese. A match made in heaven!",
+            "The stadium classic: tortilla chips and melted cheese. A match made in heaven!",
         },
         {
           title: "Davo Supremo Nachos",
@@ -108,9 +107,9 @@ const menu: Menu = {
       title: "Afro-Caribbean",
       items: [
         {
-          title: "Jerk Chicken",
+          title: "Jerk Chicken Kabob",
           description:
-            "The Jamaican classic! Morsels of perfectly-spiced chicken flame-grilled and served on a skewer.",
+            "The Jamaican classic! Morsels of perfectly-spiced chicken flame-grilled and served alongside grilled vegetables on a skewer.",
         },
         {
           title: "Beignets",
@@ -120,7 +119,7 @@ const menu: Menu = {
         {
           title: "Grio",
           description:
-            "Juicy pork shoulder bites braised until fork-tender, then quickly fried to add a thin, crispy shell.",
+            "Juicy pork shoulder bites braised until fork-tender, then quickly fried to add a thin, deliciously crispy shell.",
         },
         {
           title: "Fried Plantains",
@@ -129,6 +128,7 @@ const menu: Menu = {
         },
       ],
     },
+
     {
       title: "Asian",
       items: [
@@ -138,9 +138,8 @@ const menu: Menu = {
             "Bite into a takeout classic: everyone's favorite crispy shell surrounding a blend of savory spiced pork and crunchy cabbage.",
         },
         {
-          title: "Teriyaki Chicken Skewer",
-          description:
-            "Juicy chicken bites tossed in a classic sweet and tangy teriyake glaze.",
+          title: "Chicken Skewer",
+          description: "Juicy chicken bites cured in our top secret marinade.",
         },
         {
           title: "Vegetable Fried Rice",
@@ -148,9 +147,9 @@ const menu: Menu = {
             "Classic fried rice, tossed with stir-fried vegetables, eggs, and a splash of soy sauce.",
         },
         {
-          title: "Pandan Coconut Milk Waffles",
+          title: "Gyoza",
           description:
-            "An unforgettable sweet treat! Coconut milk waffles with an aromatic, slightly-sweet hint of pandan leaves.",
+            "Classic handmade dumplings with a savory filling. Perfect with a splash of sweet and spicy sauce!",
         },
       ],
     },
@@ -158,24 +157,49 @@ const menu: Menu = {
       title: "Texas BBQ",
       items: [
         {
-          title: "Brisket Plate",
+          title: "Goretti FEAST BBQ Plate",
           description:
-            "Texas-style smoked brisket sliced or chopped, with your choice of classic BBQ sides.",
+            "Texas-style smoked brisket, perfectly peppery smoked sausage, mac and cheese, and cole slaw.",
         },
         {
-          title: "Sausage Plate",
+          title: "Mini Feast BBQ Plate",
           description:
-            "Peppery, savory gourmet sausage, with your choice of classic BBQ sides.",
-        },
-        {
-          title: "Texas Twinkie",
-          description:
-            "A jalapeno pepper wrapped in bacon and roasted to create the perfect smoky snack with just a hint of heat.",
+            "One choice of brisket or sausage, mac and cheese, and cole slaw.",
         },
         {
           title: "Brisket Mac and Cheese",
           description:
-            "The only thing better than the creamy comfort of classic Mac and Cheese is to add a kick of smoked brisket!",
+            "The only thing better than the creamy comfort of classic mac and cheese is to add a kick of smoked brisket!",
+        },
+        {
+          title: "Texas Twinkie",
+          description:
+            "A jumbo roasted jalapeño pepper stuffed with brisket and wrapped in bacon to create the perfect smoky snack with just a hint of heat.",
+        },
+        {
+          title: "Baked Beans",
+          description:
+            "(a la carte only) A BBQ classic, our smoked beans are the perfect companion to any of our main dishes.",
+        },
+      ],
+    },
+    {
+      title: "Corn Dogs and Lemonade",
+      items: [
+        {
+          title: "Corn Dogs",
+          description: (
+            <>
+              Nothing says &ldquo;Festival&rdquo; like a piping hot corn dog.
+              Come try our homemade, freshly battered and fried classic with
+              mustard or ketchup!
+            </>
+          ),
+        },
+        {
+          title: "Fresh-Squeezed Lemonade",
+          description:
+            "Cool off with a sip of perfectly tart, freshly-made lemonade.",
         },
       ],
     },
@@ -183,14 +207,14 @@ const menu: Menu = {
       title: "Italian",
       items: [
         {
-          title: "Pizza",
-          description:
-            "Enjoy a classic slice topped with your choice of cheese, pepperoni, or sausage.",
-        },
-        {
           title: "Meatball Sub",
           description:
             "It's everybody's favorite sandwich for a reason! Homemade pork meatballs bathed in marinara sauce, all atop a bun of white Italian bread.",
+        },
+        {
+          title: "Pizza",
+          description:
+            "Enjoy a classic slice topped with your choice of cheese or pepperoni.",
         },
         {
           title: "Garlic Bread",
