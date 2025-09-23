@@ -122,6 +122,11 @@ const menu: Menu = {
             "Juicy pork shoulder bites braised until fork-tender, then quickly fried to add a thin, deliciously crispy shell.",
         },
         {
+          title: "Jollof Rice",
+          description:
+            "Hearty, spiced fried rice with diced vegetables and bits of jerk chicken.",
+        },
+        {
           title: "Fried Plantains",
           description:
             "Get your daily dose of fruits with these mature plaintain slices, slowly fried until they achieve a toothsome, caramelized glaze.",
