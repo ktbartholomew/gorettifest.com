@@ -31,6 +31,18 @@ const sponsors: SponsorLogo[] = [
     linkUrl: "https://sinkorswimpool.com/",
   },
   {
+    size: "large",
+    name: "Rick and Ray's Auto Plaza",
+    imageUrl: "/img/sponsors/rick-and-rays-logo.png",
+    linkUrl: "https://rickandraysautoplaza.com/",
+  },
+  {
+    size: "large",
+    name: "Image Communication Technology",
+    imageUrl: "/img/sponsors/ict-logo.png",
+    linkUrl: "https://www.ictcorp.net/",
+  },
+  {
     size: "small",
     name: "Abbey Brown and the Sound",
     imageUrl: "/img/sponsors/abbey-brown-and-the-sound.png",

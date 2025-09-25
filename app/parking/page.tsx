@@ -70,7 +70,7 @@ export default function MenuPage() {
                 >
                   <address>
                     UTA Lot 26 <br />
-                    9999 W Mitchell St <br />
+                    1301 W Mitchell St <br />
                     Arlington, TX 76013
                   </address>
                 </a>

@@ -143,15 +143,7 @@ const schedule: ScheduleItem[] = [
     category: ScheduleItemCategory.SECONDARY,
     location: "Main Stage",
   },
-  {
-    startTime: new Date("2025-10-04T10:00:00-0500"),
-    endTime: new Date("2025-10-04T18:00:00-0500"),
-    title: "Hospitality Tent",
-    description:
-      "We can neither confirm nor deny that pilsners and ales will be available here.",
-    location: "North Fairgrounds",
-    category: ScheduleItemCategory.TERTIARY,
-  },
+
   {
     startTime: new Date("2025-10-05T10:00:00-0500"),
     endTime: new Date("2025-10-05T11:30:00-0500"),
@@ -174,6 +166,8 @@ const schedule: ScheduleItem[] = [
     startTime: new Date("2025-10-05T12:30:00-0500"),
     endTime: new Date("2025-10-05T13:00:00-0500"),
     title: "Miss Persis Dance",
+    description:
+      "A cherished Arlington institution!  Enjoy watching these graceful dancers share their talents on stage.",
     location: "Main Stage",
     category: ScheduleItemCategory.SECONDARY,
   },
@@ -205,15 +199,6 @@ const schedule: ScheduleItem[] = [
     endTime: new Date("2025-10-04T18:00:00-0500"),
     title: "Vendor Show",
     location: "Holy Family Life Center",
-    category: ScheduleItemCategory.TERTIARY,
-  },
-  {
-    startTime: new Date("2025-10-05T10:00:00-0500"),
-    endTime: new Date("2025-10-05T15:00:00-0500"),
-    title: "Hospitality Tent",
-    description:
-      "We can neither confirm nor deny that pilsners and ales will be available here.",
-    location: "North Fairgrounds",
     category: ScheduleItemCategory.TERTIARY,
   },
   {
