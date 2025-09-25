@@ -20,22 +20,78 @@
 }
 
 .calendarItem {
-  @apply text-xs;
+  @apply text-sm;
   @apply text-white;
-  @apply bg-red-700;
   @apply border-t;
-  @apply border-t-red-600;
   @apply border-b;
-  @apply border-b-red-800;
-  @apply py-1;
   @apply px-4;
   @apply rounded-md;
+  @apply mb-2;
   @apply overflow-hidden;
   @apply text-ellipsis;
+  @apply bg-red-700;
+  @apply border-t-red-600;
+  @apply border-b-red-800;
+}
+
+.primary {
+  @apply bg-red-700;
+  @apply border-t-red-600;
+  @apply border-b-red-800;
+}
+
+.secondary {
+  @apply bg-slate-700;
+  @apply border-t-slate-600;
+  @apply border-b-slate-800;
+}
+
+.other {
+  @apply bg-slate-500;
+  @apply border-t-zinc-400;
+  @apply border-b-zinc-600;
+}
+
+.tertiary {
+  @apply bg-emerald-600;
+  @apply border-t-emerald-500;
+  @apply border-b-emerald-700;
 }
 
 .alternate {
   @apply bg-slate-800;
   @apply border-t-slate-700;
   @apply border-b-slate-900;
+}
+
+.primary .timeBlock {
+  @apply border-r-red-600;
+}
+
+.primary .descriptionBlock {
+  @apply border-l-red-800;
+}
+
+.secondary .timeBlock {
+  @apply border-r-slate-600;
+}
+
+.secondary .descriptionBlock {
+  @apply border-l-slate-800;
+}
+
+.tertiary .timeBlock {
+  @apply border-r-emerald-500;
+}
+
+.tertiary .descriptionBlock {
+  @apply border-l-emerald-700;
+}
+
+.other .timeBlock {
+  @apply border-r-zinc-400;
+}
+
+.other .descriptionBlock {
+  @apply border-l-zinc-600;
 }

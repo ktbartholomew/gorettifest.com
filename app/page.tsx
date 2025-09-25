@@ -208,10 +208,17 @@ export default function Home() {
             loading="eager"
             className="block relative h-[75%] object-contain p-4 md:p-0"
           />
-          {/* Link to the map and the schedule when close to the event */}
-          {/* <a href="/img/GorettiFest-Map.png">
-            <Button>View the GorettiFest Map</Button>
-          </a> */}
+          <div className="flex flex-col gap-4">
+            <a href="/parking">
+              <Button>Find Parking</Button>
+            </a>
+            <a href="/img/GorettiFest-Map.png">
+              <Button>GorettiFest Map</Button>
+            </a>
+            <a href="/schedule">
+              <Button>Schedule</Button>
+            </a>
+          </div>
         </div>
       </section>
       <HeaderNav />

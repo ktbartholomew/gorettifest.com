@@ -124,7 +124,7 @@ const menu: Menu = {
         {
           title: "Jollof Rice",
           description:
-            "Hearty, spiced fried rice with diced vegetables and bits of jerk chicken.",
+            "Hearty, spiced basmati rice with diced vegetables and bits of jerk chicken.",
         },
         {
           title: "Fried Plantains",
