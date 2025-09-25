@@ -80,7 +80,7 @@ const schedule: ScheduleItem[] = [
     startTime: new Date("2025-10-04T14:30:00-0500"),
     endTime: new Date("2025-10-04T15:30:00-0500"),
     title: "The Blue Decade",
-    description: "A father/daughter band perform modern hits!",
+    description: "Our homegrown SMG community band perform modern hits!",
     location: "Main Stage",
     category: ScheduleItemCategory.PRIMARY,
   },
