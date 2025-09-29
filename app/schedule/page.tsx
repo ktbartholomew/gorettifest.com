@@ -1,6 +1,5 @@
 "use client";
 
-import { HeaderNav } from "@/components/header-nav";
 import classes from "./calendar.module.css";
 import Image from "next/image";
 import { lilita } from "@/components/font";
@@ -65,6 +64,15 @@ const schedule: ScheduleItem[] = [
     category: ScheduleItemCategory.SECONDARY,
   },
   {
+    startTime: new Date("2025-10-04T14:00:00-0500"),
+    endTime: new Date("2025-10-04T15:00:00-0500"),
+    title: "The Nobodies",
+    description:
+      "Hear live music from a band of SMG’s own parishioners and families!",
+    location: "Main Stage",
+    category: ScheduleItemCategory.PRIMARY,
+  },
+  {
     startTime: new Date("2025-10-04T13:00:00-0500"),
     endTime: new Date("2025-10-04T17:00:00-0500"),
     title: "Bingo",
@@ -79,16 +87,16 @@ const schedule: ScheduleItem[] = [
     category: ScheduleItemCategory.TERTIARY,
   },
   {
-    startTime: new Date("2025-10-04T14:30:00-0500"),
-    endTime: new Date("2025-10-04T15:30:00-0500"),
+    startTime: new Date("2025-10-04T15:30:00-0500"),
+    endTime: new Date("2025-10-04T16:30:00-0500"),
     title: "The Blue Decade",
     description: "Our homegrown SMG community band perform modern hits!",
     location: "Main Stage",
     category: ScheduleItemCategory.PRIMARY,
   },
   {
-    startTime: new Date("2025-10-04T16:00:00-0500"),
-    endTime: new Date("2025-10-04T16:30:00-0500"),
+    startTime: new Date("2025-10-04T16:30:00-0500"),
+    endTime: new Date("2025-10-04T17:00:00-0500"),
     title: "Premier Martial Arts",
     location: "Main Stage",
     category: ScheduleItemCategory.SECONDARY,
@@ -147,6 +155,13 @@ const schedule: ScheduleItem[] = [
   },
 
   {
+    startTime: new Date("2025-10-04T10:00:00-0500"),
+    endTime: new Date("2025-10-04T16:00:00-0500"),
+    title: "Dunk Tank",
+    location: "Field",
+    category: ScheduleItemCategory.SECONDARY,
+  },
+  {
     startTime: new Date("2025-10-05T10:00:00-0500"),
     endTime: new Date("2025-10-05T11:30:00-0500"),
     title: "SMG School Talent Show",
@@ -204,6 +219,30 @@ const schedule: ScheduleItem[] = [
     category: ScheduleItemCategory.TERTIARY,
   },
   {
+    startTime: new Date("2025-10-04T10:00:00-0500"),
+    endTime: new Date("2025-10-04T15:00:00-0500"),
+    title: "Cake Spin",
+    description: "Spin the wheel, win baked goods!",
+    location: "Cafetorium",
+    category: ScheduleItemCategory.OTHER,
+  },
+  {
+    startTime: new Date("2025-10-04T10:00:00-0500"),
+    endTime: new Date("2025-10-04T15:00:00-0500"),
+    title: "Rummage Sale",
+    description:
+      "Find your next hidden gem in this expansive rummage sale curated by the SMG Women’s Guild.",
+    location: "Cafetorium",
+    category: ScheduleItemCategory.OTHER,
+  },
+  {
+    startTime: new Date("2025-10-04T10:00:00-0500"),
+    endTime: new Date("2025-10-04T15:00:00-0500"),
+    title: "Ministry Tables",
+    location: "Cafetorium",
+    category: ScheduleItemCategory.OTHER,
+  },
+  {
     startTime: new Date("2025-10-05T10:00:00-0500"),
     endTime: new Date("2025-10-05T15:00:00-0500"),
     title: "Cake Spin",
@@ -215,6 +254,8 @@ const schedule: ScheduleItem[] = [
     startTime: new Date("2025-10-05T10:00:00-0500"),
     endTime: new Date("2025-10-05T15:00:00-0500"),
     title: "Rummage Sale",
+    description:
+      "Find your next hidden gem in this expansive rummage sale curated by the SMG Women’s Guild.",
     location: "Cafetorium",
     category: ScheduleItemCategory.OTHER,
   },
@@ -235,6 +276,24 @@ const schedule: ScheduleItem[] = [
   {
     startTime: new Date("2025-10-05T10:00:00-0500"),
     endTime: new Date("2025-10-05T15:00:00-0500"),
+    title: "Axe Throwing",
+    location: "Field",
+    description:
+      "Hone your aim and sharpen your blades—challenge your friends to an axe-throwing contest!",
+    category: ScheduleItemCategory.SECONDARY,
+  },
+  {
+    startTime: new Date("2025-10-05T11:45:00-0500"),
+    endTime: new Date("2025-10-05T12:15:00-0500"),
+    title: "Alumni Group Photo",
+    location: "In the church",
+    description:
+      "Any SMG alumni, young or old, are welcome to join us for a group photo in the church. Be part of SMG history!",
+    category: ScheduleItemCategory.TERTIARY,
+  },
+  {
+    startTime: new Date("2025-10-05T10:00:00-0500"),
+    endTime: new Date("2025-10-05T15:00:00-0500"),
     title: "Caricatures",
     location: "Holy Family Life Center",
     category: ScheduleItemCategory.TERTIARY,
@@ -244,7 +303,7 @@ const schedule: ScheduleItem[] = [
     endTime: new Date("2025-10-05T15:00:00-0500"),
     title: "Dunk Tank",
     location: "Field",
-    category: ScheduleItemCategory.TERTIARY,
+    category: ScheduleItemCategory.SECONDARY,
   },
 ];
 
@@ -262,13 +321,25 @@ function localTime(date: Date): string {
 }
 
 function sortItems(a: ScheduleItem, b: ScheduleItem) {
+  const priorityMap = {
+    primary: 0,
+    secondary: 1,
+    tertiary: 2,
+    other: 3,
+  };
+
   // Case: one interval is entirely before the other
   if (a.endTime <= b.startTime) return -1;
   if (b.endTime <= a.startTime) return 1;
 
+  // Then, prioritize by category
+  if (a.category !== b.category) {
+    return (priorityMap[a.category] ?? 3) - (priorityMap[b.category] ?? 3);
+  }
+
   // Otherwise, prioritize earlier endTime
-  if (a.endTime < b.endTime) return -1;
-  if (a.endTime > b.endTime) return 1;
+  if (a.startTime < b.startTime) return -1;
+  if (a.startTime > b.startTime) return 1;
 
   // If same endTime, break ties with startTime
   return a.startTime.getTime() - b.startTime.getTime();
