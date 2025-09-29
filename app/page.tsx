@@ -209,15 +209,15 @@ export default function Home() {
             className="block relative h-[75%] object-contain p-4 md:p-0"
           />
           <div className="flex flex-col gap-4">
-            <a href="/parking">
+            <Link href="/parking">
               <Button>Find Parking</Button>
-            </a>
-            <a href="/img/GorettiFest-Map.png">
+            </Link>
+            <Link href="/img/GorettiFest-Map.png">
               <Button>GorettiFest Map</Button>
-            </a>
-            <a href="/schedule">
+            </Link>
+            <Link href="/schedule">
               <Button>Schedule</Button>
-            </a>
+            </Link>
           </div>
         </div>
       </section>

@@ -7,6 +7,8 @@ import { lilita } from "@/components/font";
 import headerImage from "@/public/img/IMG_2212.webp";
 
 import { useEffect, useState } from "react";
+import { Button } from "@/components/button";
+import Link from "next/link";
 
 enum ScheduleItemCategory {
   PRIMARY = "primary",
@@ -317,7 +319,32 @@ export default function SchedulePage() {
 
   return (
     <>
-      <HeaderNav logo />
+      <div className="z-10 relative flex flex-row mb-4 gap-4 px-4 md:px-0 text-center items-center justify-center">
+        <div>
+          <Link href="/">
+            <Image
+              alt="GorettiFest October 4-5, 2025"
+              src="/img/gorettifest-logo-white-red-outline-date.svg"
+              width={180}
+              height={180}
+              priority
+              loading="eager"
+              className="block relative h-[75%] object-contain p-4 md:p-0"
+            />
+          </Link>
+        </div>
+        <div className="flex flex-col md:flex-row gap-4">
+          <Link href="/parking">
+            <Button>Find Parking</Button>
+          </Link>
+          <Link href="/img/GorettiFest-Map.png">
+            <Button>GorettiFest Map</Button>
+          </Link>
+          <Link href="/schedule">
+            <Button>Schedule</Button>
+          </Link>
+        </div>
+      </div>
       <div className="relative max-h-[90vh] md:h-[90vh]">
         <div className="hidden md:block absolute h-full w-full overflow-hidden">
           <Image
