@@ -213,14 +213,14 @@ const schedule: ScheduleItem[] = [
   },
   {
     startTime: new Date("2025-10-04T10:00:00-0500"),
-    endTime: new Date("2025-10-04T18:00:00-0500"),
+    endTime: new Date("2025-10-04T20:00:00-0500"),
     title: "Vendor Show",
     location: "Holy Family Life Center",
     category: ScheduleItemCategory.TERTIARY,
   },
   {
     startTime: new Date("2025-10-04T10:00:00-0500"),
-    endTime: new Date("2025-10-04T15:00:00-0500"),
+    endTime: new Date("2025-10-04T20:00:00-0500"),
     title: "Cake Spin",
     description: "Spin the wheel, win baked goods!",
     location: "Cafetorium",
@@ -228,7 +228,7 @@ const schedule: ScheduleItem[] = [
   },
   {
     startTime: new Date("2025-10-04T10:00:00-0500"),
-    endTime: new Date("2025-10-04T18:00:00-0500"),
+    endTime: new Date("2025-10-04T20:00:00-0500"),
     title: "Rummage Sale",
     description:
       "Find your next hidden gem in this expansive rummage sale curated by the SMG Women’s Guild.",
@@ -237,14 +237,14 @@ const schedule: ScheduleItem[] = [
   },
   {
     startTime: new Date("2025-10-04T10:00:00-0500"),
-    endTime: new Date("2025-10-04T18:00:00-0500"),
+    endTime: new Date("2025-10-04T20:00:00-0500"),
     title: "Ministry Tables",
     location: "Cafetorium",
     category: ScheduleItemCategory.OTHER,
   },
   {
     startTime: new Date("2025-10-05T10:00:00-0500"),
-    endTime: new Date("2025-10-05T18:00:00-0500"),
+    endTime: new Date("2025-10-05T20:00:00-0500"),
     title: "Cake Spin",
     description: "Spin the wheel, win baked goods!",
     location: "Cafetorium",
@@ -252,7 +252,7 @@ const schedule: ScheduleItem[] = [
   },
   {
     startTime: new Date("2025-10-05T10:00:00-0500"),
-    endTime: new Date("2025-10-05T18:00:00-0500"),
+    endTime: new Date("2025-10-05T20:00:00-0500"),
     title: "Rummage Sale",
     description:
       "Find your next hidden gem in this expansive rummage sale curated by the SMG Women’s Guild.",
@@ -261,7 +261,7 @@ const schedule: ScheduleItem[] = [
   },
   {
     startTime: new Date("2025-10-05T10:00:00-0500"),
-    endTime: new Date("2025-10-05T18:00:00-0500"),
+    endTime: new Date("2025-10-05T20:00:00-0500"),
     title: "Ministry Tables",
     location: "Cafetorium",
     category: ScheduleItemCategory.OTHER,
