@@ -43,6 +43,12 @@ const sponsors: SponsorLogo[] = [
     linkUrl: "https://www.ictcorp.net/",
   },
   {
+    size: "large",
+    name: "Wade Funeral Home",
+    imageUrl: "/img/sponsors/wade-funeral-home.webp",
+    linkUrl: "https://www.wadefamilyfuneralhome.com/",
+  },
+  {
     size: "small",
     name: "Abbey Brown and the Sound",
     imageUrl: "/img/sponsors/abbey-brown-and-the-sound.png",
