@@ -208,7 +208,7 @@ export default function Home() {
             loading="eager"
             className="block relative h-[75%] object-contain p-4 md:p-0"
           />
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col md:mt-4 md:flex-row md:columns-2 gap-4">
             <Link href="/parking">
               <Button>Find Parking</Button>
             </Link>
@@ -217,6 +217,12 @@ export default function Home() {
             </Link>
             <Link href="/schedule">
               <Button>Schedule</Button>
+            </Link>
+            <Link
+              href="https://www.instagram.com/stories/smgcatholicschool/"
+              target="_blank"
+            >
+              <Button>Follow the Fun on Instagram</Button>
             </Link>
           </div>
         </div>
