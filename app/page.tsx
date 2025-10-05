@@ -219,7 +219,7 @@ export default function Home() {
               <Button>Schedule</Button>
             </Link>
             <Link
-              href="https://www.instagram.com/stories/smgcatholicschool/"
+              href="https://www.instagram.com/smgcatholicschool/"
               target="_blank"
             >
               <Button>Follow the Fun on Instagram</Button>
