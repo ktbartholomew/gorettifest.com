@@ -435,7 +435,57 @@ function shuffle<T>(arr: T[]) {
   return out;
 }
 
-export function Carousel({ randomize = true }: { randomize?: boolean }) {
+// xmur3 string hash -> uint32
+function xmur3(str: string) {
+  let h = 1779033703 ^ str.length;
+  for (let i = 0; i < str.length; i++) {
+    h = Math.imul(h ^ str.charCodeAt(i), 3432918353);
+    h = (h << 13) | (h >>> 19);
+  }
+  return function () {
+    h = Math.imul(h ^ (h >>> 16), 2246822507);
+    h = Math.imul(h ^ (h >>> 13), 3266489909);
+    return (h ^= h >>> 16) >>> 0;
+  };
+}
+
+// mulberry32 seeded RNG
+function mulberry32(a: number) {
+  return function () {
+    a |= 0;
+    a = (a + 0x6d2b79f5) | 0;
+    let t = Math.imul(a ^ (a >>> 15), 1 | a);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+// shuffle with deterministic seeded RNG
+function shuffleWithSeed<T>(arr: T[], seed: string | number) {
+  // Convert seed to uint32
+  let seedNumber: number;
+  if (typeof seed === "number") {
+    seedNumber = seed >>> 0;
+  } else {
+    const h = xmur3(seed)();
+    seedNumber = h >>> 0;
+  }
+  const rng = mulberry32(seedNumber);
+  const out = arr.slice();
+  for (let i = out.length - 1; i > 0; i--) {
+    const j = Math.floor(rng() * (i + 1));
+    [out[i], out[j]] = [out[j], out[i]];
+  }
+  return out;
+}
+
+export function Carousel({
+  randomize = true,
+  seed,
+}: {
+  randomize?: boolean;
+  seed?: number | string;
+}) {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
     Autoplay({ delay: 4000, stopOnInteraction: false }),
     Fade({}),
@@ -450,10 +500,11 @@ export function Carousel({ randomize = true }: { randomize?: boolean }) {
   }, [emblaApi]);
 
   // Shuffle once per mount (useMemo with empty deps) so order is randomized but stable across renders
-  const shuffledImages = useMemo(
-    () => (randomize ? shuffle(images) : images.slice()),
-    [randomize]
-  );
+  const shuffledImages = useMemo(() => {
+    if (!randomize) return images.slice();
+    if (seed !== undefined) return shuffleWithSeed(images, seed);
+    return shuffle(images);
+  }, [randomize, seed]);
 
   return (
     <div className="embla" ref={emblaRef}>

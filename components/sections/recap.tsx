@@ -2,6 +2,9 @@ import { Carousel } from "../carousel";
 import { lilita } from "../font";
 
 export function RecapSection() {
+  // Pick a single, static "random" number. The slideshow will always be
+  // shuffled but in one predictable order.
+  const seed = Math.floor(0xf0e2b65c);
   return (
     <div id="recap" className="bg-slate-800 text-white py-0 md:py-16">
       <div className="flex items-center flex-col gap-8">
@@ -25,7 +28,7 @@ export function RecapSection() {
           ></iframe>
         </div>
         <div>
-          <Carousel />
+          <Carousel seed={seed} />
         </div>
       </div>
     </div>
