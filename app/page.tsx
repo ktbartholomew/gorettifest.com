@@ -13,6 +13,7 @@ import { FoodSection } from "@/components/sections/food";
 import { VisitSection } from "@/components/sections/visit";
 import { VendorSection } from "@/components/sections/vendors";
 import { SponsorsSection } from "@/components/sections/sponsors";
+import { RecapSection } from "@/components/sections/recap";
 
 const DONATION_LINK = "https://square.link/u/Ugurk7sW";
 
@@ -188,7 +189,7 @@ export default function Home() {
           <Image
             className="h-full w-full object-cover"
             src={headerImage.src}
-            alt="two students selling paletas from a rolling cart at GorettiFest festival"
+            alt="A medical helicopter on the field at GorettiFest with guests and families gathering around to look"
             priority
             width={1800}
             height={1800}
@@ -208,7 +209,8 @@ export default function Home() {
             loading="eager"
             className="block relative h-[75%] object-contain p-4 md:p-0"
           />
-          <div className="flex flex-col md:mt-4 md:flex-row md:columns-2 gap-4">
+          {/* Critical day-of buttons */}
+          {/* <div className="flex flex-col md:mt-4 md:flex-row md:columns-2 gap-4">
             <Link href="/parking">
               <Button>Find Parking</Button>
             </Link>
@@ -224,15 +226,16 @@ export default function Home() {
             >
               <Button>Follow the Fun on Instagram</Button>
             </Link>
-          </div>
+          </div> */}
         </div>
       </section>
-      <HeaderNav />
+      {/*   <HeaderNav />
       <VisitSection />
       <FoodSection />
       <GamesSection />
       <EntertainmentSection />
-      <VendorSection />
+      <VendorSection /> */}
+      <RecapSection />
       {/* TODO: Confirm sponsors first, then build out this section */}
       <SponsorsSection />
       <PageSection id="about-us" className="bg-red-700 text-white">

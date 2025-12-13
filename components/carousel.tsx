@@ -4,328 +4,438 @@ import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import Fade from "embla-carousel-fade";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 
 const images: { src: string; alt: string }[] = [
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_1918.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG02459.jpg",
+    alt: "Man wearing a wide-brim hat and red vest talking on a phone while standing in front of outdoor event booths and tents.",
+  },
+  {
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG02509.jpg",
+    alt: "Children playing a colorful outdoor carnival game at a community festival with tents and activities in the background.",
+  },
+  {
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG02515.jpg",
+    alt: "",
+  },
+  {
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG02539.jpg",
+    alt: "",
+  },
+  {
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG02548.jpg",
+    alt: "",
+  },
+  {
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG02551.jpg",
+    alt: "",
+  },
+  {
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG02556.jpg",
+    alt: "",
+  },
+  {
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG02572.jpg",
+    alt: "",
+  },
+  {
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG02589.jpg",
+    alt: "",
+  },
+  {
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG02601.jpg",
+    alt: "",
+  },
+  {
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG02625.jpg",
+    alt: "",
+  },
+  {
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG02632.jpg",
+    alt: "",
+  },
+  {
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG02647.jpg",
+    alt: "",
+  },
+  {
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG02688.jpg",
+    alt: "",
+  },
+  {
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG02714.jpg",
+    alt: "",
+  },
+  {
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG02718.jpg",
+    alt: "",
+  },
+  {
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG02754.jpg",
+    alt: "",
+  },
+  {
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG02771.jpg",
+    alt: "",
+  },
+  {
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG02785.jpg",
+    alt: "",
+  },
+  {
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG02788.jpg",
+    alt: "",
+  },
+  {
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG02837.jpg",
+    alt: "",
+  },
+  {
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG02851.jpg",
+    alt: "",
+  },
+  {
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG02863.jpg",
+    alt: "",
+  },
+  {
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG02882.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_1928.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG02929.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_1930.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG02933.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_1935.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG02953.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_1938.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG02959.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_1955.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG02983.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_1975.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG02995.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_1978.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG02997.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_1982.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03009.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_1988.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03016.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_1993.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03023.jpg",
     alt: "",
+  },
+  {
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03041.jpg",
+    alt: "Firefighter showing children the tools and equipment stored in a red fire truck at a community event.",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_1996.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03048.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2000.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03058.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2007.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03065.jpg",
     alt: "",
+  },
+  {
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03078.jpg",
+    alt: "Young musician singing into a microphone while playing a blue acoustic-electric guitar at an outdoor event.",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2011.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03084.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2012.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03086.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2019.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03088.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2031.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03105.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2062.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03118.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2106.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03129.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2116.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03166.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2145.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03170.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2149.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03174.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2152.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03191.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2154.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03205.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2161.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03209.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2165.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03219.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2166.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03230.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2178.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03237.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2179.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03249.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2188.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03260.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2194.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03279.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2199.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03295.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2206.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03333.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2212.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03342.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2224.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03347.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2228.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03356.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2248.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03361.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2256.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03370.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2258.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03381.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2264.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03401.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2278.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03423.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2292.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03470.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2293.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03531.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2298.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03543.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2316.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03564.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2319.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03601.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2331.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03610.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2333.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03714.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2335.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03720.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2341.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03731.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2343.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03745.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2346.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03753.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2348.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03950.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2352.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03960.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2356.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03984.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2363.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03986.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2368.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03990.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2372.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03995.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2376.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG03997.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2387.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG04002.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2390.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG04004.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2392.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG04006.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2396.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG04024.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2400.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG04029.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2403.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG04035.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2408.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG04045.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2413.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG04082.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2429.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG04125.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2450.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG04157.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2457.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG04181.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2463.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG04209.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2493.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG04225.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2602.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG04322.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2651.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG04335.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2662.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG04389.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2672.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG04410.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2682.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG04434.jpg",
     alt: "",
   },
   {
-    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/IMG_2716.jpg",
+    src: "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2025/event/stills/IMG04567.jpg",
     alt: "",
   },
 ];
 
-export function Carousel() {
+// Fisher–Yates shuffle — returns a new shuffled array without mutating the original
+function shuffle<T>(arr: T[]) {
+  const out = arr.slice();
+  for (let i = out.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [out[i], out[j]] = [out[j], out[i]];
+  }
+  return out;
+}
+
+export function Carousel({ randomize = true }: { randomize?: boolean }) {
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
     Autoplay({ delay: 4000, stopOnInteraction: false }),
     Fade({}),
@@ -339,11 +449,17 @@ export function Carousel() {
     });
   }, [emblaApi]);
 
+  // Shuffle once per mount (useMemo with empty deps) so order is randomized but stable across renders
+  const shuffledImages = useMemo(
+    () => (randomize ? shuffle(images) : images.slice()),
+    [randomize]
+  );
+
   return (
     <div className="embla" ref={emblaRef}>
       <div className="embla__container w-[320px] h-[214px] md:w-[700px] md:h-[469px] lg:h-[667px] lg:w-[1000px] xl:w-[1200px] xl:h-[804px] mx-auto">
-        {images.map((i, idx) => (
-          <div className="embla__slide" key={idx}>
+        {shuffledImages.map((i, idx) => (
+          <div className="embla__slide" key={i.src}>
             <Image
               src={i.src}
               alt={i.alt}
