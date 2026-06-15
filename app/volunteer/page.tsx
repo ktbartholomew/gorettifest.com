@@ -6,7 +6,7 @@ import { Button } from "@/components/button";
 import { lilita } from "@/components/font";
 
 const VOLUNTEER_SIGNUP_LINK =
-  "https://stmariagoretti.volunteerlocal.com/volunteer/?id=103729";
+  "https://stmariagoretti.volunteerlocal.com/volunteer/?id=114893";
 const DONATION_LINK = "https://square.link/u/Ugurk7sW";
 
 export const metadata: Metadata = {
