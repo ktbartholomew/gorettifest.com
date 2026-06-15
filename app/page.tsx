@@ -1,9 +1,7 @@
 import Image from "next/image";
 import styles from "@/components/sections/sections.module.css";
-import headerImage from "@/public/img/IMG_2212.webp";
 import { HeaderNav } from "@/components/header-nav";
 import { PageSection } from "@/components/page-section";
-import { InfoTable } from "@/components/info-table";
 import { Button } from "@/components/button";
 import Link from "next/link";
 import { GamesSection } from "@/components/sections/games";
@@ -15,14 +13,16 @@ import { VendorSection } from "@/components/sections/vendors";
 import { SponsorsSection } from "@/components/sections/sponsors";
 import { RecapSection } from "@/components/sections/recap";
 
-const DONATION_LINK = "https://square.link/u/Ugurk7sW";
+const SHOW_RECAP = false;
+const HERO_VIDEO_URL =
+  "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/2026/GF_VIBES.mov";
 
 const eventStructuredData = {
   "@context": "https://schema.org",
   "@type": "Event",
-  name: "GorettiFest 2025",
-  startDate: "2025-10-04T10:00-05:00",
-  endDate: "2025-10-05T15:00-05:00",
+  name: "GorettiFest 2026",
+  startDate: "2026-10-03T10:00-05:00",
+  endDate: "2026-10-04T15:00-05:00",
   eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
   eventStatus: "https://schema.org/EventScheduled",
   location: {
@@ -47,195 +47,45 @@ const eventStructuredData = {
   },
 };
 
-type SponsorLogo = {
-  size: "small" | "large";
-  imageUrl: string;
-  linkUrl?: string;
-  name: string;
-};
-
-const sponsors: SponsorLogo[] = [
-  {
-    size: "large",
-    name: "Barnes Video Group",
-    imageUrl: "/img/sponsors/barnes-video-group-logo.png",
-    linkUrl: "https://www.barnesvideogroup.com/",
-  },
-  {
-    size: "large",
-    name: "Rick and Ray's Auto Plaza",
-    imageUrl: "/img/sponsors/rick-and-rays-logo.png",
-    linkUrl: "https://rickandraysautoplaza.com/",
-  },
-  {
-    size: "large",
-    name: "The Keever Group Amerprise Wealth Advisors",
-    imageUrl: "/img/sponsors/the-shelton-family.svg",
-  },
-  {
-    size: "large",
-    name: "The Keever Group Amerprise Wealth Advisors",
-    imageUrl: "/img/sponsors/the-keever-group-logo.png",
-    linkUrl: "https://www.ameripriseadvisors.com/team/the-keever-group/",
-  },
-  {
-    size: "small",
-    name: "Affalon Productions",
-    imageUrl: "/img/sponsors/Affalon%20Productions.png",
-  },
-  {
-    size: "small",
-    name: "Behan Music",
-    imageUrl: "/img/sponsors/Behan%20Music.png",
-  },
-  {
-    size: "small",
-    name: "Darby Day Staffing",
-    imageUrl: "/img/sponsors/darby-day-new-logo-1.jpg",
-  },
-  {
-    size: "small",
-    name: "Drengr Axe Throwing",
-    imageUrl: "/img/sponsors/Drengr%20Axe%20Throwing.png",
-  },
-  {
-    size: "small",
-    name: "Fischer's Meat Market",
-    imageUrl: "/img/sponsors/Fischers%20Meat%20Market.png",
-  },
-  {
-    size: "small",
-    name: "Jump Around DFW",
-    imageUrl: "/img/sponsors/JumpAroundDFW.webp",
-  },
-  {
-    size: "small",
-    name: "Knights of Columbus",
-    imageUrl: "/img/sponsors/KOC.png",
-  },
-  {
-    size: "small",
-    name: "La Isla",
-    imageUrl: "/img/sponsors/La%20Isla.webp",
-  },
-  {
-    size: "small",
-    name: "Little Germany",
-    imageUrl: "/img/sponsors/Little%20Germany.png",
-  },
-  {
-    size: "small",
-    name: "Marquee Event Rentals",
-    imageUrl: "/img/sponsors/MarqueeEventRentals.svg",
-  },
-  {
-    size: "small",
-    name: "Marquez Bakery",
-    imageUrl: "/img/sponsors/marquez%20logo%202024.jpg",
-  },
-  {
-    size: "small",
-    name: "Moore Equipment Rental",
-    imageUrl: "/img/sponsors/Moore%20Equipment%20Rental.png",
-  },
-  {
-    size: "small",
-    name: "North Arlington Little League",
-    imageUrl: "/img/sponsors/NALL%20Logo.png",
-  },
-  {
-    size: "small",
-    name: "Nolan Catholic High School",
-    imageUrl: "/img/sponsors/NCHS Viking.png",
-  },
-  {
-    size: "small",
-    name: "Pet Supermarket",
-    imageUrl: "/img/sponsors/Pet%20Supermarket.svg",
-  },
-  {
-    size: "small",
-    name: "Propane Doctor",
-    imageUrl: "/img/sponsors/Propane%20Doctor.jpg",
-  },
-  {
-    size: "small",
-    name: "Sigercon",
-    imageUrl: "/img/sponsors/Sigercon_logoFINALcol.png",
-  },
-  {
-    size: "small",
-    name: "Trailer Park Chill",
-    imageUrl: "/img/sponsors/Trailer%20Park%20Chill.png",
-  },
-  {
-    size: "small",
-    name: "Trinity River Ramblers",
-    imageUrl: "/img/sponsors/Trinity%20River%20Ramblers.png",
-  },
-
-  {
-    size: "small",
-    name: "Watermill Express",
-    imageUrl: "/img/sponsors/Watermill-logo-white.png",
-  },
-];
-
 export default function Home() {
   return (
     <main>
-      <section className="relative p-4 md:p-0 md:h-[80vh]">
-        <div className="hidden md:block absolute h-full w-full overflow-hidden">
-          <Image
-            className="h-full w-full object-cover"
-            src={headerImage.src}
-            alt="A medical helicopter on the field at GorettiFest with guests and families gathering around to look"
-            priority
-            width={1800}
-            height={1800}
-            loading="eager"
-            placeholder="blur"
-            blurDataURL={headerImage.blurDataURL}
-          />
-        </div>
-        <div className="absolute top-0 left-0 h-full w-full md:mix-blend-multiply bg-slate-800 md:bg-slate-900/70"></div>
-        <div className="z-10 relative flex flex-col h-full w-full px-4 md:px-0 md:absolute text-center items-center justify-center">
-          <Image
-            alt="GorettiFest October 4-5, 2025"
-            src="/img/gorettifest-logo-white-red-outline-date.svg"
-            width={760}
-            height={760}
-            priority
-            loading="eager"
-            className="block relative h-[75%] object-contain p-4 md:p-0"
-          />
-          {/* Critical day-of buttons */}
-          {/* <div className="flex flex-col md:mt-4 md:flex-row md:columns-2 gap-4">
-            <Link href="/parking">
-              <Button>Find Parking</Button>
-            </Link>
-            <Link href="/img/GorettiFest-Map.png">
-              <Button>GorettiFest Map</Button>
-            </Link>
-            <Link href="/schedule">
-              <Button>Schedule</Button>
-            </Link>
-            <Link
-              href="https://www.instagram.com/smgcatholicschool/"
-              target="_blank"
-            >
-              <Button>Follow the Fun on Instagram</Button>
-            </Link>
-          </div> */}
+      <HeaderNav logo />
+      <section className="relative aspect-video overflow-hidden">
+        <video
+          className="absolute inset-0 h-full w-full object-cover"
+          src={HERO_VIDEO_URL}
+          autoPlay
+          loop
+          muted
+          playsInline
+        />
+        <div className="pointer-events-none absolute inset-0 flex items-center justify-center px-6 text-center">
+          <h1
+            className={`${lilita.className} flex flex-col gap-4 text-5xl text-white md:text-6xl lg:text-8xl`}
+            style={{
+              textShadow:
+                "0 4px 18px rgba(0, 0, 0, 0.9), 0 1px 5px rgba(0, 0, 0, 0.95)",
+            }}
+          >
+            <span className="block">Food. Fun. GorettiFest.</span>
+            <span className="block text-4xl md:text-4xl lg:text-6xl">
+              October 3-4, 2026
+            </span>
+          </h1>
         </div>
       </section>
-      {/*   <HeaderNav />
-      <VisitSection />
-      <FoodSection />
-      <GamesSection />
-      <EntertainmentSection />
-      <VendorSection /> */}
-      <RecapSection />
+      {SHOW_RECAP ? (
+        <RecapSection />
+      ) : (
+        <>
+          <VisitSection />
+          <FoodSection />
+          <GamesSection />
+          <EntertainmentSection />
+          <VendorSection />
+        </>
+      )}
       {/* TODO: Confirm sponsors first, then build out this section */}
       <SponsorsSection />
       <PageSection id="about-us" className="bg-red-700 text-white">

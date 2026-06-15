@@ -1,4 +1,5 @@
 .headerNav {
+  @apply relative;
   @apply z-10;
   @apply text-lg;
   @apply bg-slate-800;

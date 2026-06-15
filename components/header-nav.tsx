@@ -51,9 +51,9 @@ export function HeaderNav({ logo }: { logo?: boolean }) {
     <nav className={styles.headerNav}>
       {logo ? (
         <a href="/" className="block">
-          <div className="bg-slate-800 z-20 md:absolute rounded-br-3xl">
+          <div className="bg-slate-800 z-20 md:absolute">
             <Image
-              alt="GorettiFest October 4-5, 2024"
+              alt="GorettiFest"
               src="/img/gorettifest-logo-white-red-outline.svg"
               width={240}
               height={240}

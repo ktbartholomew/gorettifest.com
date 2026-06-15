@@ -21,8 +21,8 @@ export default function MenuPage() {
         <div>
           <Link href="/">
             <Image
-              alt="GorettiFest October 4-5, 2025"
-              src="/img/gorettifest-logo-white-red-outline-date.svg"
+              alt="GorettiFest"
+              src="/img/gorettifest-logo-white-red-outline.svg"
               width={180}
               height={180}
               priority

@@ -35,7 +35,7 @@ export default function Page() {
                 You&apos;ll receive a receipt via email. Keep that receipt, and
                 prepare to show it to our volunteers when you arrive.
                 We&rsquo;ll have your tickets waiting for you! We can&rsquo;t
-                wait to see you on <strong>October 5</strong>!
+                wait to see you on <strong>October 4</strong>!
               </p>
             </div>
           </div>

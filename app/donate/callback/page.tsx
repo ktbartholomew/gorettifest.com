@@ -34,7 +34,7 @@ export default function Page() {
               <p className="text-lg">
                 Your donation will help us gather the supplies we need to make
                 GorettiFest an awesometime for everyone. Thank you! We
-                can&rsquo;t wait to see you on <strong>October 5</strong>!
+                can&rsquo;t wait to see you on <strong>October 4</strong>!
               </p>
             </div>
           </div>

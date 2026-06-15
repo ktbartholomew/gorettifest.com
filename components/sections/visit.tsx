@@ -18,11 +18,11 @@ export function VisitSection() {
               <th>When</th>
               <td>
                 <p className="text-lg mt-0">
-                  Saturday, October 4<br />
+                  Saturday, October 3<br />
                   10am to 8pm
                 </p>
                 <p className="text-lg">
-                  Sunday, October 5<br />
+                  Sunday, October 4<br />
                   10am to 3pm
                 </p>
                 {/* TODO: uncomment when the schedule is mostly ready */}
@@ -88,21 +88,23 @@ export function VisitSection() {
         </InfoTable>
       </div>
       <div>
-        <div className="bg-red-700 text-white p-4 rounded-2xl">
+        <div className="bg-red-700 text-white p-4">
           <iframe
             className="w-full rounded-md"
             width="600"
             height="450"
-            src="https://www.youtube.com/embed/yPmmsz8YlAw?si=lDQsIiCei3B6-QsR&controls=0"
-            title="YouTube video player"
+            src="https://www.youtube.com/embed/85zsHjPsGYE"
+            title="GorettiFest volunteer recap"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
             allowFullScreen
           ></iframe>
           <p className="text-lg">
-            Explore the sights and sounds of GorettiFest 2024, in our exclusive
-            behind-the scenes video. Expect this and much more when you visit
-            GorettiFest on October 4!
+            GorettiFest is possible because of the tireless efforts of our
+            volunteers. Together, we create a weekend that brings neighbors
+            closer, celebrates our community, and makes Arlington a little
+            brighter. Watch our behind-the-scenes film about the volunteers who
+            said &quot;yes&quot; to make GorettiFest happen.
           </p>
           {/* <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3356.5415387098847!2d-97.12749252363562!3d32.72480818665103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e7d1a02bc13ef%3A0xc77ecf1dab906f16!2sSt%20Maria%20Goretti%20Catholic%20School!5e0!3m2!1sen!2sus!4v1721175085047!5m2!1sen!2sus"
