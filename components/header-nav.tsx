@@ -59,7 +59,7 @@ export function HeaderNav({ logo }: { logo?: boolean }) {
               height={240}
               priority
               loading="eager"
-              className="relative mx-auto h-full object-contain"
+              className="relative mx-auto h-auto w-[140px] object-contain md:w-[240px]"
             />
           </div>
         </a>
