@@ -1,7 +1,6 @@
 import { PageSection } from "../page-section";
 import styles from "./sections.module.css";
 import { Button } from "../button";
-import { lilita } from "../font";
 import { AutoplayVideo } from "../autoplay-video";
 
 export function VendorSection() {
@@ -13,7 +12,7 @@ export function VendorSection() {
       />
       <PageSection id="vendors" className="bg-slate-200" grid={2}>
         <div>
-          <h2 className={lilita.className}>Vendor Showcase</h2>
+          <h2>Vendor Showcase</h2>
           <p className="text-2xl">
             Talented artisans, craftspeople, and other vendors gather at
             GorettiFest to show off their talents and give you the opportunity

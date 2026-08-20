@@ -1,5 +1,4 @@
 import { Button } from "../button";
-import { lilita } from "../font";
 import { PageSection } from "../page-section";
 import Image from "next/image";
 
@@ -108,7 +107,7 @@ export function SponsorsSection() {
   return (
     <PageSection id="sponsors" className="bg-slate-800 text-white">
       <div>
-        <h3 className={`${lilita.className} text-center mb-16`}>
+        <h3 className="text-center mb-16">
           Thank you to our sponsors
         </h3>
         <div className="flex flex-wrap gap-8 mb-32 justify-center">

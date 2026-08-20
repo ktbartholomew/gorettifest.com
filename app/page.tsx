@@ -5,7 +5,6 @@ import { PageSection } from "@/components/page-section";
 import { Button } from "@/components/button";
 import Link from "next/link";
 import { GamesSection } from "@/components/sections/games";
-import { lilita } from "@/components/font";
 import { EntertainmentSection } from "@/components/sections/entertainment";
 import { FoodSection } from "@/components/sections/food";
 import { VisitSection } from "@/components/sections/visit";
@@ -62,14 +61,14 @@ export default function Home() {
         />
         <div className="pointer-events-none absolute inset-0 flex items-center justify-center px-6 text-center">
           <h1
-            className={`${lilita.className} flex flex-col gap-4 text-5xl text-white md:text-6xl lg:text-8xl`}
+            className="flex flex-col gap-4 text-5xl italic text-white md:text-6xl lg:text-8xl"
             style={{
               textShadow:
                 "0 4px 18px rgba(0, 0, 0, 0.9), 0 1px 5px rgba(0, 0, 0, 0.95)",
             }}
           >
             <span className="block">Food. Fun. GorettiFest.</span>
-            <span className="block text-4xl md:text-4xl lg:text-6xl">
+            <span className="block text-4xl not-italic md:text-4xl lg:text-6xl">
               October 3-4, 2026
             </span>
           </h1>
@@ -91,7 +90,7 @@ export default function Home() {
       <PageSection id="about-us" className="bg-red-700 text-white">
         <div className="flex justify-evenly justify-items-center">
           <div className="lg:max-w-[50vw]">
-            <h2 className={lilita.className}>About GorettiFest</h2>
+            <h2>About GorettiFest</h2>
             <Image
               className={[styles.photoWithBorder].join(" ")}
               src="/img/IMG_3617.webp"

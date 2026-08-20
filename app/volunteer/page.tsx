@@ -3,7 +3,6 @@ import { Metadata } from "next";
 import Image from "next/image";
 import headerImage from "@/public/img/IMG_2256.webp";
 import { Button } from "@/components/button";
-import { lilita } from "@/components/font";
 
 const VOLUNTEER_SIGNUP_LINK =
   "https://stmariagoretti.volunteerlocal.com/volunteer/?id=114893";
@@ -36,7 +35,7 @@ export default function VolunteerPage() {
         <div className="md:py-16">
           <div className="bg-white relative md:max-w-[67vw] lg:max-w-[50vw] mx-auto md:rounded-3xl p-8 md:drop-shadow-xl">
             <div className="max-w-prose mx-auto">
-              <h2 className={lilita.className + " text-balance"}>
+              <h2 className="text-balance">
                 GorettiFest needs your help!
               </h2>
               <p className="text-lg">

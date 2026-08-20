@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import "@/components/font";
+import { headingFont } from "@/components/font";
 
 export const metadata: Metadata = {
   title:
@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={headingFont.variable}>
       <body>
         {children}
         <script

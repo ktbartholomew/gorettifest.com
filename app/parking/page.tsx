@@ -1,7 +1,6 @@
 import { HeaderNav } from "@/components/header-nav";
 import { Metadata } from "next";
 import Image from "next/image";
-import { lilita } from "@/components/font";
 import headerImage from "@/public/img/IMG_2256.webp";
 import parkingMap from "@/public/img/parking-map.png";
 import React from "react";
@@ -60,7 +59,7 @@ export default function MenuPage() {
         <div className="absolute top-0 left-0 h-full w-full mix-blend-multiply bg-slate-800 md:bg-slate-900/70"></div>
         <div className="md:py-16">
           <div className="bg-white relative md:max-w-[67vw] lg:max-w-[50vw] mx-auto md:rounded-3xl p-8 md:drop-shadow-xl">
-            <h2 className={lilita.className + " text-balance mb-8"}>
+            <h2 className="text-balance mb-8">
               Park at GorettiFest
             </h2>
             <Image

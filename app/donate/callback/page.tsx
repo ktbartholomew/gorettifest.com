@@ -1,5 +1,4 @@
 import { HeaderNav } from "@/components/header-nav";
-import { lilita } from "@/components/font";
 import Image from "next/image";
 import headerImage from "@/public/img/IMG_2212.webp";
 
@@ -28,7 +27,7 @@ export default function Page() {
             className="bg-white relative md:max-w-[67vw] lg:max-w-[50vw] mx-auto md:rounded-3xl p-8 md:drop-shadow-xl"
           >
             <div className="max-w-prose mx-auto">
-              <h2 className={lilita.className + " text-balance"}>
+              <h2 className="text-balance">
                 Thank you for donating to GorettiFest!
               </h2>
               <p className="text-lg">

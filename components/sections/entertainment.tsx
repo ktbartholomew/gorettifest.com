@@ -1,4 +1,3 @@
-import { lilita } from "../font";
 import { PageSection } from "../page-section";
 import { InfoTable } from "../info-table";
 import styles from "./sections.module.css";
@@ -39,7 +38,7 @@ export function EntertainmentSection() {
           </ImageScrollLoader> */}
         </div>
         <div>
-          <h2 className={lilita.className}>Entertainment</h2>
+          <h2>Entertainment</h2>
           <p className="text-2xl">
             Our school is proud to be a part of the City of Arlington and we are
             happy to showcase the incredible talents of the entire community!

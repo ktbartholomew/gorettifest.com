@@ -14,25 +14,28 @@ html {
   }
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
 h2 {
   @apply text-6xl;
-  @apply font-bold;
   @apply mb-4;
-  @apply tracking-tight;
 }
 
 h3 {
   @apply text-4xl;
-  @apply font-bold;
   @apply mb-2;
-  @apply tracking-tight;
 }
 
 h4 {
   @apply text-2xl;
-  @apply font-bold;
   @apply mb-2;
-  @apply tracking-tight;
 }
 
 p {

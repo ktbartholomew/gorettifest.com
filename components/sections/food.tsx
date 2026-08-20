@@ -1,7 +1,6 @@
 import { PageSection } from "../page-section";
 import styles from "./sections.module.css";
 import { Button } from "../button";
-import { lilita } from "../font";
 import { AutoplayVideo } from "../autoplay-video";
 
 export function FoodSection() {
@@ -10,7 +9,7 @@ export function FoodSection() {
       <AutoplayVideo src="/img/food-reel-no-audio.mp4" className="md:hidden" />
       <PageSection id="food-and-drinks" className="bg-slate-200" grid={2}>
         <div>
-          <h2 className={lilita.className}>Food &amp; Drinks</h2>
+          <h2>Food &amp; Drinks</h2>
           <p className="text-2xl">
             For generations, our school&apos;s parents have shared delicious
             cuisine from around the world representing their heritage. Enjoy a

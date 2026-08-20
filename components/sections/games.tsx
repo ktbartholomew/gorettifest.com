@@ -3,7 +3,6 @@ import { InfoTable } from "../info-table";
 import { ImageScrollLoader } from "../image-scroll-loader";
 import Image from "next/image";
 import styles from "./sections.module.css";
-import { lilita } from "../font";
 
 export function GamesSection() {
   return (
@@ -32,7 +31,7 @@ export function GamesSection() {
         </ImageScrollLoader>
       </div>
       <div>
-        <h2 className={lilita.className}>Games</h2>
+        <h2>Games</h2>
         <p className="text-2xl">
           Throw your cares away at the axe-throwing booth!
           <br />

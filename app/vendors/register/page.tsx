@@ -1,4 +1,3 @@
-import { lilita } from "@/components/font";
 import { HeaderNav } from "@/components/header-nav";
 import { PageSection } from "@/components/page-section";
 
@@ -10,7 +9,7 @@ export default function VendorRegister() {
       <HeaderNav logo />
       <PageSection>
         <div className="max-w-prose mx-auto">
-          <h2 className={lilita.className + " text-balance"}>
+          <h2 className="text-balance">
             Sign Up to be an official vendor at GorettiFest!
           </h2>
           <p>

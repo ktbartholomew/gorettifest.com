@@ -1,7 +1,6 @@
 import { HeaderNav } from "@/components/header-nav";
 import { Metadata } from "next";
 import Image from "next/image";
-import { lilita } from "@/components/font";
 import classes from "./menu.module.css";
 import headerImage from "@/public/img/IMG_2256.webp";
 import React from "react";
@@ -265,13 +264,13 @@ export default function MenuPage() {
         <div className="absolute top-0 left-0 h-full w-full mix-blend-multiply bg-slate-800 md:bg-slate-900/70"></div>
         <div className="md:py-16">
           <div className="bg-white relative md:max-w-[67vw] lg:max-w-[50vw] mx-auto md:rounded-3xl p-8 md:drop-shadow-xl">
-            <h2 className={lilita.className + " text-balance mb-8"}>
+            <h2 className="text-balance mb-8">
               GorettiFest Menu
             </h2>
             <div className={classes.menu}>
               {menu.sections.map((section, si) => (
                 <div key={si} className={classes.menuSection}>
-                  <h3 className={lilita.className}>{section.title}</h3>
+                  <h3>{section.title}</h3>
                   <dl>
                     {section.items.map((item, ii) => (
                       <React.Fragment key={ii}>

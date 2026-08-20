@@ -1,13 +1,12 @@
 import { PageSection } from "../page-section";
 import { InfoTable } from "../info-table";
 import { Button } from "../button";
-import { lilita } from "../font";
 
 export function VisitSection() {
   return (
     <PageSection id="visit" grid={2} className="bg-white">
       <div>
-        <h2 className={lilita.className}>Plan Your Visit</h2>
+        <h2>Plan Your Visit</h2>
         <p className="text-2xl my-4">
           Join us at <strong>GorettiFest</strong>, a festival packed with food,
           games, music, and fun for the whole family!

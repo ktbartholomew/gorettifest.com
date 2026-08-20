@@ -2,7 +2,6 @@
 
 import classes from "./calendar.module.css";
 import Image from "next/image";
-import { lilita } from "@/components/font";
 import headerImage from "@/public/img/IMG_2212.webp";
 
 import { useEffect, useState } from "react";
@@ -434,7 +433,7 @@ export default function SchedulePage() {
         <div className="md:py-16">
           <div className="bg-white relative md:max-w-[67vw] lg:max-w-[50vw] mx-auto md:rounded-3xl p-8 md:drop-shadow-xl">
             <div className="max-w-prose mx-auto">
-              <h2 className={lilita.className + " text-balance"}>
+              <h2 className="text-balance">
                 GorettiFest Schedule
               </h2>
             </div>
