@@ -13,12 +13,6 @@ type SponsorLogo = {
 const sponsors: SponsorLogo[] = [
   {
     size: "large",
-    name: "Barnes Video Group",
-    imageUrl: "/img/sponsors/barnes-video-group-logo.png",
-    linkUrl: "https://www.barnesvideogroup.com/",
-  },
-  {
-    size: "large",
     name: "Legacy Stone Family Wealth",
     imageUrl: "/img/sponsors/legacy-stone-white.png",
     linkUrl:
