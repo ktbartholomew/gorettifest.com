@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./header-nav.module.css";
 import { MouseEventHandler, useState } from "react";
 
@@ -50,7 +51,7 @@ export function HeaderNav({ logo }: { logo?: boolean }) {
   return (
     <nav className={styles.headerNav}>
       {logo ? (
-        <a href="/" className="block">
+        <Link href="/" className="block">
           <div className="bg-slate-800 z-20 md:absolute">
             <Image
               alt="GorettiFest"
@@ -60,9 +61,10 @@ export function HeaderNav({ logo }: { logo?: boolean }) {
               priority
               loading="eager"
               className="relative mx-auto h-auto w-[140px] object-contain md:w-[240px]"
+              style={{ height: "auto" }}
             />
           </div>
-        </a>
+        </Link>
       ) : null}
       <MobileNavToggle onClick={toggleNav} show={showMobileNav} />
       <ul
@@ -71,34 +73,34 @@ export function HeaderNav({ logo }: { logo?: boolean }) {
         } md:flex justify-center`}
       >
         <li>
-          <a className={styles.headerNav__link} href="/#visit">
+          <Link className={styles.headerNav__link} href="/#visit">
             Plan Your Visit
-          </a>
+          </Link>
         </li>
         <li>
-          <a className={styles.headerNav__link} href="/#food-and-drinks">
+          <Link className={styles.headerNav__link} href="/#food-and-drinks">
             Food &amp; Drinks
-          </a>
+          </Link>
         </li>
         <li>
-          <a className={styles.headerNav__link} href="/#games">
+          <Link className={styles.headerNav__link} href="/#games">
             Games
-          </a>
+          </Link>
         </li>
         <li>
-          <a className={styles.headerNav__link} href="/#entertainment">
+          <Link className={styles.headerNav__link} href="/#entertainment">
             Entertainment
-          </a>
+          </Link>
         </li>
         <li>
-          <a className={styles.headerNav__link} href="/#vendors">
+          <Link className={styles.headerNav__link} href="/#vendors">
             Vendors
-          </a>
+          </Link>
         </li>
         <li>
-          <a className={styles.headerNav__link} href="/#about-us">
+          <Link className={styles.headerNav__link} href="/#about-us">
             About Us
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>

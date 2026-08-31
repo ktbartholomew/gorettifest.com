@@ -515,6 +515,7 @@ export function Carousel({
               src={i.src}
               alt={i.alt}
               fill={true}
+              sizes="(min-width: 1280px) 1200px, (min-width: 1024px) 1000px, (min-width: 768px) 700px, 320px"
               loading={
                 slidesInView.some((si) => {
                   return Math.abs(si - idx) < 2;

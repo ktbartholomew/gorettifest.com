@@ -53,6 +53,12 @@ const sponsors: SponsorLogo[] = [
   },
   {
     size: "small",
+    name: "The Dove Firm",
+    imageUrl: "/img/sponsors/the-dove-firm-2026.png",
+    linkUrl: "https://www.thedovefirm.com/",
+  },
+  {
+    size: "small",
     name: "Fischer's Meat Market",
     imageUrl: "/img/sponsors/Fischers%20Meat%20Market.png",
   },
@@ -118,11 +124,16 @@ export function SponsorsSection() {
                 key={s.imageUrl}
                 className="relative flex-[100%] grow-0 shrink-0 md:grow-0 md:shrink h-[180px] md:flex-[40%]"
               >
-                <a href={s.linkUrl} target="_blank">
+                <a
+                  href={s.linkUrl}
+                  target="_blank"
+                  className="relative block h-full w-full"
+                >
                   <Image
                     src={s.imageUrl}
                     alt={s.name}
                     fill={true}
+                    sizes="(min-width: 768px) 40vw, 100vw"
                     className="mx-auto object-contain"
                   />
                 </a>
@@ -138,20 +149,26 @@ export function SponsorsSection() {
                 className="relative flex-[25%] grow-0 shrink-0 md:grow-0 md:shrink h-[80px] md:flex-[18%]"
               >
                 {s.linkUrl ? (
-                  <a href={s.linkUrl} target="_blank">
+                  <a
+                    href={s.linkUrl}
+                    target="_blank"
+                    className="relative block h-full w-full"
+                  >
                     <Image
                       src={s.imageUrl}
                       alt={s.name}
                       fill={true}
+                      sizes="(min-width: 768px) 18vw, 25vw"
                       className="mx-auto object-contain"
                     />
                   </a>
                 ) : (
-                  <div>
+                  <div className="relative h-full w-full">
                     <Image
                       src={s.imageUrl}
                       alt={s.name}
                       fill={true}
+                      sizes="(min-width: 768px) 18vw, 25vw"
                       className="mx-auto object-contain"
                     />
                   </div>

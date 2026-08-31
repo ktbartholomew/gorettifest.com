@@ -4,7 +4,7 @@ import classes from "./calendar.module.css";
 import Image from "next/image";
 import headerImage from "@/public/img/IMG_2212.webp";
 
-import { useEffect, useState } from "react";
+import { useSyncExternalStore } from "react";
 import { Button } from "@/components/button";
 import Link from "next/link";
 
@@ -371,10 +371,14 @@ function renderItem(item: ScheduleItem) {
 }
 
 export default function SchedulePage() {
-  const [now, setNow] = useState(new Date(0));
-  useEffect(() => {
-    setNow(new Date());
-  }, []);
+  const now = useSyncExternalStore(
+    (onStoreChange) => {
+      const interval = window.setInterval(onStoreChange, 60_000);
+      return () => window.clearInterval(interval);
+    },
+    () => new Date(),
+    () => new Date(0),
+  );
 
   const saturdayItems = schedule
     .filter((scheduleItem) => {
@@ -399,7 +403,7 @@ export default function SchedulePage() {
               height={180}
               priority
               loading="eager"
-              className="block relative h-[75%] object-contain p-4 md:p-0"
+              className="block relative h-[75%] w-auto object-contain p-4 md:p-0"
             />
           </Link>
         </div>

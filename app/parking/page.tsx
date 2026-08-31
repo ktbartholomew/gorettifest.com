@@ -26,7 +26,7 @@ export default function MenuPage() {
               height={180}
               priority
               loading="eager"
-              className="block relative h-[75%] object-contain p-4 md:p-0"
+              className="block relative h-[75%] w-auto object-contain p-4 md:p-0"
             />
           </Link>
         </div>
