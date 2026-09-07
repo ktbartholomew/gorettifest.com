@@ -1,4 +1,5 @@
 import Image from "next/image";
+import schoolPhoto from "@/public/img/IMG09696.jpg";
 import styles from "@/components/sections/sections.module.css";
 import { HeaderNav } from "@/components/header-nav";
 import { PageSection } from "@/components/page-section";
@@ -87,16 +88,16 @@ export default function Home() {
       )}
       {/* TODO: Confirm sponsors first, then build out this section */}
       <SponsorsSection />
-      <PageSection id="about-us" className="bg-red-700 text-white">
+      <PageSection className="bg-red-700 text-white">
         <div className="flex justify-evenly justify-items-center">
           <div className="lg:max-w-[50vw]">
             <h2>About GorettiFest</h2>
             <Image
               className={[styles.photoWithBorder].join(" ")}
-              src="/img/IMG_3617.webp"
-              alt="Saint Maria Goretti Catholic School students in the church sanctuary"
-              width={900}
-              height={900}
+              src={schoolPhoto}
+              alt="Saint Maria Goretti Catholic School students with yearbooks in the school library"
+              sizes="(min-width: 1024px) 50vw, (min-width: 768px) 80vw, 100vw"
+              placeholder="blur"
               loading="lazy"
             />
             <p className="text-2xl">
