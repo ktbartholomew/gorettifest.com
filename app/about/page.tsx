@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { HeaderNav } from "@/components/header-nav";
+import { Footer } from "@/components/footer";
+import { Button } from "@/components/button";
 import festivalPhoto from "@/public/img/IMG03058.jpg";
 import aerialPhoto from "./gorettifest-aerial.jpg";
 import styles from "./about.module.css";
@@ -301,32 +303,17 @@ export default function AboutPage() {
               gather the supplies we need to make GorettiFest an unforgettable
               experience for everyone!
             </p>
-            <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <Link href="/volunteer" className={styles.action}>
-                I want to help!
+            <p className="mb-0 text-lg text-center">
+              <Link href="/volunteer">
+                <Button>I want to help!</Button>
               </Link>
-              <Link
-                href="/#visit"
-                className="inline-block rounded-md bg-white px-8 py-3 font-bold text-slate-800 no-underline transition-colors hover:bg-slate-200"
-              >
-                Plan your visit
-              </Link>
-            </div>
+            </p>
+          </div>
+          <div className="px-6 pb-12 md:px-10 md:pb-20">
+            <Footer className="mt-0" />
           </div>
         </section>
       </main>
-      <footer className="bg-slate-800 px-6 py-8 text-center text-sm text-white">
-        <Link href="/" className="text-white">
-          GorettiFest Home
-        </Link>
-        <p className="mb-0">
-          &copy; {new Date().getFullYear()} Saint Maria Goretti Catholic School
-          |{" "}
-          <a className="text-white" href="mailto:questions@gorettifest.com">
-            Contact Us
-          </a>
-        </p>
-      </footer>
     </div>
   );
 }

@@ -2,6 +2,7 @@ import Image from "next/image";
 import schoolPhoto from "@/public/img/IMG09696.jpg";
 import styles from "@/components/sections/sections.module.css";
 import { HeaderNav } from "@/components/header-nav";
+import { Footer } from "@/components/footer";
 import { PageSection } from "@/components/page-section";
 import { Button } from "@/components/button";
 import Link from "next/link";
@@ -138,13 +139,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="text-center mt-8">
-          &copy; {new Date().getFullYear()} Saint Maria Goretti Catholic School
-          |{" "}
-          <a className="text-white" href="mailto:questions@gorettifest.com">
-            Contact Us
-          </a>
-        </div>
+        <Footer />
       </PageSection>
       <script
         type="application/ld+json"
