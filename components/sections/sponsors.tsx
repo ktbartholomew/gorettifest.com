@@ -31,6 +31,12 @@ const sponsors: SponsorLogo[] = [
   },
   {
     size: "large",
+    name: "Duck AC and Heating",
+    imageUrl: "/img/sponsors/DuckAC.png",
+    linkUrl: "https://www.duckacandheating.com/",
+  },
+  {
+    size: "large",
     name: "Image Communication Technology",
     imageUrl: "/img/sponsors/ict-logo.png",
     linkUrl: "https://www.ictcorp.net/",
