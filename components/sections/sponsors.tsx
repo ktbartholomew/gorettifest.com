@@ -7,6 +7,7 @@ type SponsorLogo = {
   imageUrl: string;
   linkUrl?: string;
   name: string;
+  background?: "white";
 };
 
 const sponsors: SponsorLogo[] = [
@@ -40,6 +41,13 @@ const sponsors: SponsorLogo[] = [
     name: "Wade Funeral Home",
     imageUrl: "/img/sponsors/wade-funeral-home.webp",
     linkUrl: "https://www.wadefamilyfuneralhome.com/",
+  },
+  {
+    size: "large",
+    name: "mma",
+    imageUrl: "/img/sponsors/mma.svg",
+    linkUrl: "https://mmatexas.com/",
+    background: "white",
   },
   {
     size: "small",
@@ -134,7 +142,7 @@ export function SponsorsSection() {
                     alt={s.name}
                     fill={true}
                     sizes="(min-width: 768px) 40vw, 100vw"
-                    className="mx-auto object-contain"
+                    className={`mx-auto object-contain${s.background === "white" ? " bg-white p-3" : ""}`}
                   />
                 </a>
               </div>
