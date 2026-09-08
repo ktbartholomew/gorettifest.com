@@ -12,13 +12,6 @@ type SponsorLogo = {
 const sponsors: SponsorLogo[] = [
   {
     size: "large",
-    name: "Legacy Stone Family Wealth",
-    imageUrl: "/img/sponsors/legacy-stone-white.png",
-    linkUrl:
-      "https://www.ameripriseadvisors.com/team/legacy-stone-family-wealth/",
-  },
-  {
-    size: "large",
     name: "Sink or Swim Pools",
     imageUrl: "/img/sponsors/sinkorswimlogo.png",
     linkUrl: "https://sinkorswimpool.com/",
@@ -28,6 +21,13 @@ const sponsors: SponsorLogo[] = [
     name: "Rick and Ray's Auto Plaza",
     imageUrl: "/img/sponsors/rick-and-rays-logo.png",
     linkUrl: "https://rickandraysautoplaza.com/",
+  },
+  {
+    size: "large",
+    name: "Legacy Stone Family Wealth",
+    imageUrl: "/img/sponsors/legacy-stone-white.png",
+    linkUrl:
+      "https://www.ameripriseadvisors.com/team/legacy-stone-family-wealth/",
   },
   {
     size: "large",
