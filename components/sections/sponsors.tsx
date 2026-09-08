@@ -7,7 +7,6 @@ type SponsorLogo = {
   imageUrl: string;
   linkUrl?: string;
   name: string;
-  background?: "white";
 };
 
 const sponsors: SponsorLogo[] = [
@@ -47,7 +46,6 @@ const sponsors: SponsorLogo[] = [
     name: "mma",
     imageUrl: "/img/sponsors/mma.svg",
     linkUrl: "https://mmatexas.com/",
-    background: "white",
   },
   {
     size: "small",
@@ -142,7 +140,7 @@ export function SponsorsSection() {
                     alt={s.name}
                     fill={true}
                     sizes="(min-width: 768px) 40vw, 100vw"
-                    className={`mx-auto object-contain${s.background === "white" ? " bg-white p-3" : ""}`}
+                    className="mx-auto object-contain"
                   />
                 </a>
               </div>
