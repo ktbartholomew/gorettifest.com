@@ -88,11 +88,7 @@ export default function VolunteerPage() {
                     </a>
                   </p>
                   <p className="text-center">
-                    <a
-                      href="https://www.signupgenius.com/go/20F0448ADA622A5FE3-65669857-gorettifest"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
+                    <a href="mailto:questions@gorettifest.com?subject=GorettiFest%20Supplies%20Donation">
                       <Button>Donate supplies</Button>
                     </a>
                   </p>
