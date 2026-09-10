@@ -49,6 +49,12 @@ const sponsors: SponsorLogo[] = [
   },
   {
     size: "large",
+    name: "John Wade Roofing",
+    imageUrl: "/img/sponsors/john-wade-roofing.png",
+    linkUrl: "https://johnwaderoofing.com/",
+  },
+  {
+    size: "large",
     name: "mma",
     imageUrl: "/img/sponsors/mma.svg",
     linkUrl: "https://mmatexas.com/",
