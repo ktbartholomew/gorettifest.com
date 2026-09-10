@@ -66,6 +66,12 @@ const sponsors: SponsorLogo[] = [
   },
   {
     size: "small",
+    name: "Camp Thurman",
+    imageUrl: "/img/sponsors/camp-thurman.png",
+    linkUrl: "https://campthurman.org/",
+  },
+  {
+    size: "small",
     name: "Drengr Axe Throwing",
     imageUrl: "/img/sponsors/Drengr%20Axe%20Throwing.png",
   },
