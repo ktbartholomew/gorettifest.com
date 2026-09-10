@@ -82,6 +82,12 @@ const sponsors: SponsorLogo[] = [
   },
   {
     size: "small",
+    name: "Huckleberry's Arlington",
+    imageUrl: "/img/sponsors/huckleberrys-arlington.png",
+    linkUrl: "https://huckleberrys.com/locations/3582/",
+  },
+  {
+    size: "small",
     name: "Knights of Columbus",
     imageUrl: "/img/sponsors/KOC.png",
   },
