@@ -60,6 +60,12 @@ const sponsors: SponsorLogo[] = [
     linkUrl: "https://mmatexas.com/",
   },
   {
+    size: "large",
+    name: "Mr. Wilson's Garage Doors",
+    imageUrl: "/img/sponsors/mr-wilsons-garage-doors.png",
+    linkUrl: "https://www.facebook.com/profile.php?id=61570984850348",
+  },
+  {
     size: "small",
     name: "Abbey Brown and the Sound",
     imageUrl: "/img/sponsors/abbey-brown-and-the-sound.png",
