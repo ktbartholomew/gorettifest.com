@@ -135,6 +135,12 @@ const sponsors: SponsorLogo[] = [
   },
   {
     size: "small",
+    name: "Symphony Arlington",
+    imageUrl: "https://symphonyarlington.org/wp-content/uploads/2023/10/SA-Logo-wh.svg",
+    linkUrl: "https://symphonyarlington.org/",
+  },
+  {
+    size: "small",
     name: "Trailer Park Chill",
     imageUrl: "/img/sponsors/Trailer%20Park%20Chill.png",
   },
