@@ -34,3 +34,22 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+### Large sponsor logos
+
+Large sponsors use a **1200 × 600 transparent canvas (2:1)**, displayed with the
+same aspect ratio in the sponsor layout. Keep original artwork in
+`public/img/sponsors/` and put standardized copies in `public/img/sponsors/large/`.
+
+Run the same preparation command for each new large sponsor:
+
+```sh
+node scripts/normalize-sponsor-logo.mjs public/img/sponsors/original.png public/img/sponsors/large/sponsor-name.webp
+```
+
+The script trims transparent margins, scales the visible artwork to a common
+bounding-box area (with width/height limits), and centers it on the shared canvas.
+It preserves aspect ratio and produces lossless WebP. It also accepts SVG input.
+Use the resulting `/img/sponsors/large/...` URL in the sponsor list. Source artwork
+should already have a transparent background; the script does not remove opaque
+backgrounds. Small sponsors keep their existing images and layout.
