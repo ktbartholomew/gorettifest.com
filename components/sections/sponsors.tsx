@@ -66,6 +66,12 @@ const sponsors: SponsorLogo[] = [
     linkUrl: "https://www.facebook.com/profile.php?id=61570984850348",
   },
   {
+    size: "large",
+    name: "Curnutt & Hafter, LLP",
+    imageUrl: "/img/sponsors/c-and-h-attorneys.png",
+    linkUrl: "https://curnutthafer.com/",
+  },
+  {
     size: "small",
     name: "Abbey Brown and the Sound",
     imageUrl: "/img/sponsors/abbey-brown-and-the-sound.png",
