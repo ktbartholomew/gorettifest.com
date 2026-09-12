@@ -44,7 +44,7 @@ const sponsors: SponsorLogo[] = [
   {
     size: "large",
     name: "Wade Funeral Home",
-    imageUrl: "/img/sponsors/large/wade-funeral-home.webp",
+    imageUrl: "/img/sponsors/large/wade-funeral-home-white.webp",
     linkUrl: "https://www.wadefamilyfuneralhome.com/",
   },
   {
@@ -67,7 +67,7 @@ const sponsors: SponsorLogo[] = [
   },
   {
     size: "large",
-    name: "Curnutt & Hafter, LLP",
+    name: "Curnutt & Hafer, LLP",
     imageUrl: "/img/sponsors/large/c-and-h-attorneys.webp",
     linkUrl: "https://curnutthafer.com/",
   },
