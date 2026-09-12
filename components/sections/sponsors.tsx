@@ -13,62 +13,62 @@ const sponsors: SponsorLogo[] = [
   {
     size: "large",
     name: "Sink or Swim Pools",
-    imageUrl: "/img/sponsors/sinkorswimlogo.png",
+    imageUrl: "/img/sponsors/large/sinkorswimlogo.webp",
     linkUrl: "https://sinkorswimpool.com/",
   },
   {
     size: "large",
     name: "Rick and Ray's Auto Plaza",
-    imageUrl: "/img/sponsors/rick-and-rays-logo.png",
+    imageUrl: "/img/sponsors/large/rick-and-rays-logo.webp",
     linkUrl: "https://rickandraysautoplaza.com/",
   },
   {
     size: "large",
     name: "Legacy Stone Family Wealth",
-    imageUrl: "/img/sponsors/legacy-stone-white.png",
+    imageUrl: "/img/sponsors/large/legacy-stone-white.webp",
     linkUrl:
       "https://www.ameripriseadvisors.com/team/legacy-stone-family-wealth/",
   },
   {
     size: "large",
     name: "Duck AC and Heating",
-    imageUrl: "/img/sponsors/DuckAC.png",
+    imageUrl: "/img/sponsors/large/DuckAC.webp",
     linkUrl: "https://www.duckacandheating.com/",
   },
   {
     size: "large",
     name: "Image Communication Technology",
-    imageUrl: "/img/sponsors/ict-logo.png",
+    imageUrl: "/img/sponsors/large/ict-logo.webp",
     linkUrl: "https://www.ictcorp.net/",
   },
   {
     size: "large",
     name: "Wade Funeral Home",
-    imageUrl: "/img/sponsors/wade-funeral-home.webp",
+    imageUrl: "/img/sponsors/large/wade-funeral-home.webp",
     linkUrl: "https://www.wadefamilyfuneralhome.com/",
   },
   {
     size: "large",
     name: "John Wade Roofing",
-    imageUrl: "/img/sponsors/john-wade-roofing.png",
+    imageUrl: "/img/sponsors/large/john-wade-roofing.webp",
     linkUrl: "https://johnwaderoofing.com/",
   },
   {
     size: "large",
     name: "mma",
-    imageUrl: "/img/sponsors/mma.svg",
+    imageUrl: "/img/sponsors/large/mma.webp",
     linkUrl: "https://mmatexas.com/",
   },
   {
     size: "large",
     name: "Mr. Wilson's Garage Doors",
-    imageUrl: "/img/sponsors/mr-wilsons-garage-doors.png",
+    imageUrl: "/img/sponsors/large/mr-wilsons-garage-doors.webp",
     linkUrl: "https://www.facebook.com/profile.php?id=61570984850348",
   },
   {
     size: "large",
     name: "Curnutt & Hafter, LLP",
-    imageUrl: "/img/sponsors/c-and-h-attorneys.png",
+    imageUrl: "/img/sponsors/large/c-and-h-attorneys.webp",
     linkUrl: "https://curnutthafer.com/",
   },
   {
@@ -170,7 +170,7 @@ export function SponsorsSection() {
             .map((s) => (
               <div
                 key={s.imageUrl}
-                className="relative flex-[100%] grow-0 shrink-0 md:grow-0 md:shrink h-[180px] md:flex-[40%]"
+                className="relative flex-[100%] grow-0 shrink-0 md:grow-0 md:shrink aspect-[2/1] md:flex-[40%]"
               >
                 <a
                   href={s.linkUrl}
