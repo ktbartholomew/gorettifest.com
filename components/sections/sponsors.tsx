@@ -72,6 +72,12 @@ const sponsors: SponsorLogo[] = [
     linkUrl: "https://curnutthafer.com/",
   },
   {
+    size: "large",
+    name: "George Conkle - J.P. Morgan Wealth Management",
+    imageUrl: "/img/sponsors/large/george-conkle.webp",
+    linkUrl: "https://jpmorganwealthmanagement.chase.com/advisor/tx/george-p-conkle",
+  },
+  {
     size: "small",
     name: "Abbey Brown and the Sound",
     imageUrl: "/img/sponsors/abbey-brown-and-the-sound.png",
