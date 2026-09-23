@@ -8,7 +8,7 @@ import React from "react";
 export const metadata: Metadata = {
   title: "GorettiFest Food & Drinks Menu",
   description:
-    "Don't miss the amazing food at GorettiFest! From Fair classics like burgers and bratwursts to cultural favorites like homemade fajitas and pandan coconut pancakes, there's a dish for every palate at GorettiFest!",
+    "Don't miss the amazing food at GorettiFest! From Fair classics like burgers and bratwursts to cultural favorites like chicken fajitas and jollof rice, there's a dish for every palate at GorettiFest!",
 };
 
 type Menu = {
@@ -24,18 +24,120 @@ type Menu = {
 const menu: Menu = {
   sections: [
     {
-      title: "Fair Classics",
+      title: "Afro-Caribbean",
       items: [
         {
-          title: "Hamburger",
+          title: "Island Crispy Chicken Tenders",
           description:
-            "A flame-grilled burger served on a classic sesame-crusted bun. Add cheese and all your favorite garnishes and condiments.",
+            "Hand-battered, freshly fried chicken tenderloins with an incredible crunch and juicy center and served with a tangy, sweet & spicy sauce.",
         },
         {
-          title: "French Fries",
+          title: "Beignets",
           description:
-            "Perfectly fried russet potatoes, lightly salted. Top them with chili for an extra-special treat!",
+            "Golden, airy dough bites, fresh-fried on-site! With your choice of powdered sugar, cinnamon, caramel, or chocolate.",
         },
+        {
+          title: "Grio & Pikliz",
+          description:
+            "Crispy pork bites with sweet & spicy sauce and zesty pickled slaw.",
+        },
+        {
+          title: "Fried Plantains",
+          description:
+            "Caramelized ripe plantains; sweet & lightly salted.",
+        },
+        {
+          title: "Jollof Rice",
+          description:
+            "Fluffy, golden-herbed basmati rice, gently spiced and not fried.",
+        },
+        {
+          title: "Combo Plate",
+          description:
+            "Island Crispy Chicken Tenders or Grio with Fried Plantains and Jollof Rice.",
+        },
+      ],
+    },
+    {
+      title: "Asian",
+      items: [
+        {
+          title: "Egg Rolls",
+          description:
+            "Two (2) egg rolls in a crispy shell surrounding a blend of savory spiced pork and crunchy cabbage.",
+        },
+        {
+          title: "Chicken Skewer",
+          description:
+            "Juicy chicken bites tossed in a classic sweet and tangy teriyaki glaze.",
+        },
+        {
+          title: "Fried Rice",
+          description:
+            "Classic fried rice, tossed with stir-fried vegetables, eggs, and a splash of soy sauce.",
+        },
+        {
+          title: "Pork Dumplings",
+          description:
+            "Classic grilled dumplings with a savory pork filling.",
+        },
+      ],
+    },
+    {
+      title: "Texas BBQ",
+      items: [
+        {
+          title: "Goretti FEAST",
+          description:
+            "2 proteins (brisket & sausage) with 2 sides (mac & cheese & green bean casserole).",
+        },
+        {
+          title: "Mini FEAST",
+          description:
+            "Choice of 1 protein (brisket or sausage) with 2 sides (mac & cheese & green bean casserole).",
+        },
+        {
+          title: "Brisket Sandwich",
+          description:
+            "Sliced, smoked brisket on a toasted bun.",
+        },
+        {
+          title: "Brisket Mac & Cheese",
+          description:
+            "Creamy classic mac and cheese with a kick of smoked brisket.",
+        },
+        { title: "Mac & Cheese (A La Carte)", description: "" },
+        { title: "Green Bean Casserole (A La Carte)", description: "" },
+        { title: "Sausage (A La Carte)", description: "" },
+        { title: "Sliced Brisket (A La Carte)", description: "" },
+        {
+          title: "Texas Twinkie (A La Carte)",
+          description:
+            "Jumbo brisket stuffed jalapeno pepper wrapped in bacon.",
+        },
+        { title: "Burnt Ends (A La Carte)", description: "" },
+        { title: "Banana Pudding", description: "" },
+        { title: "HTeaO Tea", description: "" },
+      ],
+    },
+    {
+      title: "Corn Dogs",
+      items: [
+        {
+          title: "Corn Dog",
+          description:
+            "Nothing says “Festival” like a piping hot corn dog. Come try our homemade, freshly battered and fried classic with mustard or ketchup!",
+        },
+        {
+          title: "Fresh Squeezed Lemonade",
+          description:
+            "Cool off with a sip of perfectly tart, freshly-made lemonade.",
+        },
+      ],
+    },
+    {
+      title: "Fair Classics",
+      items: [
         {
           title: "Turkey Leg",
           description:
@@ -44,12 +146,12 @@ const menu: Menu = {
         {
           title: "Texas Tornado",
           description:
-            "A giant russet potato spiral-cut from end-to-end, seasoned with our spicy, smokey spice blend and deep fried for an irresistible, shareable snack. Try it with our sweet powdered sugar topping for dessert!",
+            "A giant potato spiral-cut from end to end, seasoned and deep fried for an irresistible, shareable snack. Get it sweet or regular!",
         },
         {
           title: "Roasted Corn",
           description:
-            "A whole ear of corn seasoned with our house-made spice rub and slow-roasted for a juicy, slightly-charred crunch.",
+            "A whole cob of corn seasoned with our house-made spice rub and slow-roasted for a juicy, slightly-charred crunch.",
         },
       ],
     },
@@ -57,168 +159,60 @@ const menu: Menu = {
       title: "German",
       items: [
         {
-          title: "German Feast",
-          description: "",
+          title: "The Feast",
+          description:
+            "Bratwurst sandwich, potatoes, sauerkraut, and red cabbage.",
         },
         {
           title: "Bratwurst Sandwich",
           description:
-            "Savory, grilled bratwurst straight from Muenster! Served on a warm hoagie roll and topped with a generous topping of sauerkraut.",
+            "Enjoy a juicy, savory grilled bratwurst in a bun with or without a bed of mouth-watering sauerkraut. Don’t forget the Dusseldorf Mustard!",
         },
         {
-          title: "“Bratsicle”",
+          title: "Veggie Plate",
           description:
-            "Our famous bratwurst, on a stick. Sometimes simpler is better.",
+            "Potatoes, sauerkraut, and red cabbage.",
+        },
+        {
+          title: "Bratsicle",
+          description:
+            "Bratwurst on a stick!",
         },
         {
           title: "Soft Pretzel",
           description:
-            "A classic salted soft pretzel, straight from our oven to you!",
+            "Dusted with sweet cinnamon sugar or classic salty.",
         },
       ],
     },
     {
-      title: "Tex-Mex",
+      title: "Hamburgers",
       items: [
-        {
-          title: "Fajita Taco Plate",
-          description:
-            "Strips of flame-grilled fajita chicken or beef served on a piping-hot flour tortilla and your choice of fresh topping. Served with rice and beans.",
-        },
-        {
-          title: "Cheese Nachos",
-          description:
-            "The stadium classic: tortilla chips and melted cheese. A match made in heaven!",
-        },
-        {
-          title: "Davo Supremo Nachos",
-          description:
-            "Famous for a reason, you can get the job done on this kind of meal! Classic nachos loaded with every topping imaginable.",
-        },
-        {
-          title: "Breakfast Burritos (Sunday only)",
-          description:
-            "Peppers, onions, potatoes and cheese folded together with fluffy scrambled eggs and wrapped in a steamy flour tortilla.",
-        },
-      ],
-    },
-    {
-      title: "Afro-Caribbean",
-      items: [
-        {
-          title: "Jerk Chicken Kabob",
-          description:
-            "The Jamaican classic! Morsels of perfectly-spiced chicken flame-grilled and served alongside grilled vegetables on a skewer.",
-        },
-        {
-          title: "Beignets",
-          description:
-            'Homemade "puff puff" pastry balls fried for a flaky shell and a tender center, tossed in our special mix of powdered sugar and cinnamon.',
-        },
-        {
-          title: "Grio",
-          description:
-            "Juicy pork shoulder bites braised until fork-tender, then quickly fried to add a thin, deliciously crispy shell.",
-        },
-        {
-          title: "Jollof Rice",
-          description:
-            "Hearty, spiced basmati rice with diced vegetables and bits of jerk chicken.",
-        },
-        {
-          title: "Fried Plantains",
-          description:
-            "Get your daily dose of fruits with these mature plaintain slices, slowly fried until they achieve a toothsome, caramelized glaze.",
-        },
-      ],
-    },
-
-    {
-      title: "Asian",
-      items: [
-        {
-          title: "Egg Rolls",
-          description:
-            "Bite into a takeout classic: everyone's favorite crispy shell surrounding a blend of savory spiced pork and crunchy cabbage.",
-        },
-        {
-          title: "Chicken Skewer",
-          description: "Juicy chicken bites cured in our top secret marinade.",
-        },
-        {
-          title: "Vegetable Fried Rice",
-          description:
-            "Classic fried rice, tossed with stir-fried vegetables, eggs, and a splash of soy sauce.",
-        },
-        {
-          title: "Gyoza",
-          description:
-            "Classic handmade dumplings with a savory filling. Perfect with a splash of sweet and spicy sauce!",
-        },
-      ],
-    },
-    {
-      title: "Texas BBQ",
-      items: [
-        {
-          title: "Goretti FEAST BBQ Plate",
-          description:
-            "Texas-style smoked brisket, perfectly peppery smoked sausage, mac and cheese, and cole slaw.",
-        },
-        {
-          title: "Mini Feast BBQ Plate",
-          description:
-            "One choice of brisket or sausage, mac and cheese, and cole slaw.",
-        },
-        {
-          title: "Brisket Mac and Cheese",
-          description:
-            "The only thing better than the creamy comfort of classic mac and cheese is to add a kick of smoked brisket!",
-        },
-        {
-          title: "Texas Twinkie",
-          description:
-            "A jumbo roasted jalapeño pepper stuffed with brisket and wrapped in bacon to create the perfect smoky snack with just a hint of heat.",
-        },
-        {
-          title: "Baked Beans",
-          description:
-            "(a la carte only) A BBQ classic, our smoked beans are the perfect companion to any of our main dishes.",
-        },
-      ],
-    },
-    {
-      title: "Corn Dogs and Lemonade",
-      items: [
-        {
-          title: "Corn Dogs",
-          description: (
-            <>
-              Nothing says &ldquo;Festival&rdquo; like a piping hot corn dog.
-              Come try our homemade, freshly battered and fried classic with
-              mustard or ketchup!
-            </>
-          ),
-        },
-        {
-          title: "Fresh-Squeezed Lemonade",
-          description:
-            "Cool off with a sip of perfectly tart, freshly-made lemonade.",
-        },
+        { title: "Hamburger", description: "" },
+        { title: "Cheeseburger", description: "" },
+        { title: "French Fries", description: "" },
+        { title: "Chili Fries", description: "" },
+        { title: "Burger & Fries", description: "" },
+        { title: "Cheeseburger & Fries", description: "" },
       ],
     },
     {
       title: "Italian",
       items: [
         {
-          title: "Meatball Sub",
+          title: "Slice of Pizza",
           description:
-            "It's everybody's favorite sandwich for a reason! Homemade pork meatballs bathed in marinara sauce, all atop a bun of white Italian bread.",
+            "Cheese or pepperoni.",
         },
         {
-          title: "Pizza",
+          title: "Meatball Sub",
           description:
-            "Enjoy a classic slice topped with your choice of cheese or pepperoni.",
+            "Pork meatballs bathed in marinara sauce, all atop a bun of white Italian bread.",
+        },
+        {
+          title: "Meatball Six-Pack",
+          description:
+            "Pork meatballs bathed in marinara sauce.",
         },
         {
           title: "Garlic Bread",
@@ -228,16 +222,63 @@ const menu: Menu = {
       ],
     },
     {
-      title: "Sweets & Drinks",
+      title: "Mexican",
+      items: [
+        {
+          title: "Chicken Fajita Plate",
+          description:
+            "Flame-grilled chicken, diced and served on a hot tortilla and topped with pico de gallo and salsa. Served with rice and beans.",
+        },
+        {
+          title: "Costillas en Salsa Plate",
+          description:
+            "Baby back pork ribs braised with salsa verde and served with rice and beans.",
+        },
+        {
+          title: "Cheese Nachos",
+          description:
+            "Tortilla chips and melted cheese. A match made in heaven!",
+        },
+        {
+          title: "Davo Supremo Nachos",
+          description:
+            "Famous for a reason! Nachos “loaded” with pico, sour cream, beef, beans, & cheese.",
+        },
+        {
+          title: "Fruta en Vaso",
+          description:
+            "Fresh fruit cup with pineapple, cantaloupe, watermelon, and cucumber topped with spicy chamoy and tajin.",
+        },
+        { title: "Breakfast Burrito (Sunday only)", description: "" },
+      ],
+    },
+    {
+      title: "Drinks",
+      items: [
+        {
+          title: "Soft Drink",
+          description:
+            "Coke, Diet Coke, Dr Pepper, Diet Dr Pepper, Sprite.",
+        },
+        { title: "Sports Drink", description: "" },
+        { title: "Water", description: "" },
+      ],
+    },
+    {
+      title: "Desserts",
       items: [
         { title: "Paletas", description: "" },
-        { title: "Popcorn", description: "" },
-        { title: "Jumbo Lollipop", description: "" },
-        { title: "Brownie", description: "" },
-        { title: "Gluten-free Brownie", description: "" },
-        { title: "Soft Drinks", description: "" },
-        { title: "Gatorade", description: "" },
-        { title: "Water", description: "" },
+        { title: "Cotton Candy", description: "" },
+        { title: "Snow Cones", description: "" },
+        { title: "Pickles", description: "" },
+        {
+          title: "Brownie",
+          description:
+            "Gluten-free option available.",
+        },
+        { title: "Rice Krispy Treat", description: "" },
+        { title: "Coffee (Sunday only)", description: "" },
+        { title: "Donuts (Sunday only)", description: "" },
       ],
     },
   ],
