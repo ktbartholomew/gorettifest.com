@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 export default function MenuPage() {
   return (
     <>
-      <div className="z-10 relative flex flex-row mb-4 gap-4 px-4 md:px-0 text-center items-center justify-center">
+      <div className="z-10 relative flex flex-row mb-4 gap-4 px-4 pt-4 md:px-0 text-center items-center justify-center">
         <div>
           <Link href="/">
             <Image
