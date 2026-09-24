@@ -22,12 +22,52 @@ type ScheduleItem = {
   description?: string;
   location?: string;
   category: ScheduleItemCategory;
+  allDay?: boolean;
 };
+
+const allDayActivities: Pick<ScheduleItem, "title" | "location" | "description">[] = [
+  {
+    title: "Vendor Show",
+    location: "Holy Family Life Center",
+  },
+  {
+    title: "Cake Spin",
+    location: "Cafetorium",
+    description:
+      "Spin the wheel, win baked goods!",
+  },
+  {
+    title: "Dunk Tank",
+    location: "Back Field",
+  },
+  {
+    title: "Face Painting",
+    location: "Holy Family Life Center",
+  },
+  {
+    title: "Hospitality Tent",
+    location: "Near the Main Stage",
+  },
+  {
+    title: "Rummage Sale",
+    location: "Cafetorium",
+    description:
+      "Find your next hidden gem in this expansive rummage sale curated by the SMG Women’s Guild.",
+  },
+  {
+    title: "Ministry Tables",
+    location: "Cafetorium",
+  },
+  {
+    title: "Photo Booth",
+    location: "Holy Family Life Center",
+  },
+];
 
 const schedule: ScheduleItem[] = [
   {
-    startTime: new Date("2026-10-03T10:00:00-0500"),
-    endTime: new Date("2026-10-03T10:15:00-0500"),
+    startTime: new Date("2026-10-03T10:00:00-05:00"),
+    endTime: new Date("2026-10-03T10:15:00-05:00"),
     title: "Opening Ceremony",
     description:
       "Kick off GorettiFest with the national anthem and opening remarks from our organizers.",
@@ -35,90 +75,17 @@ const schedule: ScheduleItem[] = [
     category: ScheduleItemCategory.PRIMARY,
   },
   {
-    startTime: new Date("2026-10-03T10:00:00-0500"),
-    endTime: new Date("2026-10-03T13:00:00-0500"),
-    title: "Touch-a-Truck",
+    startTime: new Date("2026-10-03T10:15:00-05:00"),
+    endTime: new Date("2026-10-03T11:00:00-05:00"),
+    title: "SMG & Nolan Ballet Folklorico",
     description:
-      "Get up close and personal with police, fire, and ambulance vehicles.",
-    location: "South Fairgrounds",
-    category: ScheduleItemCategory.TERTIARY,
-  },
-
-  {
-    startTime: new Date("2026-10-03T12:00:00-0500"),
-    endTime: new Date("2026-10-03T12:45:00-0500"),
-    title: "Checkers the Magician",
-    description:
-      "Be amazed and entertained by Checkers, every kid's favorite magician (and every adult's favorite comedian).",
-    location: "Main Stage",
-    category: ScheduleItemCategory.SECONDARY,
-  },
-  {
-    startTime: new Date("2026-10-03T13:00:00-0500"),
-    endTime: new Date("2026-10-03T13:30:00-0500"),
-    title: "Sentinel Martial Arts",
-    description:
-      "See daring feats of martial arts featuring aerial kicks and swordwork.",
-    location: "Main Stage",
-    category: ScheduleItemCategory.SECONDARY,
-  },
-  {
-    startTime: new Date("2026-10-03T14:00:00-0500"),
-    endTime: new Date("2026-10-03T15:00:00-0500"),
-    title: "The Nobodies",
-    description:
-      "Hear live music from a band of SMG’s own parishioners and families!",
+      "Enjoy traditional Mexican dances from our very talented students!",
     location: "Main Stage",
     category: ScheduleItemCategory.PRIMARY,
   },
   {
-    startTime: new Date("2026-10-03T13:00:00-0500"),
-    endTime: new Date("2026-10-03T17:00:00-0500"),
-    title: "Bingo",
-    location: "Saint Maria Center",
-    category: ScheduleItemCategory.SECONDARY,
-  },
-  {
-    startTime: new Date("2026-10-03T13:00:00-0500"),
-    endTime: new Date("2026-10-03T17:00:00-0500"),
-    title: "Petting Zoo",
-    location: "Field",
-    category: ScheduleItemCategory.TERTIARY,
-  },
-  {
-    startTime: new Date("2026-10-03T15:30:00-0500"),
-    endTime: new Date("2026-10-03T16:30:00-0500"),
-    title: "The Blue Decade",
-    description: "Our homegrown SMG community band perform modern hits!",
-    location: "Main Stage",
-    category: ScheduleItemCategory.PRIMARY,
-  },
-  {
-    startTime: new Date("2026-10-03T16:30:00-0500"),
-    endTime: new Date("2026-10-03T17:00:00-0500"),
-    title: "Premier Martial Arts",
-    location: "Main Stage",
-    category: ScheduleItemCategory.SECONDARY,
-  },
-  {
-    startTime: new Date("2026-10-03T17:00:00-0500"),
-    endTime: new Date("2026-10-03T17:30:00-0500"),
-    title: "SMG Teacher Performance",
-    description:
-      "It's a surprise. They won't even tell us. Rest assured, it'll be worth the wait.",
-    location: "Main Stage",
-    category: ScheduleItemCategory.SECONDARY,
-  },
-  {
-    startTime: new Date("2026-10-03T17:30:00-0500"),
-    endTime: new Date("2026-10-03T18:00:00-0500"),
-    title: "Laura Dance Dynamics",
-    location: "Main Stage",
-    category: ScheduleItemCategory.SECONDARY,
-  },
-  {
-    startTime: new Date("2026-10-03T18:00:00-0500"),
-    endTime: new Date("2026-10-03T20:00:00-0500"),
+    startTime: new Date("2026-10-03T11:30:00-05:00"),
+    endTime: new Date("2026-10-03T13:30:00-05:00"),
     title: "Trinity River Ramblers",
     description:
       "Catch an eclectic mix of American country, Blues, and Rock'n Roll!",
@@ -126,52 +93,17 @@ const schedule: ScheduleItem[] = [
     category: ScheduleItemCategory.PRIMARY,
   },
   {
-    startTime: new Date("2026-10-03T10:00:00-0500"),
-    endTime: new Date("2026-10-03T12:00:00-0500"),
-    title: "Character Photo Opportunities",
+    startTime: new Date("2026-10-03T14:00:00-05:00"),
+    endTime: new Date("2026-10-03T14:30:00-05:00"),
+    title: "Miss Persis",
     description:
-      "Meet fantasy characters as they roam GorettiFest—bring your little ones for a photo op!",
-    location: "Fairgrounds",
-    category: ScheduleItemCategory.TERTIARY,
-  },
-  {
-    startTime: new Date("2026-10-03T10:15:00-0500"),
-    endTime: new Date("2026-10-03T10:30:00-0500"),
-    title: "SMG & Nolan Cheer Squads",
-    description:
-      "Get in the GorettiFest spirit with cheers from our school's squad, and our alumni from Nolan Catholic High School!",
-    category: ScheduleItemCategory.SECONDARY,
-    location: "Main Stage",
-  },
-  {
-    startTime: new Date("2026-10-03T10:30:00-0500"),
-    endTime: new Date("2026-10-03T11:30:00-0500"),
-    title: "SMG & Nolan Ballet Folklorico",
-    description:
-      "Enjoy tradicional Mexican dances from our very talented students!",
-    category: ScheduleItemCategory.SECONDARY,
-    location: "Main Stage",
-  },
-
-  {
-    startTime: new Date("2026-10-03T10:00:00-0500"),
-    endTime: new Date("2026-10-03T16:00:00-0500"),
-    title: "Dunk Tank",
-    location: "Field",
-    category: ScheduleItemCategory.SECONDARY,
-  },
-  {
-    startTime: new Date("2026-10-04T10:00:00-0500"),
-    endTime: new Date("2026-10-04T11:30:00-0500"),
-    title: "SMG School Talent Show",
-    description:
-      "Catch our talented students showing off their many unique talents!",
+      "A cherished Arlington institution! Enjoy watching these graceful dancers share their talents on stage.",
     location: "Main Stage",
     category: ScheduleItemCategory.PRIMARY,
   },
   {
-    startTime: new Date("2026-10-04T11:30:00-0500"),
-    endTime: new Date("2026-10-04T12:30:00-0500"),
+    startTime: new Date("2026-10-03T14:30:00-05:00"),
+    endTime: new Date("2026-10-03T15:30:00-05:00"),
     title: "Mike Hines",
     description:
       "Clap, dance, or sing along to all your favorite classic roots-rock hits.",
@@ -179,144 +111,148 @@ const schedule: ScheduleItem[] = [
     category: ScheduleItemCategory.PRIMARY,
   },
   {
-    startTime: new Date("2026-10-04T12:30:00-0500"),
-    endTime: new Date("2026-10-04T13:00:00-0500"),
-    title: "Miss Persis Dance",
-    description:
-      "A cherished Arlington institution!  Enjoy watching these graceful dancers share their talents on stage.",
-    location: "Main Stage",
-    category: ScheduleItemCategory.SECONDARY,
-  },
-  {
-    startTime: new Date("2026-10-04T13:30:00-0500"),
-    endTime: new Date("2026-10-04T15:00:00-0500"),
-    title: "Abbey Brown & the Sound",
+    startTime: new Date("2026-10-03T15:30:00-05:00"),
+    endTime: new Date("2026-10-03T16:15:00-05:00"),
+    title: "Historical Fencing Demonstration",
     location: "Main Stage",
     category: ScheduleItemCategory.PRIMARY,
   },
   {
-    startTime: new Date("2026-10-04T10:00:00-0500"),
-    endTime: new Date("2026-10-04T14:00:00-0500"),
+    startTime: new Date("2026-10-03T16:30:00-05:00"),
+    endTime: new Date("2026-10-03T17:30:00-05:00"),
+    title: "Rage Against the Minivan / Maya Marie / Ceramic Bunnies",
+    location: "Main Stage",
+    category: ScheduleItemCategory.PRIMARY,
+  },
+  {
+    startTime: new Date("2026-10-03T18:00:00-05:00"),
+    endTime: new Date("2026-10-03T20:00:00-05:00"),
+    title: "Abbey Brown & The Sound",
+    location: "Main Stage",
+    category: ScheduleItemCategory.PRIMARY,
+  },
+  {
+    startTime: new Date("2026-10-03T10:00:00-05:00"),
+    endTime: new Date("2026-10-03T13:00:00-05:00"),
+    title: "Touch-a-Truck",
+    description:
+      "Get up close and personal with police, fire, and ambulance vehicles.",
+    category: ScheduleItemCategory.SECONDARY,
+  },
+  {
+    startTime: new Date("2026-10-03T13:00:00-05:00"),
+    endTime: new Date("2026-10-03T17:00:00-05:00"),
     title: "Bingo",
     location: "Saint Maria Center",
     category: ScheduleItemCategory.SECONDARY,
   },
   {
-    startTime: new Date("2026-10-04T10:00:00-0500"),
-    endTime: new Date("2026-10-04T15:00:00-0500"),
-    title: "Carter Blood Drive",
-    description:
-      "Alway a good cause, give blood in the air-conditioned Carter BloodCare bus.",
-    location: "South Fairgrounds",
-    category: ScheduleItemCategory.TERTIARY,
-  },
-  {
-    startTime: new Date("2026-10-03T10:00:00-0500"),
-    endTime: new Date("2026-10-03T20:00:00-0500"),
-    title: "Vendor Show",
-    location: "Holy Family Life Center",
-    category: ScheduleItemCategory.TERTIARY,
-  },
-  {
-    startTime: new Date("2026-10-03T10:00:00-0500"),
-    endTime: new Date("2026-10-03T20:00:00-0500"),
-    title: "Cake Spin",
-    description: "Spin the wheel, win baked goods!",
-    location: "Cafetorium",
-    category: ScheduleItemCategory.OTHER,
-  },
-  {
-    startTime: new Date("2026-10-03T10:00:00-0500"),
-    endTime: new Date("2026-10-03T20:00:00-0500"),
-    title: "Rummage Sale",
-    description:
-      "Find your next hidden gem in this expansive rummage sale curated by the SMG Women’s Guild.",
-    location: "Cafetorium",
-    category: ScheduleItemCategory.OTHER,
-  },
-  {
-    startTime: new Date("2026-10-03T10:00:00-0500"),
-    endTime: new Date("2026-10-03T20:00:00-0500"),
-    title: "Ministry Tables",
-    location: "Cafetorium",
-    category: ScheduleItemCategory.OTHER,
-  },
-  {
-    startTime: new Date("2026-10-04T10:00:00-0500"),
-    endTime: new Date("2026-10-04T15:00:00-0500"),
-    title: "Cake Spin",
-    description: "Spin the wheel, win baked goods!",
-    location: "Cafetorium",
-    category: ScheduleItemCategory.OTHER,
-  },
-  {
-    startTime: new Date("2026-10-04T10:00:00-0500"),
-    endTime: new Date("2026-10-04T15:00:00-0500"),
-    title: "Rummage Sale",
-    description:
-      "Find your next hidden gem in this expansive rummage sale curated by the SMG Women’s Guild.",
-    location: "Cafetorium",
-    category: ScheduleItemCategory.OTHER,
-  },
-  {
-    startTime: new Date("2026-10-04T10:00:00-0500"),
-    endTime: new Date("2026-10-04T15:00:00-0500"),
-    title: "Ministry Tables",
-    location: "Cafetorium",
-    category: ScheduleItemCategory.OTHER,
-  },
-  {
-    startTime: new Date("2026-10-04T10:00:00-0500"),
-    endTime: new Date("2026-10-04T15:00:00-0500"),
-    title: "Face Painting",
-    location: "Holy Family Life Center",
-    category: ScheduleItemCategory.TERTIARY,
-  },
-  {
-    startTime: new Date("2026-10-04T10:00:00-0500"),
-    endTime: new Date("2026-10-04T15:00:00-0500"),
-    title: "Axe Throwing",
-    location: "Field",
-    description:
-      "Hone your aim and sharpen your blades—challenge your friends to an axe-throwing contest!",
+    startTime: new Date("2026-10-03T14:00:00-05:00"),
+    endTime: new Date("2026-10-03T18:00:00-05:00"),
+    title: "Mechanical Bull",
+    location: "Back Field",
     category: ScheduleItemCategory.SECONDARY,
   },
   {
-    startTime: new Date("2026-10-04T11:45:00-0500"),
-    endTime: new Date("2026-10-04T12:15:00-0500"),
-    title: "Alumni Group Photo",
-    location: "In the church",
+    startTime: new Date("2026-10-03T10:00:00-05:00"),
+    endTime: new Date("2026-10-03T18:00:00-05:00"),
+    title: "Petting Zoo",
+    location: "Back Field",
+    category: ScheduleItemCategory.TERTIARY,
+  },
+  {
+    startTime: new Date("2026-10-04T10:00:00-05:00"),
+    endTime: new Date("2026-10-04T10:30:00-05:00"),
+    title: "Checkers the Magician",
     description:
-      "Any SMG alumni, young or old, are welcome to join us for a group photo in the church. Be part of SMG history!",
-    category: ScheduleItemCategory.TERTIARY,
+      "Be amazed and entertained by Checkers, every kid's favorite magician (and every adult's favorite comedian).",
+    location: "Main Stage",
+    category: ScheduleItemCategory.PRIMARY,
   },
   {
-    startTime: new Date("2026-10-04T10:00:00-0500"),
-    endTime: new Date("2026-10-04T15:00:00-0500"),
-    title: "Caricatures",
-    location: "Holy Family Life Center",
-    category: ScheduleItemCategory.TERTIARY,
+    startTime: new Date("2026-10-04T11:00:00-05:00"),
+    endTime: new Date("2026-10-04T12:00:00-05:00"),
+    title: "Symphony Arlington String Quartet",
+    location: "Main Stage",
+    category: ScheduleItemCategory.PRIMARY,
   },
   {
-    startTime: new Date("2026-10-04T10:00:00-0500"),
-    endTime: new Date("2026-10-04T15:00:00-0500"),
-    title: "Dunk Tank",
-    location: "Field",
+    startTime: new Date("2026-10-04T12:15:00-05:00"),
+    endTime: new Date("2026-10-04T13:30:00-05:00"),
+    title: "Bradley Banning",
+    location: "Main Stage",
+    category: ScheduleItemCategory.PRIMARY,
+  },
+  {
+    startTime: new Date("2026-10-04T13:30:00-05:00"),
+    endTime: new Date("2026-10-04T15:00:00-05:00"),
+    title: "SMG Talent Show",
+    description:
+      "Catch our talented students showing off their many unique talents!",
+    location: "Main Stage",
+    category: ScheduleItemCategory.PRIMARY,
+  },
+  {
+    startTime: new Date("2026-10-04T10:00:00-05:00"),
+    endTime: new Date("2026-10-04T14:00:00-05:00"),
+    title: "Bingo",
+    location: "Saint Maria Center",
     category: ScheduleItemCategory.SECONDARY,
   },
+  {
+    startTime: new Date("2026-10-04T10:00:00-05:00"),
+    endTime: new Date("2026-10-04T15:00:00-05:00"),
+    title: "Blood Drive",
+    category: ScheduleItemCategory.TERTIARY,
+  },
+  ...[
+    { date: "2026-10-03", closingTime: "20:00" },
+    { date: "2026-10-04", closingTime: "15:00" },
+  ].flatMap(({ date, closingTime }) =>
+    allDayActivities.map((activity) => ({
+      ...activity,
+      startTime: new Date(`${date}T10:00:00-05:00`),
+      endTime: new Date(`${date}T${closingTime}:00-05:00`),
+      category: ScheduleItemCategory.OTHER,
+      allDay: true,
+    })),
+  ),
 ];
 
-const SATURDAY = new Date("2026-10-03T00:00:00-0500");
 const SUNDAY = new Date("2026-10-04T00:00:00-0500");
+const FESTIVAL_END = Math.max(...schedule.map((item) => item.endTime.getTime()));
+
+const eventTimeFormatter = new Intl.DateTimeFormat("en-US", {
+  timeZone: "America/Chicago",
+  hour: "numeric",
+  minute: "2-digit",
+  hour12: true,
+});
 
 function localTime(date: Date): string {
-  const meridian = date.getHours() >= 12 ? "PM" : "AM";
-  const hour = date.getHours() % 12 === 0 ? 12 : date.getHours() % 12;
+  return eventTimeFormatter.format(date);
+}
 
-  return `${hour.toString()}:${date
-    .getMinutes()
-    .toString()
-    .padStart(2, "0")} ${meridian}`;
+// Snapshots must stay unchanged between clock updates, including hydration.
+let currentTime = 0;
+
+function getTimeSnapshot() {
+  return currentTime;
+}
+
+function getServerTimeSnapshot() {
+  return 0;
+}
+
+function subscribeToTime(onStoreChange: () => void) {
+  const updateTime = () => {
+    currentTime = Date.now();
+    onStoreChange();
+  };
+
+  updateTime();
+  const interval = window.setInterval(updateTime, 60_000);
+  return () => window.clearInterval(interval);
 }
 
 function sortItems(a: ScheduleItem, b: ScheduleItem) {
@@ -327,21 +263,12 @@ function sortItems(a: ScheduleItem, b: ScheduleItem) {
     other: 3,
   };
 
-  // Case: one interval is entirely before the other
-  if (a.endTime <= b.startTime) return -1;
-  if (b.endTime <= a.startTime) return 1;
-
-  // Then, prioritize by category
-  if (a.category !== b.category) {
-    return (priorityMap[a.category] ?? 3) - (priorityMap[b.category] ?? 3);
-  }
-
-  // Otherwise, prioritize earlier endTime
-  if (a.startTime < b.startTime) return -1;
-  if (a.startTime > b.startTime) return 1;
-
-  // If same endTime, break ties with startTime
-  return a.startTime.getTime() - b.startTime.getTime();
+  // Earlier starts come first; break ties by priority, then earlier ends.
+  return (
+    a.startTime.getTime() - b.startTime.getTime() ||
+    priorityMap[a.category] - priorityMap[b.category] ||
+    a.endTime.getTime() - b.endTime.getTime()
+  );
 }
 
 function renderItem(item: ScheduleItem) {
@@ -354,10 +281,16 @@ function renderItem(item: ScheduleItem) {
         <div
           className={`py-2 text-center whitespace-nowrap pr-4 border-r ${classes.timeBlock}`}
         >
-          <div>{localTime(item.startTime)}</div>
-          <div className="mt-4">
-            <em>{localTime(item.endTime)}</em>
-          </div>
+          {item.allDay ? (
+            <div>All Day</div>
+          ) : (
+            <>
+              <div>{localTime(item.startTime)}</div>
+              <div className="mt-4">
+                <em>{localTime(item.endTime)}</em>
+              </div>
+            </>
+          )}
         </div>
         <div className={`py-2 pl-4 border-l ${classes.descriptionBlock}`}>
           <div className="mb-2">
@@ -372,22 +305,20 @@ function renderItem(item: ScheduleItem) {
 
 export default function SchedulePage() {
   const now = useSyncExternalStore(
-    (onStoreChange) => {
-      const interval = window.setInterval(onStoreChange, 60_000);
-      return () => window.clearInterval(interval);
-    },
-    () => new Date(),
-    () => new Date(0),
+    subscribeToTime,
+    getTimeSnapshot,
+    getServerTimeSnapshot,
   );
+  const festivalEnded = now >= FESTIVAL_END;
 
   const saturdayItems = schedule
     .filter((scheduleItem) => {
-      return scheduleItem.startTime < SUNDAY && scheduleItem.endTime > now;
+      return scheduleItem.startTime < SUNDAY && scheduleItem.endTime.getTime() > now;
     })
     .sort(sortItems);
   const sundayItems = schedule
     .filter((scheduleItem) => {
-      return scheduleItem.startTime >= SUNDAY && scheduleItem.endTime > now;
+      return scheduleItem.startTime >= SUNDAY && scheduleItem.endTime.getTime() > now;
     })
     .sort(sortItems);
 
@@ -442,23 +373,28 @@ export default function SchedulePage() {
               </h2>
             </div>
 
-            <div className="max-w-prose mx-auto">
-              <h3 className="text-center my-8">Saturday, October 3</h3>
-              <p className="text-sm">
-                <strong>All Day:</strong> food booths, vendor hall, bingo,
-                carnival games, bounce houses, rummage sale
-              </p>
-              {saturdayItems.map(renderItem)}
-            </div>
+            {festivalEnded ? (
+              <div className="max-w-prose mx-auto py-8 text-center" role="status">
+                <h3 className="mb-4">GorettiFest is over!</h3>
+                <p>Thanks for coming and celebrating with us!</p>
+              </div>
+            ) : (
+              <>
+                {saturdayItems.length > 0 && (
+                  <div className="max-w-prose mx-auto">
+                    <h3 className="text-center my-8">Saturday, October 3</h3>
+                    {saturdayItems.map(renderItem)}
+                  </div>
+                )}
 
-            <div className="max-w-prose mx-auto">
-              <h3 className="text-center my-8">Sunday, October 4</h3>
-              <p className="text-sm">
-                <strong>All Day:</strong> food booths, vendor hall, bingo,
-                carnival games, bounce houses, rummage sale
-              </p>
-              {sundayItems.map(renderItem)}
-            </div>
+                {sundayItems.length > 0 && (
+                  <div className="max-w-prose mx-auto">
+                    <h3 className="text-center my-8">Sunday, October 4</h3>
+                    {sundayItems.map(renderItem)}
+                  </div>
+                )}
+              </>
+            )}
           </div>
         </div>
       </div>
