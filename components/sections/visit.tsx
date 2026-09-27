@@ -1,6 +1,6 @@
 import { PageSection } from "../page-section";
 import { InfoTable } from "../info-table";
-import { Button } from "../button";
+import Link from "next/link";
 
 export function VisitSection() {
   return (
@@ -24,12 +24,14 @@ export function VisitSection() {
                   Sunday, October 4<br />
                   10am to 3pm
                 </p>
-                {/* TODO: uncomment when the schedule is mostly ready */}
-                {/* <p>
-                  <a href="/schedule">
-                    <Button>See the full schedule</Button>
-                  </a>
-                </p> */}
+                <p>
+                  <Link
+                    href="/schedule"
+                    className="inline-block rounded-md bg-blue-600 px-8 py-2 text-white no-underline transition-colors hover:bg-blue-500"
+                  >
+                    See the full schedule
+                  </Link>
+                </p>
               </td>
             </tr>
             <tr>
@@ -48,10 +50,12 @@ export function VisitSection() {
                   </address>
                 </a>
                 <br />
-                {/* TODO: uncomment close to event */}
-                {/* <a href="/img/GorettiFest-Map.png">
-                  <Button>View the GorettiFest Map</Button>
-                </a> */}
+                <Link
+                  href="/img/GorettiFest-Map.png"
+                  className="inline-block rounded-md bg-blue-600 px-8 py-2 text-white no-underline transition-colors hover:bg-blue-500"
+                >
+                  View the GorettiFest Map
+                </Link>
               </td>
             </tr>
             <tr>
