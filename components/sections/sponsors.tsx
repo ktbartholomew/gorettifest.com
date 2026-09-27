@@ -78,9 +78,16 @@ const sponsors: SponsorLogo[] = [
     linkUrl: "https://jpmorganwealthmanagement.chase.com/advisor/tx/george-p-conkle",
   },
   {
+    size: "large",
+    name: "Sigercon",
+    imageUrl: "/img/sponsors/large/sigercon.webp",
+    linkUrl: "https://www.sigercon.com",
+  },
+  {
     size: "small",
     name: "Abbey Brown and the Sound",
     imageUrl: "/img/sponsors/abbey-brown-and-the-sound.png",
+    linkUrl: "https://www.facebook.com/abbeybrownandthesound",
   },
   {
     size: "small",
@@ -92,6 +99,7 @@ const sponsors: SponsorLogo[] = [
     size: "small",
     name: "Drengr Axe Throwing",
     imageUrl: "/img/sponsors/Drengr%20Axe%20Throwing.png",
+    linkUrl: "https://www.drengr.com/",
   },
   {
     size: "small",
@@ -103,6 +111,7 @@ const sponsors: SponsorLogo[] = [
     size: "small",
     name: "Fischer's Meat Market",
     imageUrl: "/img/sponsors/Fischers%20Meat%20Market.png",
+    linkUrl: "http://fischersmeatmarket.com/",
   },
   {
     size: "small",
@@ -119,31 +128,37 @@ const sponsors: SponsorLogo[] = [
     size: "small",
     name: "La Isla",
     imageUrl: "/img/sponsors/La%20Isla.webp",
+    linkUrl: "https://laislatx.com/",
   },
   {
     size: "small",
     name: "Little Germany",
     imageUrl: "/img/sponsors/Little%20Germany.png",
+    linkUrl: "https://littlegermany.top/",
   },
   {
     size: "small",
     name: "Marquez Bakery",
     imageUrl: "/img/sponsors/marquez%20logo%202024.jpg",
+    linkUrl: "https://marquezbakery.com/",
   },
   {
     size: "small",
     name: "Moore Equipment Rental",
     imageUrl: "/img/sponsors/Moore%20Equipment%20Rental.png",
+    linkUrl: "https://www.moorerental.com/",
   },
   {
     size: "small",
     name: "North Arlington Little League",
     imageUrl: "/img/sponsors/NALL%20Logo.png",
+    linkUrl: "https://www.nallball.com/",
   },
   {
     size: "small",
     name: "Propane Doctor",
     imageUrl: "/img/sponsors/Propane%20Doctor.jpg",
+    linkUrl: "https://www.propanedoctor.com/",
   },
   {
     size: "small",
@@ -155,11 +170,13 @@ const sponsors: SponsorLogo[] = [
     size: "small",
     name: "Trailer Park Chill",
     imageUrl: "/img/sponsors/Trailer%20Park%20Chill.png",
+    linkUrl: "https://www.trailerparkchill.com/",
   },
   {
     size: "small",
     name: "Trinity River Ramblers",
     imageUrl: "/img/sponsors/Trinity%20River%20Ramblers.png",
+    linkUrl: "https://trinityriverramblers.net/",
   },
 ];
 
