@@ -51,7 +51,7 @@ export function VisitSection() {
                 </a>
                 <br />
                 <Link
-                  href="/img/GorettiFest-Map.png"
+                  href="/map"
                   className="inline-block rounded-md bg-blue-600 px-8 py-2 text-white no-underline transition-colors hover:bg-blue-500"
                 >
                   View the GorettiFest Map

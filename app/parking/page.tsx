@@ -34,7 +34,7 @@ export default function MenuPage() {
           <Link href="/parking">
             <Button>Find Parking</Button>
           </Link>
-          <Link href="/img/GorettiFest-Map.png">
+          <Link href="/map">
             <Button>GorettiFest Map</Button>
           </Link>
           <Link href="/schedule">

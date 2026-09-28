@@ -20,7 +20,7 @@ const HERO_VIDEO_URL =
 
 const eventDayLinks = [
   { label: "Find Parking", href: "/parking" },
-  { label: "GorettiFest Map", href: "/img/GorettiFest-Map.png" },
+  { label: "GorettiFest Map", href: "/map" },
   { label: "Schedule", href: "/schedule" },
   {
     label: "Follow the Fun on Instagram",
