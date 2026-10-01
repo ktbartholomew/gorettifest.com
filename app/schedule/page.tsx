@@ -205,6 +205,14 @@ const schedule: ScheduleItem[] = [
     title: "Blood Drive",
     category: ScheduleItemCategory.TERTIARY,
   },
+  {
+    startTime: new Date("2026-10-04T12:00:00-05:00"),
+    endTime: new Date("2026-10-04T15:00:00-05:00"),
+    title: "Helicopter Landing",
+    description:
+      "Expected arrival window: 12–3 PM. The crew are on-duty EMTs, so they will determine the exact arrival time based on their availability.",
+    category: ScheduleItemCategory.SECONDARY,
+  },
   ...[
     { date: "2026-10-03", closingTime: "20:00" },
     { date: "2026-10-04", closingTime: "15:00" },
@@ -338,7 +346,10 @@ export default function SchedulePage() {
             />
           </Link>
         </div>
-        <div className="flex flex-col md:flex-row gap-4">
+        <div className="flex flex-col md:flex-row md:flex-wrap gap-4">
+          <Link href="/">
+            <Button>Home</Button>
+          </Link>
           <Link href="/parking">
             <Button>Find Parking</Button>
           </Link>

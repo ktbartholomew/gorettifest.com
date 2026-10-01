@@ -28,7 +28,10 @@ export default function MapPage() {
             />
           </Link>
         </div>
-        <div className="flex flex-col md:flex-row gap-4">
+        <div className="flex flex-col md:flex-row md:flex-wrap gap-4">
+          <Link href="/">
+            <Button>Home</Button>
+          </Link>
           <Link href="/parking">
             <Button>Find Parking</Button>
           </Link>
