@@ -93,6 +93,12 @@ const schedule: ScheduleItem[] = [
     category: ScheduleItemCategory.PRIMARY,
   },
   {
+    startTime: new Date("2026-10-03T13:30:00-05:00"),
+    endTime: new Date("2026-10-03T14:00:00-05:00"),
+    title: "DANCE: Indo-western Bollywood Dance by Kavitha & Team",
+    category: ScheduleItemCategory.PRIMARY,
+  },
+  {
     startTime: new Date("2026-10-03T14:00:00-05:00"),
     endTime: new Date("2026-10-03T14:30:00-05:00"),
     title: "Miss Persis",
