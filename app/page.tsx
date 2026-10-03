@@ -22,11 +22,6 @@ const eventDayLinks = [
   { label: "Find Parking", href: "/parking" },
   { label: "GorettiFest Map", href: "/map" },
   { label: "Schedule", href: "/schedule" },
-  {
-    label: "Follow the Fun on Instagram",
-    href: "https://www.instagram.com/smgcatholicschool/",
-    target: "_blank",
-  },
 ];
 
 const eventStructuredData = {
@@ -91,12 +86,16 @@ export default function Home() {
         aria-label="Festival essentials"
         className="flex flex-col items-stretch justify-center gap-4 p-4 text-center sm:flex-row sm:flex-wrap"
       >
-        {eventDayLinks.map(({ label, href, target }) => (
+        <a
+          href="/gorettifest-program-2026.pdf"
+          className="rounded-md bg-blue-600 px-8 py-2 text-white no-underline transition-colors hover:bg-blue-500"
+        >
+          Digital Program
+        </a>
+        {eventDayLinks.map(({ label, href }) => (
           <Link
             key={href}
             href={href}
-            target={target}
-            rel={target === "_blank" ? "noopener noreferrer" : undefined}
             className="rounded-md bg-blue-600 px-8 py-2 text-white no-underline transition-colors hover:bg-blue-500"
           >
             {label}
