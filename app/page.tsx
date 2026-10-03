@@ -2,6 +2,7 @@ import Image from "next/image";
 import schoolPhoto from "@/public/img/IMG09696.jpg";
 import styles from "@/components/sections/sections.module.css";
 import { HeaderNav } from "@/components/header-nav";
+import { HeroDate } from "@/components/hero-date";
 import { Footer } from "@/components/footer";
 import { PageSection } from "@/components/page-section";
 import { Button } from "@/components/button";
@@ -77,7 +78,7 @@ export default function Home() {
           >
             <span className="block">Food. Fun. GorettiFest.</span>
             <span className="block text-4xl not-italic md:text-4xl lg:text-6xl">
-              October 3-4, 2026
+              <HeroDate />
             </span>
           </h1>
         </div>
