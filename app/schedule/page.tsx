@@ -167,6 +167,15 @@ const schedule: ScheduleItem[] = [
     category: ScheduleItemCategory.TERTIARY,
   },
   {
+    startTime: new Date("2026-10-03T15:00:00-05:00"),
+    endTime: new Date("2026-10-03T15:30:00-05:00"),
+    title: "Alumni Group Photo",
+    location: "In the church",
+    description:
+      "Any SMG alumni, young or old, are welcome to join us for a group photo in the church. Be part of SMG history!",
+    category: ScheduleItemCategory.TERTIARY,
+  },
+  {
     startTime: new Date("2026-10-04T10:00:00-05:00"),
     endTime: new Date("2026-10-04T10:30:00-05:00"),
     title: "Checkers the Magician",
