@@ -1,17 +1,17 @@
-# Small logo catalog
+# Small email logos
 
-Generated PNG copies of the GorettiFest wordmarks and sponsor artwork. Originals stay unchanged. The dated brand variants are included but not featured by default; check their text before reusing them.
+PNG copies of the GorettiFest wordmarks and sponsor artwork. Originals remain unchanged.
 
-- Browse after deployment: https://www.gorettifest.com/img/small/index.html
-- Machine-readable catalog: https://www.gorettifest.com/img/small/catalog.json
-- Images fit inside 480 × 240 pixels, preserving aspect ratio, transparent pixels, existing padding, and colors. Raster inputs are never enlarged. Display at the catalog's half-size dimensions for 2× email density.
-- White logos require a dark background. Both preview backgrounds are available; no logo colors are altered.
-- Paths mirror the source folders. The source extension is part of each output name to avoid collisions between original PNG/JPG/SVG variants.
-- `featured` selects the site's current sponsor artwork plus the undated full GorettiFest wordmark. Other source variants remain discoverable.
-- `url` is the public production image URL; `path` works on preview deployments. These URLs only become available after merging and deploying.
+The visual logo picker lives in Donor Letter Studio: https://donor-letter-studio.ktbartholomew.chatgpt.site. This repository hosts only the image assets and machine-readable metadata, not a separate catalog interface.
 
-Run `npm ci` then `npm run logos:small` to regenerate PNGs and `catalog.json`. Sources and labels are declared in `scripts/small-logo-sources.json`. To add or retire artwork, update that list and regenerate; remove obsolete generated files explicitly.
+Catalog URL after deployment: https://www.gorettifest.com/img/small/catalog.json
 
-The redundant Sigercon PDF is represented by its existing PNG source. The NALL information QR code is excluded because it is not a logo. Symphony Arlington's source SVG was copied from the URL already used in `components/sections/sponsors.tsx`: https://symphonyarlington.org/wp-content/uploads/2023/10/SA-Logo-wh.svg.
+Images fit within 480 × 240 pixels, preserving aspect ratio, transparency, padding, and colors; raster inputs are never enlarged. Use the catalog's half-size display dimensions for 2× email density. White artwork needs a dark background.
 
-A browser-based studio on another origin can load the catalog using the public CORS header configured for `catalog.json`. PNG URLs can be placed directly in email `<img>` elements; do not embed them as data URLs or reference private preview hosts.
+The catalog includes source paths, production URLs, dimensions, sponsor websites, and a featured flag for current artwork. Dated GorettiFest variants contain 2025 dates and are not featured. Filenames include source extensions to avoid variant collisions.
+
+Run `npm ci` and `npm run logos:small` to regenerate PNGs and catalog.json from scripts/small-logo-sources.json. Remove obsolete output files explicitly when retiring artwork.
+
+The Sigercon PDF is represented by its existing PNG. NALL's information QR code is excluded. Symphony Arlington's source SVG was copied from the URL already used by the site: https://symphonyarlington.org/wp-content/uploads/2023/10/SA-Logo-wh.svg.
+
+The catalog has a public CORS header so the studio can read it. Image URLs only become available after merge and deployment.
