@@ -8,6 +8,13 @@ const nextConfig = {
       },
     ],
   },
+  // Public logo metadata can be read by the separately hosted letter studio.
+  headers: async () => [
+    {
+      source: "/img/small/catalog.json",
+      headers: [{ key: "Access-Control-Allow-Origin", value: "*" }],
+    },
+  ],
   rewrites: async () => [
     {
       source: "/js/script.js",
