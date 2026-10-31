@@ -1,0 +1,677 @@
+[
+  {
+    "id": "media-77485c37801004326e4f",
+    "location": "Timberlake Main Stage",
+    "caption": "Mr. Luna blew the doors of the talent show, singing \"Drops of Jupiter\" 🤘 🤩",
+    "seedLikes": 76,
+    "media": {
+      "kind": "video",
+      "aspectRatio": "vertical",
+      "placeholderLabel": "Timberlake Main Stage",
+      "alt": "Mr. Luna sings into a microphone beneath the stage tent.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-77485c37801004326e4f/b3bc297c83209d4460dfd077534ada910af432eff138fe63428916b8f4753e0d.mp4",
+      "poster": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-77485c37801004326e4f/3254cc6772a41381cff0383849f3f8fedc598cd266497e11d2995854030c5fca.webp"
+    }
+  },
+  {
+    "id": "media-98ebaa32ec7c04c84ba5",
+    "location": "Timberlake Main Stage",
+    "caption": "Who's on first? No, that's JT! The classic Abbott & Costello routine had our talent show audience in stiches!",
+    "seedLikes": 47,
+    "media": {
+      "kind": "photo",
+      "aspectRatio": 1,
+      "placeholderLabel": "Timberlake Main Stage",
+      "alt": "A child wearing a baseball cap, blue vest, and headset microphone holds a clipboard on stage.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-98ebaa32ec7c04c84ba5/dc39edac44eab138f3685465495de837fc2dc73ae5d6594b141b4f25131dc859.webp"
+    }
+  },
+  {
+    "id": "media-e5edbdd9ea68c8eb9dd7",
+    "location": "Timberlake Main Stage",
+    "caption": "The Nolan ballet folkorico team is taking the stage for a colorful spin.",
+    "seedLikes": 81,
+    "media": {
+      "kind": "photo",
+      "aspectRatio": 1.5,
+      "placeholderLabel": "Timberlake Main Stage",
+      "alt": "Two folk dancers lift the wide skirts of their yellow and blue dresses on the GorettiFest stage.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-e5edbdd9ea68c8eb9dd7/00369ac3e3d3ae629f3881f697183977f9530159fc019dca38bdae621f98694c.webp"
+    }
+  },
+  {
+    "id": "media-5ce87dfb9d3b0bedc476",
+    "location": "Midway",
+    "caption": "Hello from the midway!",
+    "seedLikes": 44,
+    "media": {
+      "kind": "photo",
+      "aspectRatio": 1,
+      "placeholderLabel": "Midway",
+      "alt": "A girl in a red GorettiFest shirt smiles and waves beside a carnival game booth.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-5ce87dfb9d3b0bedc476/1d9610e7ae2f6d795b4bd2ef58d7357bb1963e545a4825d5d91bfa885da233bb.webp"
+    }
+  },
+  {
+    "id": "media-515db11764aedac31d2f",
+    "location": "Timberlake Main Stage",
+    "caption": "GorettiFest is always ready to rock! 🤘",
+    "seedLikes": 209,
+    "media": {
+      "kind": "photo",
+      "aspectRatio": 1,
+      "placeholderLabel": "Timberlake Main Stage",
+      "alt": "A drummer plays his kit in front of the red GorettiFest banner.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-515db11764aedac31d2f/42cda3b059791dd23b0b67f79c0baa54c8e4866690c9edc8c44a6a009355c232.webp"
+    }
+  },
+  {
+    "id": "media-3385b6e5ca362454146d",
+    "location": "Timberlake Main Stage",
+    "caption": "Came for the show. Left with confetti in their hair.",
+    "seedLikes": 249,
+    "media": {
+      "kind": "photo",
+      "aspectRatio": 1,
+      "placeholderLabel": "Timberlake Main Stage",
+      "alt": "Two children with confetti in their hair sit facing the GorettiFest stage.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-3385b6e5ca362454146d/bdacd03a3d018c2e257c38eb59af443cafa9607a2d616df389d2258c6400d08f.webp"
+    }
+  },
+  {
+    "id": "media-6df964449929448d1efc",
+    "location": "GorettiFest",
+    "caption": "Throwback to our invitation to join us at GorettiFest. Who knew what would be in store?",
+    "seedLikes": 93,
+    "media": {
+      "kind": "video",
+      "aspectRatio": "vertical",
+      "placeholderLabel": "GorettiFest",
+      "alt": "GorettiFest promotional video with aerial views of the festival grounds.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-6df964449929448d1efc/a8f22641051546d80d0f63a38a41e6458c7ff15ac390b674160a4f88f5636ef2.mp4",
+      "poster": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-6df964449929448d1efc/039058769b0e4ae0e308dda66969305eb1b0275a54aa4836ee7fb8294d45b2a7.webp"
+    }
+  },
+  {
+    "id": "media-e8909314ba8fb271015b",
+    "location": "Midway",
+    "caption": "We caught up with Mr. Nguyen of Duck AC & Heating at his sponsored game booth!",
+    "seedLikes": 36,
+    "media": {
+      "kind": "video",
+      "aspectRatio": "vertical",
+      "placeholderLabel": "Midway",
+      "alt": "An interviewer speaks with a man beside a carnival game under a blue canopy.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-e8909314ba8fb271015b/c919797d3d65f5e1383ecbe92f5bd329754481ace6cc490c1c7627f416088a22.mp4",
+      "poster": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-e8909314ba8fb271015b/160f5be4e0e2d4ee641c9ffd826b758a5229f4886f71413f89c91c70458d3ce2.webp"
+    }
+  },
+  {
+    "id": "media-ea9bfbaadfa0a26a0f2b",
+    "location": "Timberlake Main Stage",
+    "caption": "Plugged in and ready to rock. 🎸",
+    "seedLikes": 79,
+    "media": {
+      "kind": "photo",
+      "aspectRatio": 1,
+      "placeholderLabel": "Timberlake Main Stage",
+      "alt": "A bearded guitarist in a black cap plays a teal electric guitar under the stage tent.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-ea9bfbaadfa0a26a0f2b/cd017227adb8501ab481fa5b0afb31d787ac3e4256889c77d4582da506abee3b.webp"
+    }
+  },
+  {
+    "id": "media-9426b3aa3de671d4095d",
+    "location": "SMG school halls",
+    "caption": "We were honored to have our alumni back to unveil a new Alumni Celebration corner in the school library. So many memories!",
+    "seedLikes": 26,
+    "media": {
+      "kind": "photo",
+      "aspectRatio": 1,
+      "placeholderLabel": "SMG school halls",
+      "alt": "Two visitors examine award plaques on a red school wall beside a gold Trojan statue.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-9426b3aa3de671d4095d/e1ef24e82557607f120d5ce68ddd97e0cb6ee6ed6f49764a2b129a06ca9adca5.webp"
+    }
+  },
+  {
+    "id": "media-09978ca12d2b0fa12cb8",
+    "location": "Festival grounds",
+    "caption": "Keeping it cool, two bags at a time. Thanks for doing the heavy lifting!",
+    "seedLikes": 75,
+    "media": {
+      "kind": "photo",
+      "aspectRatio": 1,
+      "placeholderLabel": "Festival grounds",
+      "alt": "A smiling man in a rain jacket carries two bags of ice on his shoulder.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-09978ca12d2b0fa12cb8/099bda6c05c5591994be5c96a74f1a97e1805923c2aeecd7cbe565f847b094ac.webp"
+    }
+  },
+  {
+    "id": "media-0b46caf778dd826e7277",
+    "location": "Timberlake Main Stage",
+    "caption": "Our ballet folkorico dancers move pretty fast. If you don't stop and look around, you might miss them.",
+    "seedLikes": 26,
+    "media": {
+      "kind": "video",
+      "aspectRatio": "square",
+      "placeholderLabel": "Timberlake Main Stage",
+      "alt": "Dancers lift and swirl the skirts of their blue and yellow dresses on the covered stage.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-0b46caf778dd826e7277/e7327c97956bbae3552f156ba6d0d70b9a6621afb129aff1dec130d790ebec0f.mp4",
+      "poster": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-0b46caf778dd826e7277/bb26780ba25371c43317ac30d6094e21b6bcb8d045ac9bb2a12b1a8820f56614.webp"
+    }
+  },
+  {
+    "id": "media-8d8e0bf24b481d93d232",
+    "location": "GorettiFest",
+    "caption": "Mysterious friend of the festival Ned Lasso is pumped up about all the music coming to GorettiFest!",
+    "seedLikes": 258,
+    "media": {
+      "kind": "video",
+      "aspectRatio": "square",
+      "placeholderLabel": "GorettiFest",
+      "alt": "A man wearing glasses and a mustache appears in a retro television frame with October 3–4 text.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-8d8e0bf24b481d93d232/ab688cb4ce62a27fd076457fc585f77ee15cd1990da4b7c791745c9b2e499dda.mp4",
+      "poster": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-8d8e0bf24b481d93d232/5f3dfe2bb9673af68e12bdc681062ba24b60e4779d7be112e7d21cf80cdf6ba7.webp"
+    }
+  },
+  {
+    "id": "media-22449ce25c7b0e6440a1",
+    "location": "Timberlake Main Stage",
+    "caption": "Jake and his mustachioed saxophone were yet another highlight of the talent show. The crows loved it!",
+    "seedLikes": 152,
+    "media": {
+      "kind": "video",
+      "aspectRatio": "square",
+      "placeholderLabel": "Timberlake Main Stage",
+      "alt": "A saxophonist in a red GorettiFest shirt, black hat, and mustache performs beside a music stand.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-22449ce25c7b0e6440a1/2b5314b3699b81e0a09cb75a67c14f8b0ff1ce98c3f223bbd7621b3165858f8f.mp4",
+      "poster": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-22449ce25c7b0e6440a1/c294d406c492e74940226022f1712f1afc0526bd00ee995103f0f774a6fbcf30.webp"
+    }
+  },
+  {
+    "id": "media-3edd1f49a3c954558876",
+    "location": "Festival grounds",
+    "caption": "GorettiFest is a big festival! Sometimes our smaller guests need help getting around.",
+    "seedLikes": 33,
+    "media": {
+      "kind": "photo",
+      "aspectRatio": 1,
+      "placeholderLabel": "Festival grounds",
+      "alt": "A toddler in a light gray outfit rides on a man's shoulders as they look across the festival.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-3edd1f49a3c954558876/73bdf095f24919371425f264a34ba15fe56b81fe373c7b00fd14247ded96755f.webp"
+    }
+  },
+  {
+    "id": "media-e7cc2ff5a30c4e116d3b",
+    "location": "Lake SMG",
+    "caption": "Water broom races! A new sport invented at this year's rainy GorettiFest.",
+    "seedLikes": 80,
+    "media": {
+      "kind": "video",
+      "aspectRatio": "square",
+      "placeholderLabel": "Lake SMG",
+      "alt": "People push water across the wet festival pavement near the tent and striped booths.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-e7cc2ff5a30c4e116d3b/ca802eaeed537cd741d12215ee057041a0b58a5774bb57261704ab322d3796bb.mp4",
+      "poster": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-e7cc2ff5a30c4e116d3b/d2571dda1b4f5e1f8734fdc2e6cb7d6526e5ab41d8ae8c4876d54c527c3af55c.webp"
+    }
+  },
+  {
+    "id": "media-69da51c11fe3634fa177",
+    "location": "Festival grounds",
+    "caption": "Rain jackets earned their keep this year. Thanks for coming out in the wet weather.",
+    "seedLikes": 238,
+    "media": {
+      "kind": "photo",
+      "aspectRatio": 1,
+      "placeholderLabel": "Festival grounds",
+      "alt": "A person in a gray hooded raincoat walks across wet pavement in front of a white and blue truck.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-69da51c11fe3634fa177/a00ca5821b9b9cdd497fdc8566c5d9aacccc936717d090adad23400230d5016e.webp"
+    }
+  },
+  {
+    "id": "media-adfc1b694ee16816d1c6",
+    "location": "Timberlake Main Stage",
+    "caption": "He had the crowd dancing and clapping all through his talent show act! True story, the sun came out right after he finished his song!",
+    "seedLikes": 160,
+    "media": {
+      "kind": "photo",
+      "aspectRatio": 1,
+      "placeholderLabel": "Timberlake Main Stage",
+      "alt": "A child in a red GorettiFest shirt holds a microphone in profile against bright stage lights.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-adfc1b694ee16816d1c6/c93c23d1e8eca744340337ab1fd254736f1447dbac0d43a367b4ada1d1d29d4e.webp"
+    }
+  },
+  {
+    "id": "media-0ff342d229328eef59b5",
+    "location": "The tent",
+    "caption": "What a year to have our biggest GorettiFest tent yet. Lunch, live music, and room to stay dry together. Thanks to everyone who helped make it happen!",
+    "seedLikes": 23,
+    "media": {
+      "kind": "photo",
+      "aspectRatio": 1,
+      "placeholderLabel": "The tent",
+      "alt": "Festival visitors fill long tables with red and white checked tablecloths beneath the main tent.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-0ff342d229328eef59b5/604c84297e83ea97ec7b4820defa306f1330baf948ef99dfca7a586041a32c0f.webp"
+    }
+  },
+  {
+    "id": "media-144e9c9ba84debe81e32",
+    "location": "Food booths",
+    "caption": "Señora Zavala is one of our school's great teachers. Let's learn how to make Fruta en Vaso, new this year at the Tex-Mex booth.",
+    "seedLikes": 178,
+    "media": {
+      "kind": "video",
+      "aspectRatio": "vertical",
+      "placeholderLabel": "Food booths",
+      "alt": "Young people prepare cups of fruit at a booth decorated with colorful paper banners.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-144e9c9ba84debe81e32/74f31307cf8516fefb7e10588b09d68ea63555ddf124e2d11e79116cb6fe4b81.mp4",
+      "poster": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-144e9c9ba84debe81e32/be674b8e68bd327b2e30c7efd4ed555696990c40085608dd46105fba4b54d03b.webp"
+    }
+  },
+  {
+    "id": "media-b4450ae5a3e882bcee5e",
+    "location": "BBQ booth by Sink or Swim Pools",
+    "caption": "Good things take time. Especially when there’s barbecue involved.",
+    "seedLikes": 89,
+    "media": {
+      "kind": "photo",
+      "aspectRatio": 1,
+      "placeholderLabel": "BBQ booth by Sink or Swim Pools",
+      "alt": "A cook wearing an apron and black gloves tends pieces of meat in an open barbecue smoker.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-b4450ae5a3e882bcee5e/e65656380fbda7247b836adbff5a20c1a2c50d43b926299adb966d2aada149bb.webp"
+    }
+  },
+  {
+    "id": "media-90313ef95748612069aa",
+    "location": "GorettiFest",
+    "caption": "Friend of the festival Ned Lasso invites you to GorettiFest. Pardon the cringe.",
+    "seedLikes": 213,
+    "media": {
+      "kind": "video",
+      "aspectRatio": "square",
+      "placeholderLabel": "GorettiFest",
+      "alt": "A man wearing glasses, a mustache, and a sweater speaks in a retro television frame beside a fireplace.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-90313ef95748612069aa/209052b6f44439dc16e19a6f353a7c83bc6e6564c16bb3f2e05218ef4a750300.mp4",
+      "poster": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-90313ef95748612069aa/9d712ddcb41a524070598deb4f87c8ff6764f7ce2b2968144f82dfc49803e545.webp"
+    }
+  },
+  {
+    "id": "media-487f64cab1b3527ff501",
+    "location": "Timberlake Main Stage",
+    "caption": "Behind the music. Thanks to Symphony Arlington for playing for us! Their great performance was both entertaining and educational.",
+    "seedLikes": 99,
+    "media": {
+      "kind": "photo",
+      "aspectRatio": 1.5,
+      "placeholderLabel": "Timberlake Main Stage",
+      "alt": "Three seated string players perform under the festival tent, viewed from behind with the audience beyond the stage.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-487f64cab1b3527ff501/a28456c6fc2ef6be17a5238a6d5411d41f9d9782e121ffc04e5c9f1e544dcc29.webp"
+    }
+  },
+  {
+    "id": "media-79c7af8263c0b2600a53",
+    "location": "Festival grounds",
+    "caption": "Our students get very involved in producing all the GorettiFest media you see. Arthur went out to interview school principal Amy Utendorf.",
+    "seedLikes": 235,
+    "media": {
+      "kind": "photo",
+      "aspectRatio": 1.5,
+      "placeholderLabel": "Festival grounds",
+      "alt": "A young person holds up a smartphone on a two-handled filming rig while talking with a woman in a red GorettiFest shirt.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-79c7af8263c0b2600a53/1c5299c5a0027397204a00238cd7f22b2fc7b41a4aa950cae537d1fd7e3b4773.webp"
+    }
+  },
+  {
+    "id": "media-2c185eddc3951141737e",
+    "location": "Timberlake Main Stage",
+    "caption": "Giving the microphone a workout. Thanks for the live music!",
+    "seedLikes": 28,
+    "media": {
+      "kind": "photo",
+      "aspectRatio": 1,
+      "placeholderLabel": "Timberlake Main Stage",
+      "alt": "A gray-haired singer closes his eyes while singing into a microphone held with both hands.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-2c185eddc3951141737e/2f24beaa9f6638a388d04d2bed4219e32a0dd579c5961b37175131dd717bd3a3.webp"
+    }
+  },
+  {
+    "id": "media-28cb61bbe5b0bddb44b3",
+    "location": "Timberlake Main Stage",
+    "caption": "A closer look at the strings in action.",
+    "seedLikes": 143,
+    "media": {
+      "kind": "photo",
+      "aspectRatio": 1,
+      "placeholderLabel": "Timberlake Main Stage",
+      "alt": "A musician wearing clear-framed glasses plays a violin beside a music stand.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-28cb61bbe5b0bddb44b3/19c970735c3ec0955d16510c911049a58c08eeb8447ebf9d45ad23e71852dcc0.webp"
+    }
+  },
+  {
+    "id": "media-4e5ed07b7429b72b3076",
+    "location": "SMG Library",
+    "caption": "Old school photos, new camera roll additions.",
+    "seedLikes": 162,
+    "media": {
+      "kind": "photo",
+      "aspectRatio": 1,
+      "placeholderLabel": "SMG Library",
+      "alt": "A visitor holds a phone above an open binder of class photographs in the school library.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-4e5ed07b7429b72b3076/33c721ddae059644a68705699a3fdf622e535a683a4bc5764c1713a93dc37a54.webp"
+    }
+  },
+  {
+    "id": "media-1029cf03c363c0beb037",
+    "location": "Lake SMG",
+    "caption": "A little puddle won't keep us away from playing the midway games!",
+    "seedLikes": 77,
+    "media": {
+      "kind": "photo",
+      "aspectRatio": 1,
+      "placeholderLabel": "Lake SMG",
+      "alt": "A child in lavender clogs splashes through a puddle in front of a red and white striped booth.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-1029cf03c363c0beb037/6585e06e5b1bdc62f18528134ee8e59658d712421ee40adb40a45a377782d515.webp"
+    }
+  },
+  {
+    "id": "media-b5c45cb7f873691913bf",
+    "location": "Festival grounds",
+    "caption": "A bright choice for a rainy day.",
+    "seedLikes": 232,
+    "media": {
+      "kind": "photo",
+      "aspectRatio": 1,
+      "placeholderLabel": "Festival grounds",
+      "alt": "A smiling woman in glasses holds the hood of a bright yellow rain poncho around her face.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-b5c45cb7f873691913bf/6b2ceb14e15eaee59da095b178e0e9becf515d516056879c7db4813ccf8926b0.webp"
+    }
+  },
+  {
+    "id": "media-87a150165a2da3114705",
+    "location": "Festival grounds",
+    "caption": "GorettiFest, day two! Where else can you have this much fun in one weekend?",
+    "seedLikes": 181,
+    "media": {
+      "kind": "video",
+      "aspectRatio": "vertical",
+      "placeholderLabel": "Festival grounds",
+      "alt": "A young presenter in a blue rain jacket speaks to the camera while walking through the festival grounds.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-87a150165a2da3114705/3f0a491c7ed952a1eb6cda94b74b6843591550efb2d5e6bab5f40d5fd43578f6.mp4",
+      "poster": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-87a150165a2da3114705/597c86685ae2d0bad46250cd170fba90d4e36ba5fb8100ddc107439f3797cded.webp"
+    }
+  },
+  {
+    "id": "media-ba5f78fce0fdf93f48ad",
+    "location": "Festival grounds",
+    "caption": "Raincoat on. Back to the games.",
+    "seedLikes": 211,
+    "media": {
+      "kind": "photo",
+      "aspectRatio": 1,
+      "placeholderLabel": "Festival grounds",
+      "alt": "A child in a blue and red rain jacket looks back while walking across the wet festival grounds.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-ba5f78fce0fdf93f48ad/b7c9fa5bf5dd626fdb0f222fac627ceb8ad86792224d6a532454bf22172d94a7.webp"
+    }
+  },
+  {
+    "id": "media-4510c711b48cb243ba90",
+    "location": "Lake SMG",
+    "caption": "The midway games are just a quick walk (swim?) across \"Lake SMG\"",
+    "seedLikes": 180,
+    "media": {
+      "kind": "photo",
+      "aspectRatio": 1,
+      "placeholderLabel": "Lake SMG",
+      "alt": "A child in a red, blue, and yellow rain jacket walks through a puddle beside festival booths.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-4510c711b48cb243ba90/4837e0d3ef705069d2e5bc34bc1c21da1016356f2ca524ebee6157c71fdf3acc.webp"
+    }
+  },
+  {
+    "id": "media-b1fdef43112214d2c315",
+    "location": "Timberlake Main Stage",
+    "caption": "Taking a break from the games to catch some live music. Three cheers for a bigger tent and a dry seat!",
+    "seedLikes": 225,
+    "media": {
+      "kind": "photo",
+      "aspectRatio": 1,
+      "placeholderLabel": "Timberlake Main Stage",
+      "alt": "Two children watch a string ensemble perform on the stage beneath the festival tent.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-b1fdef43112214d2c315/74be52ccef5e46663e7ae620676341270290cbfe31810175d2d51348c0466855.webp"
+    }
+  },
+  {
+    "id": "media-99c6d3c4ad24450fa15b",
+    "location": "SMG Library",
+    "caption": "Recognize anyone? Vintage class photo albums gave our alumni plenty of memories to look through.",
+    "seedLikes": 26,
+    "media": {
+      "kind": "photo",
+      "aspectRatio": 1,
+      "placeholderLabel": "SMG Library",
+      "alt": "A visitor points to a student in a class photograph while looking through a school photo album.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-99c6d3c4ad24450fa15b/7a8c24943885ca826b64c85ce6abbb5c2b58fa8fb7f4f6bacebb6656e81002db.webp"
+    }
+  },
+  {
+    "id": "media-1ad35b7c899aafb2ae4b",
+    "location": "BBQ booth by Sink or Swim Pools",
+    "caption": "Mrs. Treadway keeps the busy BBQ booth running smoothly! Does she ever stop smiling?",
+    "seedLikes": 167,
+    "media": {
+      "kind": "photo",
+      "aspectRatio": 0.6666666666666666,
+      "placeholderLabel": "BBQ booth by Sink or Swim Pools",
+      "alt": "A woman wearing a Sink or Swim Pool Service cap smiles while writing on a clipboard.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-1ad35b7c899aafb2ae4b/4f635921648291ff7d5af27d566dbc7590e026c4aeca429747b0e64544ebb011.webp"
+    }
+  },
+  {
+    "id": "media-bedb6c9f1ba135834565",
+    "location": "Timberlake Main Stage",
+    "caption": "Catholic country musician Bradley Banning was new to GorettiFest this year and put on an amazing show.",
+    "seedLikes": 159,
+    "media": {
+      "kind": "photo",
+      "aspectRatio": 1,
+      "placeholderLabel": "Timberlake Main Stage",
+      "alt": "A musician in a black cowboy hat gestures with both hands at a microphone, with an acoustic guitar strapped across his chest.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-bedb6c9f1ba135834565/dd3e7f5cbb1602a543e833420be69c7bd10cf102f413e175e68eeb63605e384e.webp"
+    }
+  },
+  {
+    "id": "media-01087a21e5bceebdebaa",
+    "location": "Timberlake Main Stage",
+    "caption": "The whole family gets a front-row seat for a magic show at GorettiFest.",
+    "seedLikes": 44,
+    "media": {
+      "kind": "photo",
+      "aspectRatio": 1.5,
+      "placeholderLabel": "Timberlake Main Stage",
+      "alt": "A man stands beside a stroller while two older children watch the stage.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-01087a21e5bceebdebaa/745e662a247e9bc6494153f6fc168552e1d6b246e777a3b4c663bb2443558ade.webp"
+    }
+  },
+  {
+    "id": "media-b71af5452c5ac5441463",
+    "location": "Timberlake Main Stage",
+    "caption": "The annual SMG Alumni photo. It's always a pleasure to see so many alumni walking around the campus once again.",
+    "seedLikes": 94,
+    "media": {
+      "kind": "photo",
+      "aspectRatio": 1.5,
+      "placeholderLabel": "Timberlake Main Stage",
+      "alt": "A large group of adults and young people pose together on the Timberlake Main Stage.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-b71af5452c5ac5441463/a8b5a3af6c6549202611632a18a7ca40750dab467d22cd416510cfeb4a1e1249.webp"
+    }
+  },
+  {
+    "id": "media-0568b000b0f15708d85e",
+    "location": "Festival grounds",
+    "caption": "Checking in with Matt, the GorettiFest organizer.",
+    "seedLikes": 204,
+    "media": {
+      "kind": "video",
+      "aspectRatio": "vertical",
+      "placeholderLabel": "Festival grounds",
+      "alt": "A young interviewer walks beside a man in a wide-brimmed hat pushing a cart through the festival grounds.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-0568b000b0f15708d85e/84112792c405d9729668622fe293cf0d42cf32b9954d1f481165b9477be31896.mp4",
+      "poster": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-0568b000b0f15708d85e/8969ce55cdf234aad944c82a8d0b9f6ac7682895cbf2be48377531083a4221e7.webp"
+    }
+  },
+  {
+    "id": "media-aeb02c4f0b0cec905ce7",
+    "location": "Timberlake Main Stage",
+    "caption": "Live music under the tent. Thanks to the musicians for keeping us entertained, and to everyone who made room for a bigger tent this year!",
+    "seedLikes": 100,
+    "media": {
+      "kind": "photo",
+      "aspectRatio": 1,
+      "placeholderLabel": "Timberlake Main Stage",
+      "alt": "A singer in sunglasses and a plaid shirt performs at a microphone under the stage tent.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-aeb02c4f0b0cec905ce7/eadafa81e365c5a37357ea09790a4171138901ac90b43511f28b986fbc0de79e.webp"
+    }
+  },
+  {
+    "id": "media-f772768ddc295a7e600b",
+    "location": "The tent",
+    "caption": "Giving the umbrella a rest. A bigger tent was a very welcome upgrade this year!",
+    "seedLikes": 246,
+    "media": {
+      "kind": "photo",
+      "aspectRatio": 1,
+      "placeholderLabel": "The tent",
+      "alt": "A young person in a navy Saint Maria Goretti sweatshirt holds a closed umbrella inside a tent.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-f772768ddc295a7e600b/7c09d100f0716185684e24b147f442a039e06614464c91d67490e8408e096154.webp"
+    }
+  },
+  {
+    "id": "media-5f35a0ed0c5bfce4e7be",
+    "location": "The tent",
+    "caption": "Matching shirts and a wave for the camera.",
+    "seedLikes": 153,
+    "media": {
+      "kind": "photo",
+      "aspectRatio": 1.5,
+      "placeholderLabel": "The tent",
+      "alt": "Two smiling girls in red GorettiFest shirts stand together, with one waving at the camera.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-5f35a0ed0c5bfce4e7be/48d43fdf3f13b28a902239ca3b7e5c36cd491905623a0154209c71d87cb2c4b2.webp"
+    }
+  },
+  {
+    "id": "media-45f261c265c61a21c909",
+    "location": "Food booths",
+    "caption": "Order up! Thanks to the food booth crew for keeping everyone fed.",
+    "seedLikes": 166,
+    "media": {
+      "kind": "photo",
+      "aspectRatio": 1,
+      "placeholderLabel": "Food booths",
+      "alt": "A smiling food booth worker wearing gloves hands a paper food tray across a red and white striped counter.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-45f261c265c61a21c909/85c451d213ad71e1b1bc01ea190685514ffc261c37cab9a2eedcae76e5baacc3.webp"
+    }
+  },
+  {
+    "id": "media-e44a89fe2125573b69fc",
+    "location": "Timberlake Main Stage",
+    "caption": "That look when the show catches you by surprise.",
+    "seedLikes": 142,
+    "media": {
+      "kind": "photo",
+      "aspectRatio": 1,
+      "placeholderLabel": "Timberlake Main Stage",
+      "alt": "A smiling girl covers her mouth with one hand near the stage.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-e44a89fe2125573b69fc/d06875f78e4b9c96c7dbec89fd4d179b8a4f6806023e9677da975c8365fc5b46.webp"
+    }
+  },
+  {
+    "id": "media-a95cabd024d4632bb5ca",
+    "location": "Festival grounds",
+    "caption": "Bingo was busier than ever this year, as a guaranteed way to sit down and dry off.",
+    "seedLikes": 176,
+    "media": {
+      "kind": "photo",
+      "aspectRatio": 1,
+      "placeholderLabel": "Festival grounds",
+      "alt": "A man in glasses and a colorful Bingo Night shirt holds an umbrella in the rain.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-a95cabd024d4632bb5ca/1105ea039dc9d532fdafe4b14bc64da5816afacf27d6aaf5ba615c49f06c8bd2.webp"
+    }
+  },
+  {
+    "id": "media-6854ecdeb0e955c83e2f",
+    "location": "Lake SMG",
+    "caption": "The puddles turned out to be an attraction of their own.",
+    "seedLikes": 88,
+    "media": {
+      "kind": "photo",
+      "aspectRatio": 1,
+      "placeholderLabel": "Lake SMG",
+      "alt": "Three children in colorful clogs walk and jump through puddles in front of festival booths.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-6854ecdeb0e955c83e2f/fff78a6b75c66d875c98e82ce66dc06f9307df0238798edd36c1cae14dac206d.webp"
+    }
+  },
+  {
+    "id": "media-15e25ad7df2bc51d2d60",
+    "location": "Timberlake Main Stage",
+    "caption": "Well now the bird's out of the bag.",
+    "seedLikes": 102,
+    "media": {
+      "kind": "photo",
+      "aspectRatio": 1,
+      "placeholderLabel": "Timberlake Main Stage",
+      "alt": "A young performer wearing glasses and a headset holds a paper bag as colorful feathers fall through the air.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-15e25ad7df2bc51d2d60/2d62480c1818e0fa21ded26b831754b6628b0716979a63938f4e8b23b2e45949.webp"
+    }
+  },
+  {
+    "id": "media-a474de64bd6e684e87dc",
+    "location": "SMG Library",
+    "caption": "Class photos and carnival shirts from years past, on display in the library.",
+    "seedLikes": 120,
+    "media": {
+      "kind": "photo",
+      "aspectRatio": 1.5,
+      "placeholderLabel": "SMG Library",
+      "alt": "An open binder displays two Saint Maria Goretti class photos beside a folded shirt and a trophy in the library.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-a474de64bd6e684e87dc/436cd20d4eb11925a71d7528ecb2f09ca8e9a3ae652a8c6ed611df9198acb575.webp"
+    }
+  },
+  {
+    "id": "media-8d905b208615b81d6f42",
+    "location": "Timberlake Main Stage",
+    "caption": "A few tricks up his sleeve. Thanks to Checkers the magician for bringing magic and laughs to the GorettiFest audience!",
+    "seedLikes": 20,
+    "media": {
+      "kind": "photo",
+      "aspectRatio": 1,
+      "placeholderLabel": "Timberlake Main Stage",
+      "alt": "A bearded performer in a black hat and a star-and-moon vest holds out a green fabric prop toward the audience.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-8d905b208615b81d6f42/83a89ac576eb08da5d400344c8e52925d0d84457a0735383fd3222ead734758a.webp"
+    }
+  },
+  {
+    "id": "media-191cec388e1f99216286",
+    "location": "Lake SMG",
+    "caption": "Even the puddles wore red and white.",
+    "seedLikes": 208,
+    "media": {
+      "kind": "photo",
+      "aspectRatio": 1,
+      "placeholderLabel": "Lake SMG",
+      "alt": "Red and white booth stripes reflect in a puddle rippled by falling rain.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-191cec388e1f99216286/df987916aa0baa230f01714a648d1b83688bdccc1b3843037088c56eef1da257.webp"
+    }
+  },
+  {
+    "id": "media-4dae98b1b150f28df51a",
+    "location": "Midway",
+    "caption": "Checking in between stops on the midway.",
+    "seedLikes": 226,
+    "media": {
+      "kind": "video",
+      "aspectRatio": "vertical",
+      "placeholderLabel": "Midway",
+      "alt": "Two young presenters speak to the camera on the wet festival grounds beside striped booths.",
+      "src": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-4dae98b1b150f28df51a/c7f3cae86bd38462ce8bc8231686de7739e7723f3abca9f393a133a0dafbf3ff.mp4",
+      "poster": "https://kfpt3dd2rwiw8zff.public.blob.vercel-storage.com/recap/2026/media-4dae98b1b150f28df51a/61d1ea7fd19cccbc30ae79beeff0484e70d13a6696237ff195af1136b2a7d941.webp"
+    }
+  }
+]

@@ -1,7 +1,17 @@
+import { createRequire } from "node:module";
+
+const require = createRequire(import.meta.url);
+const recapMedia = require("./content/recap-generated.json");
+// Allow only the exact hosts of published images, including a different Blob store.
+const recapImageHosts = [...new Set(recapMedia
+  .filter(post => post.media.kind === "photo")
+  .map(post => new URL(post.media.src).hostname))];
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
     remotePatterns: [
+      ...recapImageHosts.map(hostname => ({ protocol: "https", hostname })),
       {
         protocol: "https",
         hostname: "kfpt3dd2rwiw8zff.public.blob.vercel-storage.com",

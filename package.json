@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "media": "node scripts/media.mjs",
+    "test:media": "node --test scripts/media/*.test.mjs",
+    "test:video": "node --experimental-strip-types --test tests/video-coordinator.test.mjs"
   },
   "dependencies": {
     "embla-carousel-autoplay": "^8.6.0",
@@ -20,6 +23,7 @@
     "@types/node": "^20",
     "@types/react": "19.2.7",
     "@types/react-dom": "19.2.3",
+    "@vercel/blob": "^2.8.2",
     "eslint": "^9",
     "eslint-config-next": "16.0.10",
     "postcss": "^8",

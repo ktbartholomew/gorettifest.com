@@ -34,3 +34,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Media sources, optimized files, local paths, and secrets
+/.media/
+.env
+.env.*
+!.env.example

@@ -1,0 +1,17 @@
+.toolbar { position: relative; z-index: 30; padding: 16px 24px; background: #e9f2ee; border-bottom: 1px solid #a8bfb1; color: #20392d; font: 14px/1.5 system-ui, sans-serif; }
+.toolbar p { margin: 8px 0 0; font-size: 12px; }
+.actions { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+.toolbar button, .editor button { background: #234b3c; color: white; border-radius: 4px; padding: 8px 12px; font-size: 13px; cursor: pointer; }
+.toolbar button:disabled, .editor button:disabled { opacity: .5; cursor: default; }
+.editor { padding: 18px 22px; background: #f2f6f3; border-top: 1px dashed #a8bfb1; font: 13px/1.5 system-ui, sans-serif; color: #20392d; }
+.filename { display: flex; align-items: center; justify-content: space-between; gap: 12px; overflow-wrap: anywhere; }
+.filename span { font-size: 11px; text-transform: uppercase; letter-spacing: .05em; }
+.editor fieldset { min-width: 0; }
+.editor label { display: grid; gap: 4px; margin: 10px 0; }
+.editor input:not([type=checkbox]), .editor textarea { min-width: 0; width: 100%; padding: 8px; border: 1px solid #a8bfb1; background: white; border-radius: 4px; color: #182a20; }
+.editor textarea { resize: vertical; }
+.numbers { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.editor .checkbox { display: flex; align-items: center; gap: 8px; }
+.editor p { margin: 10px 0 0; font-size: 12px; }
+.status { white-space: pre-wrap; }
+.editor :focus-visible, .toolbar :focus-visible { outline: 2px solid #a6312d; outline-offset: 3px; }
