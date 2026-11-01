@@ -1,0 +1,428 @@
+[
+  {
+    "source": "/img/gorettifest-logo-red-outline-date.svg",
+    "output": "gorettifest-logo-red-outline-date-svg.png",
+    "name": "GorettiFest \u2014 red outline date",
+    "category": "brand",
+    "featured": false
+  },
+  {
+    "source": "/img/gorettifest-logo-white-red-outline-date.svg",
+    "output": "gorettifest-logo-white-red-outline-date-svg.png",
+    "name": "GorettiFest \u2014 white red outline date",
+    "category": "brand",
+    "featured": false
+  },
+  {
+    "source": "/img/gorettifest-logo-white-red-outline.svg",
+    "output": "gorettifest-logo-white-red-outline-svg.png",
+    "name": "GorettiFest \u2014 white red outline",
+    "category": "brand",
+    "featured": true
+  },
+  {
+    "source": "/img/sponsors/Affalon Productions.png",
+    "output": "sponsors/affalon-productions-png.png",
+    "name": "Affalon Productions",
+    "category": "sponsor",
+    "featured": false
+  },
+  {
+    "source": "/img/sponsors/Behan Music.png",
+    "output": "sponsors/behan-music-png.png",
+    "name": "Behan Music",
+    "category": "sponsor",
+    "featured": false
+  },
+  {
+    "source": "/img/sponsors/Drengr Axe Throwing.png",
+    "output": "sponsors/drengr-axe-throwing-png.png",
+    "name": "Drengr Axe Throwing",
+    "category": "sponsor",
+    "featured": true,
+    "website": "https://www.drengr.com/"
+  },
+  {
+    "source": "/img/sponsors/DuckAC.png",
+    "output": "sponsors/duckac-png.png",
+    "name": "DuckAC",
+    "category": "sponsor",
+    "featured": false
+  },
+  {
+    "source": "/img/sponsors/Fischers Meat Market.png",
+    "output": "sponsors/fischers-meat-market-png.png",
+    "name": "Fischer's Meat Market",
+    "category": "sponsor",
+    "featured": true,
+    "website": "http://fischersmeatmarket.com/"
+  },
+  {
+    "source": "/img/sponsors/JumpAroundDFW.webp",
+    "output": "sponsors/jumparounddfw-webp.png",
+    "name": "JumpAroundDFW",
+    "category": "sponsor",
+    "featured": false
+  },
+  {
+    "source": "/img/sponsors/KOC.png",
+    "output": "sponsors/koc-png.png",
+    "name": "Knights of Columbus",
+    "category": "sponsor",
+    "featured": true
+  },
+  {
+    "source": "/img/sponsors/La Isla.webp",
+    "output": "sponsors/la-isla-webp.png",
+    "name": "La Isla",
+    "category": "sponsor",
+    "featured": true,
+    "website": "https://laislatx.com/"
+  },
+  {
+    "source": "/img/sponsors/Little Germany.png",
+    "output": "sponsors/little-germany-png.png",
+    "name": "Little Germany",
+    "category": "sponsor",
+    "featured": true,
+    "website": "https://littlegermany.top/"
+  },
+  {
+    "source": "/img/sponsors/Marquee Event Rentals logo.jfif",
+    "output": "sponsors/marquee-event-rentals-logo-jfif.png",
+    "name": "Marquee Event Rentals logo",
+    "category": "sponsor",
+    "featured": false
+  },
+  {
+    "source": "/img/sponsors/MarqueeEventRentals.svg",
+    "output": "sponsors/marqueeeventrentals-svg.png",
+    "name": "MarqueeEventRentals",
+    "category": "sponsor",
+    "featured": false
+  },
+  {
+    "source": "/img/sponsors/Moore Equipment Rental.png",
+    "output": "sponsors/moore-equipment-rental-png.png",
+    "name": "Moore Equipment Rental",
+    "category": "sponsor",
+    "featured": true,
+    "website": "https://www.moorerental.com/"
+  },
+  {
+    "source": "/img/sponsors/NALL Logo.png",
+    "output": "sponsors/nall-logo-png.png",
+    "name": "North Arlington Little League",
+    "category": "sponsor",
+    "featured": true,
+    "website": "https://www.nallball.com/"
+  },
+  {
+    "source": "/img/sponsors/NCHS Viking.png",
+    "output": "sponsors/nchs-viking-png.png",
+    "name": "NCHS Viking",
+    "category": "sponsor",
+    "featured": false
+  },
+  {
+    "source": "/img/sponsors/Pet Supermarket.svg",
+    "output": "sponsors/pet-supermarket-svg.png",
+    "name": "Pet Supermarket",
+    "category": "sponsor",
+    "featured": false
+  },
+  {
+    "source": "/img/sponsors/Propane Doctor.jpg",
+    "output": "sponsors/propane-doctor-jpg.png",
+    "name": "Propane Doctor",
+    "category": "sponsor",
+    "featured": true,
+    "website": "https://www.propanedoctor.com/"
+  },
+  {
+    "source": "/img/sponsors/Sigercon_logoFINALcol.png",
+    "output": "sponsors/sigercon-logofinalcol-png.png",
+    "name": "Sigercon logoFINALcol",
+    "category": "sponsor",
+    "featured": false
+  },
+  {
+    "source": "/img/sponsors/Trailer Park Chill.png",
+    "output": "sponsors/trailer-park-chill-png.png",
+    "name": "Trailer Park Chill",
+    "category": "sponsor",
+    "featured": true,
+    "website": "https://www.trailerparkchill.com/"
+  },
+  {
+    "source": "/img/sponsors/Trinity River Ramblers.png",
+    "output": "sponsors/trinity-river-ramblers-png.png",
+    "name": "Trinity River Ramblers",
+    "category": "sponsor",
+    "featured": true,
+    "website": "https://trinityriverramblers.net/"
+  },
+  {
+    "source": "/img/sponsors/Watermill-logo-cyan.png",
+    "output": "sponsors/watermill-logo-cyan-png.png",
+    "name": "Watermill logo cyan",
+    "category": "sponsor",
+    "featured": false
+  },
+  {
+    "source": "/img/sponsors/Watermill-logo-white.png",
+    "output": "sponsors/watermill-logo-white-png.png",
+    "name": "Watermill logo white",
+    "category": "sponsor",
+    "featured": false
+  },
+  {
+    "source": "/img/sponsors/abbey-brown-and-the-sound.png",
+    "output": "sponsors/abbey-brown-and-the-sound-png.png",
+    "name": "Abbey Brown and the Sound",
+    "category": "sponsor",
+    "featured": true,
+    "website": "https://www.facebook.com/abbeybrownandthesound"
+  },
+  {
+    "source": "/img/sponsors/barnes-video-group-logo.png",
+    "output": "sponsors/barnes-video-group-logo-png.png",
+    "name": "barnes video group logo",
+    "category": "sponsor",
+    "featured": false
+  },
+  {
+    "source": "/img/sponsors/c-and-h-attorneys.png",
+    "output": "sponsors/c-and-h-attorneys-png.png",
+    "name": "c and h attorneys",
+    "category": "sponsor",
+    "featured": false
+  },
+  {
+    "source": "/img/sponsors/camp-thurman.png",
+    "output": "sponsors/camp-thurman-png.png",
+    "name": "Camp Thurman",
+    "category": "sponsor",
+    "featured": true,
+    "website": "https://campthurman.org/"
+  },
+  {
+    "source": "/img/sponsors/darby-day-new-logo-1.jpg",
+    "output": "sponsors/darby-day-new-logo-1-jpg.png",
+    "name": "darby day new logo 1",
+    "category": "sponsor",
+    "featured": false
+  },
+  {
+    "source": "/img/sponsors/george-conkle.png",
+    "output": "sponsors/george-conkle-png.png",
+    "name": "george conkle",
+    "category": "sponsor",
+    "featured": false
+  },
+  {
+    "source": "/img/sponsors/huckleberrys-arlington.png",
+    "output": "sponsors/huckleberrys-arlington-png.png",
+    "name": "Huckleberry's Arlington",
+    "category": "sponsor",
+    "featured": true,
+    "website": "https://huckleberrys.com/locations/3582/"
+  },
+  {
+    "source": "/img/sponsors/ict-logo.png",
+    "output": "sponsors/ict-logo-png.png",
+    "name": "ict logo",
+    "category": "sponsor",
+    "featured": false
+  },
+  {
+    "source": "/img/sponsors/john-wade-roofing.png",
+    "output": "sponsors/john-wade-roofing-png.png",
+    "name": "john wade roofing",
+    "category": "sponsor",
+    "featured": false
+  },
+  {
+    "source": "/img/sponsors/large/DuckAC.webp",
+    "output": "sponsors/large/duckac-webp.png",
+    "name": "Duck AC and Heating",
+    "category": "sponsor",
+    "featured": true,
+    "website": "https://www.duckacandheating.com/"
+  },
+  {
+    "source": "/img/sponsors/large/c-and-h-attorneys.webp",
+    "output": "sponsors/large/c-and-h-attorneys-webp.png",
+    "name": "Curnutt & Hafer, LLP",
+    "category": "sponsor",
+    "featured": true,
+    "website": "https://curnutthafer.com/"
+  },
+  {
+    "source": "/img/sponsors/large/george-conkle.webp",
+    "output": "sponsors/large/george-conkle-webp.png",
+    "name": "George Conkle - J.P. Morgan Wealth Management",
+    "category": "sponsor",
+    "featured": true,
+    "website": "https://jpmorganwealthmanagement.chase.com/advisor/tx/george-p-conkle"
+  },
+  {
+    "source": "/img/sponsors/large/ict-logo.webp",
+    "output": "sponsors/large/ict-logo-webp.png",
+    "name": "Image Communication Technology",
+    "category": "sponsor",
+    "featured": true,
+    "website": "https://www.ictcorp.net/"
+  },
+  {
+    "source": "/img/sponsors/large/john-wade-roofing.webp",
+    "output": "sponsors/large/john-wade-roofing-webp.png",
+    "name": "John Wade Roofing",
+    "category": "sponsor",
+    "featured": true,
+    "website": "https://johnwaderoofing.com/"
+  },
+  {
+    "source": "/img/sponsors/large/legacy-stone-white.webp",
+    "output": "sponsors/large/legacy-stone-white-webp.png",
+    "name": "Legacy Stone Family Wealth",
+    "category": "sponsor",
+    "featured": true,
+    "website": "https://www.ameripriseadvisors.com/team/legacy-stone-family-wealth/"
+  },
+  {
+    "source": "/img/sponsors/large/mma.webp",
+    "output": "sponsors/large/mma-webp.png",
+    "name": "mma",
+    "category": "sponsor",
+    "featured": true,
+    "website": "https://mmatexas.com/"
+  },
+  {
+    "source": "/img/sponsors/large/mr-wilsons-garage-doors.webp",
+    "output": "sponsors/large/mr-wilsons-garage-doors-webp.png",
+    "name": "Mr. Wilson's Garage Doors",
+    "category": "sponsor",
+    "featured": true,
+    "website": "https://www.facebook.com/profile.php?id=61570984850348"
+  },
+  {
+    "source": "/img/sponsors/large/rick-and-rays-logo.webp",
+    "output": "sponsors/large/rick-and-rays-logo-webp.png",
+    "name": "Rick and Ray's Auto Plaza",
+    "category": "sponsor",
+    "featured": true,
+    "website": "https://rickandraysautoplaza.com/"
+  },
+  {
+    "source": "/img/sponsors/large/sigercon.webp",
+    "output": "sponsors/large/sigercon-webp.png",
+    "name": "Sigercon",
+    "category": "sponsor",
+    "featured": true,
+    "website": "https://www.sigercon.com"
+  },
+  {
+    "source": "/img/sponsors/large/sinkorswimlogo.webp",
+    "output": "sponsors/large/sinkorswimlogo-webp.png",
+    "name": "Sink or Swim Pools",
+    "category": "sponsor",
+    "featured": true,
+    "website": "https://sinkorswimpool.com/"
+  },
+  {
+    "source": "/img/sponsors/large/wade-funeral-home-white.webp",
+    "output": "sponsors/large/wade-funeral-home-white-webp.png",
+    "name": "Wade Funeral Home",
+    "category": "sponsor",
+    "featured": true,
+    "website": "https://www.wadefamilyfuneralhome.com/"
+  },
+  {
+    "source": "/img/sponsors/legacy-stone-white.png",
+    "output": "sponsors/legacy-stone-white-png.png",
+    "name": "legacy stone white",
+    "category": "sponsor",
+    "featured": false
+  },
+  {
+    "source": "/img/sponsors/marquez logo 2024.jpg",
+    "output": "sponsors/marquez-logo-2024-jpg.png",
+    "name": "Marquez Bakery",
+    "category": "sponsor",
+    "featured": true,
+    "website": "https://marquezbakery.com/"
+  },
+  {
+    "source": "/img/sponsors/marquez logo 2024.png",
+    "output": "sponsors/marquez-logo-2024-png.png",
+    "name": "marquez logo 2024",
+    "category": "sponsor",
+    "featured": false
+  },
+  {
+    "source": "/img/sponsors/mma.svg",
+    "output": "sponsors/mma-svg.png",
+    "name": "mma",
+    "category": "sponsor",
+    "featured": false
+  },
+  {
+    "source": "/img/sponsors/mr-wilsons-garage-doors.png",
+    "output": "sponsors/mr-wilsons-garage-doors-png.png",
+    "name": "mr wilsons garage doors",
+    "category": "sponsor",
+    "featured": false
+  },
+  {
+    "source": "/img/sponsors/rick-and-rays-logo.png",
+    "output": "sponsors/rick-and-rays-logo-png.png",
+    "name": "rick and rays logo",
+    "category": "sponsor",
+    "featured": false
+  },
+  {
+    "source": "/img/sponsors/sinkorswimlogo.png",
+    "output": "sponsors/sinkorswimlogo-png.png",
+    "name": "sinkorswimlogo",
+    "category": "sponsor",
+    "featured": false
+  },
+  {
+    "source": "/img/sponsors/symphony-arlington.svg",
+    "output": "sponsors/symphony-arlington-svg.png",
+    "name": "Symphony Arlington",
+    "category": "sponsor",
+    "featured": true,
+    "website": "https://symphonyarlington.org/"
+  },
+  {
+    "source": "/img/sponsors/the-dove-firm-2026.png",
+    "output": "sponsors/the-dove-firm-2026-png.png",
+    "name": "The Dove Firm",
+    "category": "sponsor",
+    "featured": true,
+    "website": "https://www.thedovefirm.com/"
+  },
+  {
+    "source": "/img/sponsors/the-keever-group-logo.png",
+    "output": "sponsors/the-keever-group-logo-png.png",
+    "name": "the keever group logo",
+    "category": "sponsor",
+    "featured": false
+  },
+  {
+    "source": "/img/sponsors/the-shelton-family.svg",
+    "output": "sponsors/the-shelton-family-svg.png",
+    "name": "the shelton family",
+    "category": "sponsor",
+    "featured": false
+  },
+  {
+    "source": "/img/sponsors/wade-funeral-home.webp",
+    "output": "sponsors/wade-funeral-home-webp.png",
+    "name": "wade funeral home",
+    "category": "sponsor",
+    "featured": false
+  }
+]

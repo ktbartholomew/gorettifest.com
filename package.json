@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "media": "node scripts/media.mjs",
     "test:media": "node --test scripts/media/*.test.mjs",
-    "test:video": "node --experimental-strip-types --test tests/video-coordinator.test.mjs"
+    "test:video": "node --experimental-strip-types --test tests/video-coordinator.test.mjs",
+    "logos:small": "node scripts/generate-small-logos.mjs"
   },
   "dependencies": {
     "embla-carousel-autoplay": "^8.6.0",
