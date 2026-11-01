@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { siteConfig } from "@/content/site";
 import Link from "next/link";
 import styles from "./header-nav.module.css";
 import { MouseEventHandler, useState } from "react";
@@ -72,36 +73,27 @@ export function HeaderNav({ logo }: { logo?: boolean }) {
           showMobileNav ? "block" : "hidden"
         } md:flex justify-center`}
       >
-        <li>
-          <Link className={styles.headerNav__link} href="/#visit">
-            Plan Your Visit
-          </Link>
-        </li>
-        <li>
-          <Link className={styles.headerNav__link} href="/#food-and-drinks">
-            Food &amp; Drinks
-          </Link>
-        </li>
-        <li>
-          <Link className={styles.headerNav__link} href="/#games">
-            Games
-          </Link>
-        </li>
-        <li>
-          <Link className={styles.headerNav__link} href="/#entertainment">
-            Entertainment
-          </Link>
-        </li>
-        <li>
-          <Link className={styles.headerNav__link} href="/#vendors">
-            Vendors
-          </Link>
-        </li>
-        <li>
-          <Link className={styles.headerNav__link} href="/about">
-            About Us
-          </Link>
-        </li>
+        {(siteConfig.homeMode === "thank-you"
+          ? [
+              { href: "/", label: "Home" },
+              { href: "/about", label: "About" },
+            ]
+          : [
+              { href: "/#visit", label: "Plan Your Visit" },
+              { href: "/#food-and-drinks", label: "Food & Drinks" },
+              { href: "/#games", label: "Games" },
+              { href: "/#entertainment", label: "Entertainment" },
+              { href: "/#vendors", label: "Vendors" },
+              { href: "/about", label: "About Us" },
+            ]
+        ).map(({ href, label }) => (
+          <li key={href}>
+            <Link className={styles.headerNav__link} href={href}
+              onClick={() => setShowMobileNav(false)}>
+              {label}
+            </Link>
+          </li>
+        ))}
       </ul>
     </nav>
   );

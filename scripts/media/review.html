@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Review photo crops</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f5f5f4;color:#182025;font:15px system-ui,sans-serif}header{padding:20px 24px;border-bottom:1px solid #ddd;background:white}h1{font-size:22px;margin:0 0 16px}nav{display:flex;gap:12px;align-items:center;flex-wrap:wrap}button,select,input{font:inherit}button,select{padding:10px 14px;border:1px solid #aaa;border-radius:5px;background:white;color:inherit}button{cursor:pointer}button:disabled{opacity:.5;cursor:default}button.primary{background:#234b3c;color:white;border-color:#234b3c}main{padding:24px;max-width:1600px;margin:auto}h2{font-size:17px;margin:0 0 10px}p{line-height:1.5}.paths{font-size:12px;overflow-wrap:anywhere;color:#4d555d}.panels{display:grid;grid-template-columns:1fr 1fr;gap:24px}.stage{height:56svh;min-height:200px;display:flex;justify-content:center;align-items:center;background:#ddd;border:1px solid #ccc;overflow:hidden}canvas,img{display:block;max-width:100%;max-height:100%;width:auto;height:auto}#original{touch-action:none;cursor:move}#preview{display:none}[hidden]{display:none!important}label{display:flex;gap:12px;align-items:center;margin:12px 0}label span{min-width:100px}input[type=range]{flex:1;max-width:350px}output{min-width:45px}#status{min-height:24px}a{color:#214c7a}button:focus-visible,select:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid #b44e16;outline-offset:3px}.controls{margin-top:24px} @media(max-width:700px){main,header{padding:16px}.panels{grid-template-columns:1fr}.stage{height:40svh}select{max-width:65vw}}
+</style>
+</head>
+<body>
+<header><h1>Review photo crops</h1><nav aria-label="Photo selection"><button id="previous">Previous</button><select id="selection" aria-label="Photo filename"></select><button id="next">Next</button><span id="counter"></span></nav></header>
+<main>
+<h2 id="filename"></h2><div class="paths"><p>Original: <span id="source-path"></span></p><p>Optimized: <span id="output-path"></span></p></div>
+<div class="panels">
+<section><h2>Original — drag the crop to adjust</h2><div class="stage"><canvas id="original" aria-label="Original image with draggable crop"></canvas></div></section>
+<section><h2 id="preview-title">Saved crop</h2><div class="stage"><img id="saved" alt="Saved optimized crop"><canvas id="preview" aria-label="Unsaved crop preview"></canvas></div></section>
+</div>
+<div class="controls">
+<label><span>Aspect ratio</span><select id="aspect" aria-label="Crop aspect ratio">
+<option value="1">Square · 1:1</option><option value="original">Original proportions</option>
+<option value="0.8">Portrait · 4:5</option><option value="0.6666666666666666">Portrait · 2:3</option>
+<option value="0.75">Portrait · 3:4</option><option value="0.5625">Portrait · 9:16</option>
+<option value="1.5">Landscape · 3:2</option><option value="1.3333333333333333">Landscape · 4:3</option>
+<option value="1.7777777777777777">Landscape · 16:9</option><option value="custom">Custom</option></select></label>
+<label id="custom-ratio" hidden><span>Width : height</span><input id="ratio-width" type="number" min="0.1" max="100" step="any" value="1" aria-label="Aspect width" style="width:70px"> : <input id="ratio-height" type="number" min="0.1" max="100" step="any" value="1" aria-label="Aspect height" style="width:70px"></label>
+<label><span>Zoom</span><input id="zoom" type="range" min="1" max="4" step="0.01" value="1"><output id="zoom-value">1×</output></label>
+<label><span>Horizontal</span><input id="horizontal" type="range" min="0" max="100" step="0.1" value="50"><output id="horizontal-value">50%</output></label>
+<label><span>Vertical</span><input id="vertical" type="range" min="0" max="100" step="0.1" value="50"><output id="vertical-value">50%</output></label>
+<button id="reset">Center crop</button> <button class="primary" id="save" disabled>Save crop & regenerate</button>
+<p id="status" role="status" aria-live="polite"></p>
+<p>Saving regenerates this photo from the original. It does not upload or publish it.</p>
+</div>
+</main>
+<script>
+const token='__TOKEN__';
+const $=id=>document.getElementById(id);
+let items=[], index=0, image=null, crop=null, dirty=false, busy=false, drag=null, generation=0;
+const original=$('original'), preview=$('preview');
+function dimensions(){const item=items[index],ratio=crop.ratio??1;return {w:Math.max(1,Math.round(Math.min(item.width,item.height*ratio)*crop.size)),h:Math.max(1,Math.round(Math.min(item.height,item.width/ratio)*crop.size))};}
+function clamp(){const item=items[index],s=dimensions();crop.left=Math.max(0,Math.min(item.width-s.w,Math.round(crop.left*item.width)))/item.width;crop.top=Math.max(0,Math.min(item.height-s.h,Math.round(crop.top*item.height)))/item.height;}
+function updateButtons(){ $('previous').disabled=busy||index===0;$('next').disabled=busy||index===items.length-1;$('save').disabled=busy||!dirty;$('selection').disabled=busy;for(const id of ['reset','zoom','horizontal','vertical','aspect','ratio-width','ratio-height'])$(id).disabled=busy;}
+function draw(changed=false){
+ if(!image)return;
+ clamp();const item=items[index],s=dimensions(),x=crop.left*image.width,y=crop.top*image.height,w=s.w/item.width*image.width,h=s.h/item.height*image.height;
+ const ctx=original.getContext('2d');ctx.clearRect(0,0,original.width,original.height);ctx.drawImage(image,0,0);
+ ctx.fillStyle='rgba(0,0,0,.55)';ctx.fillRect(0,0,image.width,y);ctx.fillRect(0,y+h,image.width,image.height-y-h);ctx.fillRect(0,y,x,h);ctx.fillRect(x+w,y,image.width-x-w,h);
+ ctx.strokeStyle='#fff';ctx.lineWidth=3;ctx.strokeRect(x,y,w,h);
+ preview.width=Math.max(1,Math.round(600*Math.min(1,s.w/s.h)));preview.height=Math.max(1,Math.round(600*Math.min(1,s.h/s.w)));preview.getContext('2d').drawImage(image,x,y,w,h,0,0,preview.width,preview.height);
+ $('zoom').value=1/crop.size;$('zoom-value').textContent=(1/crop.size).toFixed(2)+'×';
+ for(const [name,offset,dimension,extent] of [['horizontal',crop.left,item.width,s.w],['vertical',crop.top,item.height,s.h]]){const value=dimension===extent?50:offset*dimension/(dimension-extent)*100;$(name).value=value;$(name+'-value').textContent=Math.round(value)+'%';}
+ if(changed){dirty=true;$('saved').style.display='none';preview.style.display='block';$('preview-title').textContent='Crop preview — unsaved';$('status').textContent='Unsaved crop changes.';}
+ updateButtons();
+}
+function preset(item){
+ if(typeof item.crop==='object')return {...item.crop};
+ const ratio=typeof item.aspectRatio==='number'?item.aspectRatio:1;const w=Math.min(item.width,item.height*ratio),h=Math.min(item.height,item.width/ratio);let x=.5,y=.5;const value=item.crop||'centre';
+ if(value.includes('west'))x=0;if(value.includes('east'))x=1;if(value.includes('north'))y=0;if(value.includes('south'))y=1;
+ return {left:(item.width-w)*x/item.width,top:(item.height-h)*y/item.height,size:1,ratio};
+}
+async function load(target){
+ if(dirty&&!confirm('Discard unsaved crop changes?')){$('selection').value=String(index);return;}
+ index=target;dirty=false;busy=true;image=null;const current=++generation;updateButtons();const item=items[index];
+ $('selection').value=String(index);$('filename').textContent=item.filename;$('counter').textContent=`${index+1} / ${items.length}`;
+ $('source-path').textContent=item.sourcePaths.join(' · ');$('output-path').textContent=item.optimizedPath||'Not optimized yet';$('status').textContent='Loading original…';
+ $('saved').style.display='none';preview.style.display='none';original.getContext('2d').clearRect(0,0,original.width,original.height);
+ const nextImage=new Image();
+ nextImage.onload=()=>{if(current!==generation)return;image=nextImage;original.width=image.width;original.height=image.height;crop=preset(item);syncAspect();busy=false;draw();
+ if(item.revision){$('saved').src=`/optimized/${item.id}?v=${item.revision}`;$('saved').style.display='block';$('preview-title').textContent='Saved crop';}
+ else {preview.style.display='block';$('preview-title').textContent='Crop preview';dirty=true;updateButtons();}
+ $('status').textContent=typeof item.crop==='string'&&['attention','entropy'].includes(item.crop)?'Saved crop uses automatic positioning. Manual adjustments start from the center.':'';
+ };
+ nextImage.onerror=()=>{busy=false;$('status').textContent='Could not load the original. Check its source path.';updateButtons();$('save').disabled=true;};
+ nextImage.src='/original/'+item.id;
+}
+$('selection').onchange=event=>load(Number(event.target.value));$('previous').onclick=()=>load(index-1);$('next').onclick=()=>load(index+1);
+function syncAspect(){const ratio=crop.ratio??1,item=items[index];const match=[...$('aspect').options].find(option=>Number(option.value)===ratio);$('aspect').value=match?match.value:Math.abs(ratio-item.width/item.height)<.00001?'original':'custom';$('custom-ratio').hidden=$('aspect').value!=='custom';$('ratio-width').value=ratio;$('ratio-height').value=1;}
+function changeRatio(ratio){if(!image||!Number.isFinite(ratio)||ratio<.1||ratio>10){$('status').textContent='Choose an aspect ratio between 1:10 and 10:1.';return;}const item=items[index],old=dimensions(),cx=crop.left*item.width+old.w/2,cy=crop.top*item.height+old.h/2;crop.ratio=ratio;crop.size=1;const size=dimensions();crop.left=(cx-size.w/2)/item.width;crop.top=(cy-size.h/2)/item.height;draw(true);}
+$('aspect').onchange=event=>{const value=event.target.value;$('custom-ratio').hidden=value!=='custom';if(value==='custom'){$('ratio-width').value=crop.ratio??1;$('ratio-height').value=1;return;}changeRatio(value==='original'?items[index].width/items[index].height:Number(value));};
+for(const id of ['ratio-width','ratio-height'])$(id).oninput=()=>changeRatio(Number($('ratio-width').value)/Number($('ratio-height').value));
+$('reset').onclick=()=>{if(!image)return;crop=preset({...items[index],crop:'centre',aspectRatio:crop.ratio??1});draw(true);};
+$('zoom').oninput=event=>{if(!image)return;const item=items[index],old=dimensions(),cx=crop.left*item.width+old.w/2,cy=crop.top*item.height+old.h/2;crop.size=1/Number(event.target.value);const size=dimensions();crop.left=(cx-size.w/2)/item.width;crop.top=(cy-size.h/2)/item.height;draw(true);};
+$('horizontal').oninput=event=>{if(!image)return;crop.left=Number(event.target.value)/100*(items[index].width-dimensions().w)/items[index].width;draw(true);};
+$('vertical').oninput=event=>{if(!image)return;crop.top=Number(event.target.value)/100*(items[index].height-dimensions().h)/items[index].height;draw(true);};
+function point(event){const bounds=original.getBoundingClientRect();return {x:(event.clientX-bounds.left)/bounds.width*items[index].width,y:(event.clientY-bounds.top)/bounds.height*items[index].height};}
+original.onpointerdown=event=>{if(!image||busy)return;const p=point(event),item=items[index],s=dimensions(),x=crop.left*item.width,y=crop.top*item.height;drag={x:p.x>=x&&p.x<=x+s.w?p.x-x:s.w/2,y:p.y>=y&&p.y<=y+s.h?p.y-y:s.h/2};original.setPointerCapture(event.pointerId);original.onpointermove(event);};
+original.onpointermove=event=>{if(!drag||!image||busy)return;const p=point(event);crop.left=(p.x-drag.x)/items[index].width;crop.top=(p.y-drag.y)/items[index].height;draw(true);};
+original.onpointerup=original.onpointercancel=()=>{drag=null;};
+$('save').onclick=async()=>{
+ if(!image||busy)return;busy=true;updateButtons();$('status').textContent='Saving and regenerating…';
+ try{const response=await fetch('/crop/'+items[index].id,{method:'POST',headers:{'Content-Type':'application/json','X-Review-Token':token},body:JSON.stringify(crop)});const result=await response.json();if(!response.ok)throw Error(result.error);
+ Object.assign(items[index],result);dirty=false;$('output-path').textContent=result.optimizedPath;$('saved').src=`/optimized/${items[index].id}?v=${result.revision}`;$('saved').style.display='block';preview.style.display='none';$('preview-title').textContent='Saved crop';$('status').textContent='Saved. Original unchanged.';
+ }catch(error){$('status').textContent=error.message;}finally{busy=false;updateButtons();}
+};
+window.addEventListener('beforeunload',event=>{if(dirty||busy){event.preventDefault();event.returnValue='';}});
+(async()=>{try{const response=await fetch('/items');const result=await response.json();if(!response.ok)throw Error(result.error);items=result;if(!items.length)throw Error('No photos found.');items.forEach((item,i)=>{const option=document.createElement('option');option.value=i;option.textContent=item.filename;$('selection').append(option);});await load(0);}catch(error){$('status').textContent=error.message;}})();
+</script>
+</body></html>
